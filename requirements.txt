@@ -1,0 +1,5 @@
+pymupdf
+pdfplumber
+jupyter
+pandas
+pytest
