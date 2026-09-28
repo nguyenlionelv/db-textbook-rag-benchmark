@@ -3,3 +3,5 @@ pdfplumber
 jupyter
 pandas
 pytest
+langchain-core
+langchain-text-splitters

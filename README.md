@@ -9,12 +9,14 @@ db-rag-eval/
 ├── data/
 │   ├── raw/
 │   └── interim/
-├── notebooks/
-│   └── 01_pdf_inspection.ipynb
+├── docs/
+├── notebooks/ 
+│   ├── 01_pdf_inspection.ipynb
+|   └── 02_pdf_chunking.ipynb
+├── output/
 ├── src/
 │   └── ingestion/
-│       ├── extract_pdf.py
-│       └── clean_text.py
+│       └── textbook_parser.py
 ├── tests/
 ├── .gitignore
 ├── requirements.txt
@@ -41,5 +43,19 @@ Nếu dùng PowerShell, có thể kích hoạt bằng `.venv\Scripts\Activate.ps
 Mở `notebooks/01_pdf_inspection.ipynb` để bắt đầu khảo sát PDF.
 Các file trong `src/ingestion/` là khung ban đầu cho bước trích xuất và làm sạch văn bản.
 
-Giai đoạn đầu chỉ dùng PyMuPDF, pdfplumber, Jupyter, pandas và pytest;
-chưa cần LangChain, vector database hay framework RAG khác.
+Parser sử dụng PyMuPDF; các Chunker sử dụng `langchain-core` và
+`langchain-text-splitters`. Các thư viện được liệt kê trong `requirements.txt`.
+
+## Chạy thử pipeline Chunker
+
+Với input `output/parsed_chapter1.jsonl` đã được Parser tạo ra, chạy từ project root:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run_chunking_pipeline.py
+```
+
+Script nạp record, chạy cả ba Chunker, kiểm tra các khoảng text nguồn và in một
+mẫu input/output gồm nội dung cùng metadata. Output đầy đủ được lưu thành ba file
+JSONL trong `output/chunks/`. Có thể đổi input, kích thước, overlap và số mẫu in ra
+bằng các hằng số ở đầu script. Contract được mô tả tại
+[docs/chunker_contract.md](docs/chunker_contract.md).
