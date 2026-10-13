@@ -3,6 +3,11 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 
+# Model pretrained dùng trong notebook so sánh embedding.
+output/model_cache/
+# Dữ liệu Qdrant sinh từ notebook
+output/qdrant_db/
+
 data/raw/
 data/interim/
 data/processed/

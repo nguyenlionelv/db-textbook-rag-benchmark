@@ -1,61 +1,78 @@
 # db-rag-eval
 
-Dự án khảo sát PDF và xây dựng pipeline xử lý dữ liệu đơn giản cho RAG.
+## Tổng quan
 
-## Cấu trúc
+Dự án nghiên cứu và hiện thực hệ thống **Retrieval-Augmented Generation (RAG)** trên tài liệu PDF. Quá trình phát triển kết hợp thực nghiệm phương pháp với xây dựng các thành phần xử lý tài liệu, biểu diễn văn bản, lưu trữ vector và truy xuất thông tin.
+
+Định hướng pipeline:
+
+```text
+PDF → Parsing → Chunking → Embedding → Vector Storage → Retrieval → Generation
+```
+
+## Cấu trúc dự án
 
 ```text
 db-rag-eval/
 ├── data/
-│   ├── raw/
-│   └── interim/
+│   ├── raw/                    # Tài liệu đầu vào
+│   └── interim/                # Dữ liệu trung gian
 ├── docs/
-├── notebooks/ 
-│   ├── 01_pdf_inspection.ipynb
-|   └── 02_pdf_chunking.ipynb
-├── output/
+│   ├── materials/              # Tài liệu lý thuyết
+│   └── pipelines/              # Kế hoạch và đặc tả quy trình
+├── notebooks/                  # Thực nghiệm và hiện thực các thành phần
+├── output/                     # Kết quả xử lý và dữ liệu lưu trữ
+├── scripts/                    # Script thực thi pipeline
 ├── src/
-│   └── ingestion/
-│       └── textbook_parser.py
-├── tests/
-├── .gitignore
+│   └── ingestion/              # Mã nguồn Parsing và Chunking
+├── tests/                      # Kiểm thử
 ├── requirements.txt
 └── README.md
 ```
 
-Đặt PDF gốc vào `data/raw/` và dữ liệu trung gian vào `data/interim/`.
-Các thư mục dữ liệu và file PDF được bỏ qua khi commit Git.
+## Tech Stack
 
-## Thiết lập Python trên Windows
+| Nhóm | Công nghệ |
+| --- | --- |
+| Ngôn ngữ | Python |
+| Xử lý PDF | PyMuPDF, pdfplumber |
+| Chunking | LangChain Core, LangChain Text Splitters |
+| Embedding | PyTorch, Sentence Transformers, FlagEmbedding |
+| Xử lý dữ liệu | NumPy, pandas, SciPy, scikit-learn |
+| Vector Storage | Qdrant Local |
+| Môi trường thực nghiệm | Jupyter Notebook |
+| Kiểm thử | pytest |
 
-Dùng Python 3.11. Từ thư mục dự án, chạy:
+## Installation & Setup
+
+Môi trường tham chiếu: **Python 3.13, Windows và PowerShell**. Từ thư mục dự án, tạo môi trường ảo và cài đặt các thư viện:
 
 ```powershell
-cd db-rag-eval
 python -m venv .venv
-.venv\Scripts\activate
-python -m pip install -r requirements.txt
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements.txt FlagEmbedding
+```
+
+Cấu hình trên sử dụng PyTorch CPU. Các cấu hình GPU được cung cấp trong [hướng dẫn cài đặt PyTorch](https://pytorch.org/get-started/locally/).
+
+Khởi động môi trường notebook:
+
+```powershell
 jupyter notebook
 ```
 
-Nếu dùng PowerShell, có thể kích hoạt bằng `.venv\Scripts\Activate.ps1`.
+Chọn kernel tương ứng với `.venv` và đặt tài liệu PDF tại `data/raw/`. Đường dẫn đầu vào và cấu hình model được khai báo trong các notebook. Model pretrained cần được tải ở lần sử dụng đầu tiên; Qdrant Local lưu dữ liệu trên máy và không yêu cầu server riêng.
 
-Mở `notebooks/01_pdf_inspection.ipynb` để bắt đầu khảo sát PDF.
-Các file trong `src/ingestion/` là khung ban đầu cho bước trích xuất và làm sạch văn bản.
+## Tiến độ hiện tại
 
-Parser sử dụng PyMuPDF; các Chunker sử dụng `langchain-core` và
-`langchain-text-splitters`. Các thư viện được liệt kê trong `requirements.txt`.
-
-## Chạy thử pipeline Chunker
-
-Với input `output/parsed_chapter1.jsonl` đã được Parser tạo ra, chạy từ project root:
-
-```powershell
-.\.venv\Scripts\python.exe scripts\run_chunking_pipeline.py
-```
-
-Script nạp record, chạy cả ba Chunker, kiểm tra các khoảng text nguồn và in một
-mẫu input/output gồm nội dung cùng metadata. Output đầy đủ được lưu thành ba file
-JSONL trong `output/chunks/`. Có thể đổi input, kích thước, overlap và số mẫu in ra
-bằng các hằng số ở đầu script. Contract được mô tả tại
-[docs/chunker_contract.md](docs/chunker_contract.md).
+| Thành phần | Phạm vi | Trạng thái |
+| --- | --- | --- |
+| Document Processing | PDF Inspection, Parsing, Metadata | Đã hiện thực |
+| Chunking | Fixed, Recursive, Structure-aware | Đã hiện thực |
+| Thực nghiệm phương pháp | TF-IDF, Static, Dense, Sparse, Multi-vector, Hybrid | Đã thực nghiệm |
+| Embedding & Vector Storage | E5, Qdrant, Persistence | Đã hiện thực trong notebook |
+| Retrieval | Retrieval Pipeline, Reranking | Chưa triển khai thành phần hệ thống |
+| Generation | Context Assembly, LLM | Chưa triển khai |
+| Evaluation | End-to-end RAG Evaluation | Chưa triển khai |

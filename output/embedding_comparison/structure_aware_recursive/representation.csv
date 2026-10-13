@@ -1,0 +1,7 @@
+﻿method,representation,dimensions,nonzero_values,numeric_mib
+tfidf,CSR sparse,16037,37820.0,0.28943634033203125
+static,one dense vector,1024,,0.91015625
+e5,one dense vector,384,,0.34130859375
+bge_dense,one dense vector,1024,,0.91015625
+bge_sparse,token IDs + weights,250002,17014.0,0.1298065185546875
+bge_multi,token vectors,1024,,143.99609375

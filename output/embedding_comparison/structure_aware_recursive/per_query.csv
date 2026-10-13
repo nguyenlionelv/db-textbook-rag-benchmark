@@ -1,0 +1,113 @@
+﻿method,topic,language,query,hit@5,mrr@5
+tfidf,dbms,en,What is a database management system?,1,0.3333333333333333
+tfidf,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+tfidf,schema,en,What is a database schema?,0,0.0
+tfidf,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+tfidf,state,en,What do we call the data in a database at a particular moment?,1,1.0
+tfidf,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+tfidf,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+tfidf,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+tfidf,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,0.3333333333333333
+tfidf,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+tfidf,multivalued,en,Can an attribute have several values for the same entity?,1,1.0
+tfidf,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+tfidf,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+tfidf,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+tfidf,key,en,Which attribute can uniquely identify each entity?,1,1.0
+tfidf,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+static,dbms,en,What is a database management system?,1,1.0
+static,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+static,schema,en,What is a database schema?,1,0.25
+static,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+static,state,en,What do we call the data in a database at a particular moment?,1,1.0
+static,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+static,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+static,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+static,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,0.3333333333333333
+static,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+static,multivalued,en,Can an attribute have several values for the same entity?,1,0.25
+static,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+static,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+static,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+static,key,en,Which attribute can uniquely identify each entity?,1,1.0
+static,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+e5,dbms,en,What is a database management system?,1,1.0
+e5,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+e5,schema,en,What is a database schema?,1,0.5
+e5,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+e5,state,en,What do we call the data in a database at a particular moment?,1,1.0
+e5,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+e5,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+e5,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+e5,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+e5,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+e5,multivalued,en,Can an attribute have several values for the same entity?,1,1.0
+e5,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+e5,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+e5,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+e5,key,en,Which attribute can uniquely identify each entity?,1,1.0
+e5,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bge_dense,dbms,en,What is a database management system?,1,1.0
+bge_dense,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+bge_dense,schema,en,What is a database schema?,1,0.25
+bge_dense,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bge_dense,state,en,What do we call the data in a database at a particular moment?,1,1.0
+bge_dense,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,1,1.0
+bge_dense,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,0.3333333333333333
+bge_dense,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.25
+bge_dense,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bge_dense,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+bge_dense,multivalued,en,Can an attribute have several values for the same entity?,1,1.0
+bge_dense,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+bge_dense,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bge_dense,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+bge_dense,key,en,Which attribute can uniquely identify each entity?,1,1.0
+bge_dense,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,1,1.0
+bge_sparse,dbms,en,What is a database management system?,1,1.0
+bge_sparse,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+bge_sparse,schema,en,What is a database schema?,1,0.2
+bge_sparse,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bge_sparse,state,en,What do we call the data in a database at a particular moment?,1,1.0
+bge_sparse,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+bge_sparse,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+bge_sparse,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+bge_sparse,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bge_sparse,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+bge_sparse,multivalued,en,Can an attribute have several values for the same entity?,1,0.5
+bge_sparse,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+bge_sparse,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,0.5
+bge_sparse,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+bge_sparse,key,en,Which attribute can uniquely identify each entity?,1,1.0
+bge_sparse,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bge_multi,dbms,en,What is a database management system?,1,1.0
+bge_multi,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+bge_multi,schema,en,What is a database schema?,1,0.25
+bge_multi,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bge_multi,state,en,What do we call the data in a database at a particular moment?,1,1.0
+bge_multi,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,1,1.0
+bge_multi,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,0.5
+bge_multi,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+bge_multi,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bge_multi,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+bge_multi,multivalued,en,Can an attribute have several values for the same entity?,1,1.0
+bge_multi,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,1.0
+bge_multi,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bge_multi,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+bge_multi,key,en,Which attribute can uniquely identify each entity?,1,1.0
+bge_multi,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,1,1.0
+hybrid,dbms,en,What is a database management system?,1,1.0
+hybrid,dbms,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+hybrid,schema,en,What is a database schema?,1,0.25
+hybrid,schema,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+hybrid,state,en,What do we call the data in a database at a particular moment?,1,1.0
+hybrid,state,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,1,0.3333333333333333
+hybrid,logical,en,Which data independence allows structural and constraint changes without affecting application programs?,1,0.5
+hybrid,logical,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+hybrid,physical,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+hybrid,physical,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+hybrid,multivalued,en,Can an attribute have several values for the same entity?,1,1.0
+hybrid,multivalued,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.25
+hybrid,derived,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+hybrid,derived,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,0.5
+hybrid,key,en,Which attribute can uniquely identify each entity?,1,1.0
+hybrid,key,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,1,0.5

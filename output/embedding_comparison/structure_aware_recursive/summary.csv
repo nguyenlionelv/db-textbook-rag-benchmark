@@ -1,0 +1,15 @@
+﻿method,language,hit@5,mrr@5
+bge_dense,en,1.0,0.8229166666666666
+bge_dense,vi,0.875,0.71875
+bge_multi,en,1.0,0.84375
+bge_multi,vi,0.875,0.8125
+bge_sparse,en,1.0,0.775
+bge_sparse,vi,0.0,0.0
+e5,en,1.0,0.9375
+e5,vi,0.625,0.5
+hybrid,en,1.0,0.84375
+hybrid,vi,0.75,0.44791666666666663
+static,en,1.0,0.7291666666666666
+static,vi,0.0,0.0
+tfidf,en,0.875,0.7083333333333333
+tfidf,vi,0.0,0.0

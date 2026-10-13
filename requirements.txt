@@ -5,3 +5,6 @@ pandas
 pytest
 langchain-core
 langchain-text-splitters
+torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers
+qdrant-client

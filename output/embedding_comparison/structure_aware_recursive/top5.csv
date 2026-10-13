@@ -1,0 +1,901 @@
+﻿rank,row_index,score,evidence_match,chapter,section,pdf_pages,preview,method,query_index,query,language
+1.0,195.0,0.23447230458259583,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",tfidf,0,What is a database management system?,en
+2.0,97.0,0.12495308369398117,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",tfidf,0,What is a database management system?,en
+3.0,8.0,0.11955539882183075,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,tfidf,0,What is a database management system?,en
+4.0,196.0,0.11739656329154968,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",tfidf,0,What is a database management system?,en
+5.0,7.0,0.10274386405944824,False,1,1.1,"[36, 37]","An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, ele",tfidf,0,What is a database management system?,en
+1.0,195.0,0.32744237780570984,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",tfidf,2,What is a database schema?,en
+2.0,196.0,0.15038573741912842,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",tfidf,2,What is a database schema?,en
+3.0,97.0,0.1496438980102539,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",tfidf,2,What is a database schema?,en
+4.0,114.0,0.12583968043327332,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",tfidf,2,What is a database schema?,en
+5.0,211.0,0.11410374194383621,False,3,3.1,[93],"During or after the conceptual schema design, the basic data model operations can be used to specify the high-level user queries and operations identified durin",tfidf,2,What is a database schema?,en
+1.0,113.0,0.19431936740875244,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",tfidf,4,What do we call the data in a database at a particular moment?,en
+2.0,238.0,0.13276086747646332,False,3,3.3.2,[101],"V = P(P(V1) × P(V2) × . . . × P(Vn))
+The value set provides all possible values. Usually only a small number of these values exist in the database at a particul",tfidf,4,What do we call the data in a database at a particular moment?,en
+3.0,195.0,0.12808604538440704,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",tfidf,4,What do we call the data in a database at a particular moment?,en
+4.0,27.0,0.07956092059612274,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",tfidf,4,What do we call the data in a database at a particular moment?,en
+5.0,97.0,0.07480020821094513,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",tfidf,4,What do we call the data in a database at a particular moment?,en
+1.0,126.0,0.3741946816444397,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",tfidf,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,123.0,0.1420401781797409,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",tfidf,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,124.0,0.10544715821743011,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",tfidf,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,27.0,0.09850549697875977,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",tfidf,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,75.0,0.08232345432043076,False,1,1.6.10,[54],"using DBMS facilities. Development time using a DBMS is estimated to be onesixth to one-fourth of that for a file system.
+Flexibility. It may be necessary to ch",tfidf,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,119.0,0.2236478626728058,False,2,2.2.1,"[67, 68]","End Users
+. . .
+Figure 2.2 The three-schema architecture.
+2. The conceptual level has a conceptual schema, which describes the structure
+of the whole database f",tfidf,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,124.0,0.19828222692012787,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",tfidf,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,125.0,0.19696000218391418,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",tfidf,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,211.0,0.16024276614189148,False,3,3.1,[93],"During or after the conceptual schema design, the basic data model operations can be used to specify the high-level user queries and operations identified durin",tfidf,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,118.0,0.15636511147022247,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",tfidf,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,222.0,0.2804197669029236,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",tfidf,10,Can an attribute have several values for the same entity?,en
+2.0,231.0,0.22977246344089508,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,tfidf,10,Can an attribute have several values for the same entity?,en
+3.0,233.0,0.18018817901611328,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",tfidf,10,Can an attribute have several values for the same entity?,en
+4.0,224.0,0.15962223708629608,False,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",tfidf,10,Can an attribute have several values for the same entity?,en
+5.0,228.0,0.14847619831562042,False,3,3.3.2,[98],"[[SECTION 3.3.2: Entity Types, Entity Sets, Keys, and Value Sets]]
+Entity Types and Entity Sets. A database usually contains groups of entities that are similar",tfidf,10,Can an attribute have several values for the same entity?,en
+1.0,224.0,0.11126583814620972,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",tfidf,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,214.0,0.10310269147157669,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",tfidf,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,164.0,0.10030504316091537,False,2,2.5.2,[78],. The resources provided by specialized servers can be accessed by many client machines. The client machines provide the user with the appropriate interfaces to,tfidf,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,215.0,0.08642850816249847,False,3,3.2,[94],"ance purposes, including each dependent’s first name, sex, birth date, and relationship to the employee.
+Figure 3.2 shows how the schema for this database appli",tfidf,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,98.0,0.06897367537021637,False,1,1.9,"[59, 60]","Figure 1.2.
+1.11. Give some additional views that may be needed by other user groups for the
+database shown in Figure 1.2.
+1.12. Cite some examples of integrity",tfidf,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,231.0,0.2521063983440399,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,tfidf,14,Which attribute can uniquely identify each entity?,en
+2.0,228.0,0.1535368263721466,False,3,3.3.2,[98],"[[SECTION 3.3.2: Entity Types, Entity Sets, Keys, and Value Sets]]
+Entity Types and Entity Sets. A database usually contains groups of entities that are similar",tfidf,14,Which attribute can uniquely identify each entity?,en
+3.0,217.0,0.13268707692623138,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",tfidf,14,Which attribute can uniquely identify each entity?,en
+4.0,233.0,0.12067728489637375,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",tfidf,14,Which attribute can uniquely identify each entity?,en
+5.0,224.0,0.1184069886803627,False,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",tfidf,14,Which attribute can uniquely identify each entity?,en
+1.0,8.0,0.7544749975204468,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,static,0,What is a database management system?,en
+2.0,96.0,0.7020191550254822,False,1,1.9,[59],"We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, ",static,0,What is a database management system?,en
+3.0,95.0,0.6994266510009766,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",static,0,What is a database management system?,en
+4.0,10.0,0.6911507844924927,False,1,1.1,[37],It is not absolutely necessary to use general-purpose DBMS software to implement a computerized database. It is possible to write a customized set of programs t,static,0,What is a database management system?,en
+5.0,144.0,0.6868054270744324,False,2,2.4,[73],"[[SECTION 2.4: The Database System Environment]]
+A DBMS is a complex software system. In this section we discuss the types of software components that constitut",static,0,What is a database management system?,en
+1.0,213.0,0.05799078196287155,False,3,3.2,"[93, 94]","[[SECTION 3.2: A Sample Database Application]]
+In this section we describe a sample database application, called COMPANY, which serves to illustrate the basic E",static,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,205.0,0.055434450507164,False,3,3.intro,[91],". Section 3.8 introduces some UML class diagram concepts, compares them to ER model concepts, and applies them to the same COMPANY database example. Section 3.9",static,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,189.0,0.053065650165081024,False,2,2.6,[84],The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for,static,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+4.0,0.0,0.039290230721235275,False,1,1.intro,[35],"[[SECTION 1.intro: Chapter Introduction]]
+store images, audio clips, and video streams digitally. These types of files are becoming an important component of mu",static,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+5.0,158.0,0.03893077373504639,False,2,2.4.3,[77],"Application development environments, such as PowerBuilder (Sybase) or JBuilder (Borland), have been quite popular. These systems provide an environment for dev",static,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,114.0,0.8266534805297852,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",static,2,What is a database schema?,en
+2.0,190.0,0.8062217235565186,False,2,2.7,[85],"[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categ",static,2,What is a database schema?,en
+3.0,115.0,0.7942561507225037,False,2,2.1.2,[66],". The schema is sometimes called the intension, and a database state is called an extension of the schema.",static,2,What is a database schema?,en
+4.0,111.0,0.7792533040046692,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",static,2,What is a database schema?,en
+5.0,122.0,0.7733381390571594,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",static,2,What is a database schema?,en
+1.0,189.0,0.05294245481491089,False,2,2.6,[84],The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for,static,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,165.0,0.04933621361851692,False,2,2.5.2,"[78, 79]","Display Monitor
+Display Monitor
+Network
+Software
+Hardware/Firmware
+Operating System
+Display Monitor
+Application
+Programs
+DBMS
+Controller
+CPU
+Controller
+. . .
+. ",static,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,167.0,0.042615920305252075,False,2,2.5.2,"[79, 80]","Client Client Client
+Print Server
+DBMS
+Server File Server
+. . .
+. . .
+Network Figure 2.5 Logical two-tier client/server architecture.
+Client CLIENT
+Site 2
+Clien",static,3,Lược đồ cơ sở dữ liệu là gì?,vi
+4.0,94.0,0.04206575080752373,False,1,1.8,[58],"■ Embedded systems with limited storage capacity, where a general-purpose
+DBMS would not fit
+■ No multiple-user access to data
+Certain industries and applicatio",static,3,Lược đồ cơ sở dữ liệu là gì?,vi
+5.0,157.0,0.03826579451560974,False,2,2.4.3,"[76, 77]","[[SECTION 2.4.3: Tools, Application Environments, and Communications Facilities]]
+Other tools are often available to database designers, users, and the DBMS. CA",static,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.6420284509658813,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",static,4,What do we call the data in a database at a particular moment?,en
+2.0,95.0,0.6384187936782837,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",static,4,What do we call the data in a database at a particular moment?,en
+3.0,23.0,0.603801965713501,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",static,4,What do we call the data in a database at a particular moment?,en
+4.0,3.0,0.6015654802322388,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",static,4,What do we call the data in a database at a particular moment?,en
+5.0,96.0,0.5898799896240234,False,1,1.9,[59],"We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, ",static,4,What do we call the data in a database at a particular moment?,en
+1.0,189.0,0.09660795331001282,False,2,2.6,[84],The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for,static,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,153.0,0.07281342148780823,False,2,2.4.1,[76],"buffering of disk pages. The DBMS also interfaces with compilers for general- purpose host programming languages, and with application servers and client progra",static,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,145.0,0.07135455310344696,False,2,2.4.1,[73],"[[SECTION 2.4.1: DBMS Component Modules]]
+Figure 2.3 illustrates, in a simplified form, the typical DBMS components. The figure is divided into two parts. The t",static,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,151.0,0.07053700089454651,False,2,2.4.1,[75],"In the lower part of Figure 2.3, the runtime database processor executes (1) the privileged commands, (2) the executable query plans, and (3) the canned transac",static,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,46.0,0.05925794318318367,False,1,1.5,[48],"[[SECTION 1.5: Workers behind the Scene]]
+In addition to those who design, use, and administer a database, others are associated with the design, development, a",static,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,126.0,0.5899195671081543,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",static,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,123.0,0.5079745054244995,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",static,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,27.0,0.4885501563549042,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",static,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,68.0,0.47682732343673706,False,1,1.6.8,[52],". This is known as a referential integrity constraint. Another type of constraint specifies uniqueness on data item values, such as every course record must hav",static,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,67.0,0.4410752058029175,False,1,1.6.8,[52],Most database applications have certain integrity constraints that must hold for the data. A DBMS should provide capabilities for defining and enforcing these c,static,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,29.0,0.025022372603416443,False,1,1.3.2,[43],"In some types of database systems, such as object-oriented and object-relational systems (see Chapter 12), users can define operations on data as part of the da",static,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,142.0,0.01071729976683855,False,2,2.3.2,[72],Speech Input and Output. Limited use of speech as an input query and speech as an answer to a question or result of a request is becoming commonplace. Applicati,static,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,38.0,0.009257065132260323,False,1,1.3.4,[45],The preceding characteristics are important in distinguishing a DBMS from traditional file-processing software. In Section 1.6 we discuss additional features th,static,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+4.0,137.0,0.006332807242870331,False,2,2.3.2,[71],"[[SECTION 2.3.2: DBMS Interfaces]]
+User-friendly interfaces provided by a DBMS may include the following:
+Menu-based Interfaces for Web Clients or Browsing. The",static,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+5.0,153.0,6.584636867046356e-05,False,2,2.4.1,[76],"buffering of disk pages. The DBMS also interfaces with compilers for general- purpose host programming languages, and with application servers and client progra",static,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,124.0,0.6640632152557373,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",static,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,123.0,0.6171631217002869,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",static,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,125.0,0.6161969304084778,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",static,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,119.0,0.5886950492858887,False,2,2.2.1,"[67, 68]","End Users
+. . .
+Figure 2.2 The three-schema architecture.
+2. The conceptual level has a conceptual schema, which describes the structure
+of the whole database f",static,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,190.0,0.5601685643196106,False,2,2.7,[85],"[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categ",static,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,13.0,0.07134446501731873,False,1,1.2,"[38, 39]","Software to Process
+Queries/Programs
+Software to Access
+Stored Data
+Stored Database Stored Database
+Definition (Meta-Data)
+DBMS Software
+Figure 1.1 A simplified",static,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,165.0,0.06402716040611267,False,2,2.5.2,"[78, 79]","Display Monitor
+Display Monitor
+Network
+Software
+Hardware/Firmware
+Operating System
+Display Monitor
+Application
+Programs
+DBMS
+Controller
+CPU
+Controller
+. . .
+. ",static,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,38.0,0.056281596422195435,False,1,1.3.4,[45],The preceding characteristics are important in distinguishing a DBMS from traditional file-processing software. In Section 1.6 we discuss additional features th,static,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,142.0,0.04176747426390648,False,2,2.3.2,[72],Speech Input and Output. Limited use of speech as an input query and speech as an answer to a question or result of a request is becoming commonplace. Applicati,static,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,64.0,0.040433529764413834,False,1,1.6.6,"[51, 52]","[[SECTION 1.6.6: Providing Multiple User Interfaces]]
+Because many types of users with varying levels of technical knowledge use a database, a DBMS should provi",static,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,231.0,0.7856281995773315,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,static,10,Can an attribute have several values for the same entity?,en
+2.0,217.0,0.6980038285255432,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",static,10,Can an attribute have several values for the same entity?,en
+3.0,224.0,0.6951656341552734,False,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",static,10,Can an attribute have several values for the same entity?,en
+4.0,222.0,0.6803299784660339,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",static,10,Can an attribute have several values for the same entity?,en
+5.0,233.0,0.670157790184021,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",static,10,Can an attribute have several values for the same entity?,en
+1.0,220.0,0.02787058800458908,False,3,3.3.1,[96],"Composite versus Simple (Atomic) Attributes. Composite attributes can be divided into smaller subparts, which represent more basic attributes with independent m",static,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,236.0,0.02150069549679756,False,3,3.3.2,"[100, 101]","Model
+Make
+Vehicle_id
+Year
+Color
+Registration
+State (a)
+(b)
+Number
+CAR
+CAR1 ((ABC 123, TEXAS), TK629, Ford Mustang, convertible, 2004 {red, black})
+CAR2 ((ABC 1",static,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,227.0,0.01741330511868,False,3,3.3.1,"[97, 98]","Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+comp",static,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+4.0,221.0,0.016393793746829033,False,3,3.3.1,"[96, 97]","Name = John Smith Name = Sunco Oil
+Headquarters = Houston
+President = John Smith
+Address = 2311 Kirby Houston, Texas 77001
+Age = 55
+e1 c1
+Home_phone = 713-749-2",static,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+5.0,218.0,0.01438391488045454,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",static,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,224.0,0.405629426240921,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",static,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,23.0,0.2858406901359558,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",static,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,28.0,0.27036553621292114,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",static,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,50.0,0.2685694694519043,False,1,1.6.1,[49],"This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering ",static,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,12.0,0.2683444619178772,False,1,1.2,[38],"To define this database, we must specify the structure of the records of each file by specifying the different types of data elements to be stored in each recor",static,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,167.0,0.029767094179987907,False,2,2.5.2,"[79, 80]","Client Client Client
+Print Server
+DBMS
+Server File Server
+. . .
+. . .
+Network Figure 2.5 Logical two-tier client/server architecture.
+Client CLIENT
+Site 2
+Clien",static,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,238.0,0.027220025658607483,False,3,3.3.2,[101],"V = P(P(V1) × P(V2) × . . . × P(Vn))
+The value set provides all possible values. Usually only a small number of these values exist in the database at a particul",static,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,172.0,0.01639862358570099,False,2,2.5.4,[80],"[[SECTION 2.5.4: Three-Tier and n-Tier Architectures for Web Applications]]
+Many Web applications use an architecture called the three-tier architecture, which ",static,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+4.0,131.0,0.01626335084438324,False,2,2.3.1,[70],". In relational DBMSs, SQL is used in the role of VDL to define user or application views as results of predefined queries (see Chapters 6 and 7).",static,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+5.0,14.0,0.006802336312830448,False,1,1.2,"[39, 40]","CS3380 CS3320
+CS3380 MATH2410
+CS3320 CS1310
+PREREQUISITE
+Figure 1.2 A database that stores student and course information.
+single character from the set {‘A’, ‘",static,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.7565363645553589,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,static,14,Which attribute can uniquely identify each entity?,en
+2.0,233.0,0.6617491245269775,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",static,14,Which attribute can uniquely identify each entity?,en
+3.0,228.0,0.6491119861602783,False,3,3.3.2,[98],"[[SECTION 3.3.2: Entity Types, Entity Sets, Keys, and Value Sets]]
+Entity Types and Entity Sets. A database usually contains groups of entities that are similar",static,14,Which attribute can uniquely identify each entity?,en
+4.0,217.0,0.6487836837768555,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",static,14,Which attribute can uniquely identify each entity?,en
+5.0,230.0,0.6007288694381714,False,3,3.3.2,[99],An entity type is represented in ER diagrams (see Figure 3.2) as a rectangular box enclosing the entity type name. Attribute names are enclosed in ovals and are,static,14,Which attribute can uniquely identify each entity?,en
+1.0,37.0,0.05907771736383438,False,1,1.3.4,[45],The concept of a transaction has become central to many database applications. A transaction is an executing program or process that includes one or more databa,static,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,153.0,0.03382926061749458,False,2,2.4.1,[76],"buffering of disk pages. The DBMS also interfaces with compilers for general- purpose host programming languages, and with application servers and client progra",static,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,13.0,0.02851509302854538,False,1,1.2,"[38, 39]","Software to Process
+Queries/Programs
+Software to Access
+Stored Data
+Stored Database Stored Database
+Definition (Meta-Data)
+DBMS Software
+Figure 1.1 A simplified",static,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,61.0,0.025603817775845528,False,1,1.6.4,[51],"[[SECTION 1.6.4: Providing Storage Structures and Search Techniques for Efficient Query Processing]]
+Database systems must provide capabilities for efficiently ",static,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,236.0,0.024620238691568375,False,3,3.3.2,"[100, 101]","Model
+Make
+Vehicle_id
+Year
+Color
+Registration
+State (a)
+(b)
+Number
+CAR
+CAR1 ((ABC 123, TEXAS), TK629, Ford Mustang, convertible, 2004 {red, black})
+CAR2 ((ABC 1",static,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+1.0,8.0,0.9190411567687988,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,e5,0,What is a database management system?,en
+2.0,177.0,0.8838086128234863,False,2,2.6,[82],"[[SECTION 2.6: Classification of Database Management Systems]]
+Several criteria can be used to classify DBMSs. The first is the data model on which the DBMS is ",e5,0,What is a database management system?,en
+3.0,9.0,0.8704354763031006,False,1,1.1,[37],An application program accesses the database by sending queries or requests for data to the DBMS. A query typically causes some data to be retrieved; a transact,e5,0,What is a database management system?,en
+4.0,40.0,0.8698817491531372,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",e5,0,What is a database management system?,en
+5.0,132.0,0.8667203187942505,False,2,2.3.1,[70],"Once the database schemas are compiled and the database is populated with data, users must have some means to manipulate the database. Typical manipulations inc",e5,0,What is a database management system?,en
+1.0,8.0,0.8038731217384338,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,e5,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,146.0,0.7983431816101074,False,2,2.4.1,"[73, 74]","Let us consider the top part of Figure 2.3 first. It shows interfaces for the DBA staff, casual users who work with interactive interfaces to formulate queries,",e5,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,202.0,0.796472430229187,False,2,2.7,[90],"In this chapter, we follow the traditional approach of concentrating on the database structures and constraints during conceptual database design. The design of",e5,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+4.0,130.0,0.7963582277297974,False,2,2.3.1,[70],"In DBMSs where a clear separation is maintained between the conceptual and internal levels, the DDL is used to specify the conceptual schema only. Another langu",e5,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+5.0,40.0,0.7960320711135864,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",e5,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,115.0,0.8890002965927124,False,2,2.1.2,[66],". The schema is sometimes called the intension, and a database state is called an extension of the schema.",e5,2,What is a database schema?,en
+2.0,111.0,0.8859075307846069,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",e5,2,What is a database schema?,en
+3.0,191.0,0.87762850522995,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",e5,2,What is a database schema?,en
+4.0,114.0,0.8770508170127869,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",e5,2,What is a database schema?,en
+5.0,120.0,0.8751131296157837,False,2,2.2.1,[68],views. Each external schema describes the part of the database that a particular user group is interested in and hides the rest of the database from that user g,e5,2,What is a database schema?,en
+1.0,109.0,0.7971984148025513,False,2,2.1.1,[64],We can regard the object data model as an example of a new family of higher-level implementation data models that are closer to conceptual data models. A standa,e5,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,130.0,0.791545033454895,False,2,2.3.1,[70],"In DBMSs where a clear separation is maintained between the conceptual and internal levels, the DDL is used to specify the conceptual schema only. Another langu",e5,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,198.0,0.7891705632209778,False,2,2.7,[87],"Selected Bibliography
+Many database textbooks, including Date (2004), Silberschatz et al. (2011), Ramakrishnan and Gehrke (2003), Garcia-Molina et al. (2002, 20",e5,3,Lược đồ cơ sở dữ liệu là gì?,vi
+4.0,194.0,0.7856100797653198,False,2,2.7,[86],"Finally, we classified DBMSs according to several criteria: data model, number of users, number of sites, types of access paths, and cost. We discussed the avai",e5,3,Lược đồ cơ sở dữ liệu là gì?,vi
+5.0,51.0,0.7844668030738831,False,1,1.6.1,[49],"In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each l",e5,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.8855313062667847,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",e5,4,What do we call the data in a database at a particular moment?,en
+2.0,115.0,0.8707275390625,False,2,2.1.2,[66],". The schema is sometimes called the intension, and a database state is called an extension of the schema.",e5,4,What do we call the data in a database at a particular moment?,en
+3.0,184.0,0.8589204549789429,False,2,2.6,[83],"Let us briefly elaborate on the main criterion for classifying DBMSs: the data model. The relational data model represents a database as a collection of tables,",e5,4,What do we call the data in a database at a particular moment?,en
+4.0,114.0,0.8581407070159912,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",e5,4,What do we call the data in a database at a particular moment?,en
+5.0,29.0,0.85753333568573,False,1,1.3.2,[43],"In some types of database systems, such as object-oriented and object-relational systems (see Chapter 12), users can define operations on data as part of the da",e5,4,What do we call the data in a database at a particular moment?,en
+1.0,192.0,0.8110251426696777,False,2,2.7,[85],Then we discussed the main types of languages and interfaces that DBMSs support. A data definition language (DDL) is used to define the database conceptual sche,e5,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,130.0,0.8105602860450745,False,2,2.3.1,[70],"In DBMSs where a clear separation is maintained between the conceptual and internal levels, the DDL is used to specify the conceptual schema only. Another langu",e5,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,189.0,0.7989646792411804,False,2,2.6,[84],The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for,e5,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,7.0,0.7986478209495544,False,1,1.1,"[36, 37]","An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, ele",e5,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,51.0,0.7985875010490417,False,1,1.6.1,[49],"In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each l",e5,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,126.0,0.8894447088241577,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",e5,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,27.0,0.8702644109725952,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",e5,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,127.0,0.8575390577316284,False,2,2.2.2,[69],"Whenever we have a multiple-level DBMS, its catalog must be expanded to include information on how to map requests and data among the various levels. The DBMS u",e5,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,124.0,0.8571733236312866,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",e5,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,30.0,0.8492727279663086,False,1,1.3.2,[43],The characteristic that allows program-data independence and program-operation independence is called data abstraction. A DBMS provides users with a conceptual ,e5,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,27.0,0.8171921968460083,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",e5,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,126.0,0.8115870356559753,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",e5,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,28.0,0.8082311749458313,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",e5,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+4.0,68.0,0.8077318668365479,False,1,1.6.8,[52],". This is known as a referential integrity constraint. Another type of constraint specifies uniqueness on data item values, such as every course record must hav",e5,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+5.0,94.0,0.8060078024864197,False,1,1.8,[58],"■ Embedded systems with limited storage capacity, where a general-purpose
+DBMS would not fit
+■ No multiple-user access to data
+Certain industries and applicatio",e5,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,125.0,0.9042519330978394,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",e5,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,124.0,0.8900263905525208,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",e5,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,212.0,0.8591604828834534,False,3,3.1,[93],"The last step is the physical design phase, during which the internal storage structures, file organizations, indexes, access paths, and physical design paramet",e5,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,191.0,0.8581187129020691,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",e5,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,116.0,0.8529400825500488,False,2,2.1.2,[66],"Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema a",e5,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,125.0,0.8143154382705688,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",e5,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,124.0,0.8102992177009583,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",e5,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,109.0,0.7937915325164795,False,2,2.1.1,[64],We can regard the object data model as an example of a new family of higher-level implementation data models that are closer to conceptual data models. A standa,e5,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,28.0,0.7904823422431946,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",e5,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,90.0,0.7861639261245728,False,1,1.7.5,[57],"■ More complex data structures were needed for modeling the application
+than the simple relational representation.
+■ New data types were needed in addition to t",e5,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,222.0,0.9078396558761597,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",e5,10,Can an attribute have several values for the same entity?,en
+2.0,233.0,0.8859351873397827,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",e5,10,Can an attribute have several values for the same entity?,en
+3.0,223.0,0.8823186159133911,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",e5,10,Can an attribute have several values for the same entity?,en
+4.0,231.0,0.8778336048126221,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,e5,10,Can an attribute have several values for the same entity?,en
+5.0,228.0,0.8732576370239258,False,3,3.3.2,[98],"[[SECTION 3.3.2: Entity Types, Entity Sets, Keys, and Value Sets]]
+Entity Types and Entity Sets. A database usually contains groups of entities that are similar",e5,10,Can an attribute have several values for the same entity?,en
+1.0,233.0,0.7991610765457153,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",e5,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,222.0,0.7879344820976257,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",e5,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,228.0,0.7853109836578369,False,3,3.3.2,[98],"[[SECTION 3.3.2: Entity Types, Entity Sets, Keys, and Value Sets]]
+Entity Types and Entity Sets. A database usually contains groups of entities that are similar",e5,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+4.0,67.0,0.7807018756866455,False,1,1.6.8,[52],Most database applications have certain integrity constraints that must hold for the data. A DBMS should provide capabilities for defining and enforcing these c,e5,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+5.0,69.0,0.7793887853622437,False,1,1.6.8,"[52, 53]","A data item may be entered erroneously and still satisfy the specified integrity constraints. For example, if a student receives a grade of ‘A’ but a grade of ‘",e5,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,224.0,0.8618955612182617,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",e5,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,238.0,0.8443619012832642,False,3,3.3.2,[101],"V = P(P(V1) × P(V2) × . . . × P(Vn))
+The value set provides all possible values. Usually only a small number of these values exist in the database at a particul",e5,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,214.0,0.8430500030517578,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",e5,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,89.0,0.8420820236206055,False,1,1.7.5,[57],"■ Storage and retrieval of videos, such as movies, and video clips from news
+or personal digital cameras
+■ Data mining applications that analyze large amounts o",e5,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,28.0,0.8417746424674988,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",e5,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,224.0,0.7779039144515991,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",e5,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,235.0,0.7679408192634583,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",e5,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,222.0,0.7612621188163757,False,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",e5,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+4.0,225.0,0.7611726522445679,False,3,3.3.1,[97],"NULL Values. In some cases, a particular entity may not have an applicable value for an attribute. For example, the Apartment_number attribute of an address app",e5,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+5.0,240.0,0.7606274485588074,False,3,3.3.3,[101],"Birth_date, Department, and Supervisor. Both Name and Address may be composite attributes; however, this was not specified in the requirements. We must go back ",e5,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.8706738948822021,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,e5,14,Which attribute can uniquely identify each entity?,en
+2.0,217.0,0.8588533997535706,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",e5,14,Which attribute can uniquely identify each entity?,en
+3.0,233.0,0.8562051057815552,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",e5,14,Which attribute can uniquely identify each entity?,en
+4.0,220.0,0.8535488843917847,False,3,3.3.1,[96],"Composite versus Simple (Atomic) Attributes. Composite attributes can be divided into smaller subparts, which represent more basic attributes with independent m",e5,14,Which attribute can uniquely identify each entity?,en
+5.0,232.0,0.8485151529312134,False,3,3.3.2,[99],". Notice that such a composite key must be minimal; that is, all component attributes must be included in the composite attribute to have the uniqueness propert",e5,14,Which attribute can uniquely identify each entity?,en
+1.0,217.0,0.7694252729415894,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",e5,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,237.0,0.7687876224517822,False,3,3.3.2,[101],"Mathematically, an attribute A of entity set E whose value set is V can be defined as a function from E to the power set P(V) of V:
+A : E → P(V)
+We refer to the",e5,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,230.0,0.7681435346603394,False,3,3.3.2,[99],An entity type is represented in ER diagrams (see Figure 3.2) as a rectangular box enclosing the entity type name. Attribute names are enclosed in ovals and are,e5,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,216.0,0.7673200368881226,False,3,3.3,[94],"[[SECTION 3.3: Entity Types, Entity Sets, Attributes, and Keys]]
+The ER model describes data as entities, relationships, and attributes. In Section 3.3.1 we int",e5,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,67.0,0.7670742273330688,False,1,1.6.8,[52],Most database applications have certain integrity constraints that must hold for the data. A DBMS should provide capabilities for defining and enforcing these c,e5,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+1.0,8.0,0.781455397605896,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_dense,0,What is a database management system?,en
+2.0,177.0,0.6737008690834045,False,2,2.6,[82],"[[SECTION 2.6: Classification of Database Management Systems]]
+Several criteria can be used to classify DBMSs. The first is the data model on which the DBMS is ",bge_dense,0,What is a database management system?,en
+3.0,152.0,0.6665388345718384,False,2,2.4.1,[75],It is common to have the client program that accesses the DBMS running on a separate computer or device from the computer on which the database resides. The for,bge_dense,0,What is a database management system?,en
+4.0,144.0,0.665953516960144,False,2,2.4,[73],"[[SECTION 2.4: The Database System Environment]]
+A DBMS is a complex software system. In this section we discuss the types of software components that constitut",bge_dense,0,What is a database management system?,en
+5.0,23.0,0.6647417545318604,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",bge_dense,0,What is a database management system?,en
+1.0,8.0,0.6682536005973816,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_dense,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,40.0,0.617206871509552,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",bge_dense,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,152.0,0.6052212715148926,False,2,2.4.1,[75],It is common to have the client program that accesses the DBMS running on a separate computer or device from the computer on which the database resides. The for,bge_dense,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+4.0,145.0,0.5996874570846558,False,2,2.4.1,[73],"[[SECTION 2.4.1: DBMS Component Modules]]
+Figure 2.3 illustrates, in a simplified form, the typical DBMS components. The figure is divided into two parts. The t",bge_dense,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+5.0,23.0,0.5957011580467224,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",bge_dense,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,114.0,0.7069591283798218,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",bge_dense,2,What is a database schema?,en
+2.0,191.0,0.6970317363739014,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",bge_dense,2,What is a database schema?,en
+3.0,190.0,0.6966797113418579,False,2,2.7,[85],"[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categ",bge_dense,2,What is a database schema?,en
+4.0,111.0,0.6908893585205078,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",bge_dense,2,What is a database schema?,en
+5.0,118.0,0.6772571206092834,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",bge_dense,2,What is a database schema?,en
+1.0,184.0,0.5906201004981995,False,2,2.6,[83],"Let us briefly elaborate on the main criterion for classifying DBMSs: the data model. The relational data model represents a database as a collection of tables,",bge_dense,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,4.0,0.5826044082641602,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_dense,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,23.0,0.5611316561698914,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",bge_dense,3,Lược đồ cơ sở dữ liệu là gì?,vi
+4.0,3.0,0.5512470006942749,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_dense,3,Lược đồ cơ sở dữ liệu là gì?,vi
+5.0,95.0,0.5448852181434631,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_dense,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.7058919668197632,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",bge_dense,4,What do we call the data in a database at a particular moment?,en
+2.0,3.0,0.6802191734313965,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_dense,4,What do we call the data in a database at a particular moment?,en
+3.0,4.0,0.6561721563339233,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_dense,4,What do we call the data in a database at a particular moment?,en
+4.0,95.0,0.6436886787414551,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_dense,4,What do we call the data in a database at a particular moment?,en
+5.0,23.0,0.6386134028434753,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",bge_dense,4,What do we call the data in a database at a particular moment?,en
+1.0,113.0,0.6185617446899414,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",bge_dense,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,3.0,0.5965457558631897,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_dense,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,92.0,0.5929877758026123,False,1,1.7.6,[57],"In the first decade of the twenty-first century, the proliferation of applications and platforms such as social media Web sites, large e-commerce companies, Web",bge_dense,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,95.0,0.5894593596458435,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_dense,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,4.0,0.5894392728805542,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_dense,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,124.0,0.6442811489105225,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_dense,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,123.0,0.6315411925315857,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",bge_dense,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,126.0,0.6141245365142822,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_dense,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,27.0,0.6063584685325623,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_dense,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,127.0,0.6008161306381226,False,2,2.2.2,[69],"Whenever we have a multiple-level DBMS, its catalog must be expanded to include information on how to map requests and data among the various levels. The DBMS u",bge_dense,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,124.0,0.5919680595397949,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_dense,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,123.0,0.5829878449440002,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",bge_dense,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,27.0,0.5659588575363159,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_dense,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+4.0,126.0,0.5542495250701904,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_dense,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+5.0,30.0,0.5493802428245544,False,1,1.3.2,[43],The characteristic that allows program-data independence and program-operation independence is called data abstraction. A DBMS provides users with a conceptual ,bge_dense,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,125.0,0.7011269330978394,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",bge_dense,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,124.0,0.6367311477661133,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_dense,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,122.0,0.5679486989974976,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",bge_dense,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,126.0,0.565722644329071,False,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_dense,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,27.0,0.5433369278907776,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_dense,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,125.0,0.5999916791915894,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",bge_dense,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,124.0,0.529597818851471,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_dense,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,126.0,0.501376748085022,False,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_dense,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,51.0,0.4876748323440552,False,1,1.6.1,[49],"In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each l",bge_dense,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,122.0,0.48518967628479004,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",bge_dense,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,222.0,0.69896399974823,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_dense,10,Can an attribute have several values for the same entity?,en
+2.0,223.0,0.6870723962783813,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",bge_dense,10,Can an attribute have several values for the same entity?,en
+3.0,233.0,0.6757036447525024,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_dense,10,Can an attribute have several values for the same entity?,en
+4.0,231.0,0.6389603018760681,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_dense,10,Can an attribute have several values for the same entity?,en
+5.0,227.0,0.6350893378257751,False,3,3.3.1,"[97, 98]","Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+comp",bge_dense,10,Can an attribute have several values for the same entity?,en
+1.0,223.0,0.5960661172866821,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",bge_dense,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,222.0,0.5897916555404663,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_dense,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,227.0,0.5842409729957581,False,3,3.3.1,"[97, 98]","Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+comp",bge_dense,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+4.0,233.0,0.5460752844810486,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_dense,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+5.0,220.0,0.5416051149368286,False,3,3.3.1,[96],"Composite versus Simple (Atomic) Attributes. Composite attributes can be divided into smaller subparts, which represent more basic attributes with independent m",bge_dense,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,224.0,0.6591855883598328,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_dense,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,235.0,0.5066952109336853,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",bge_dense,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,222.0,0.5018503069877625,False,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_dense,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,28.0,0.4994402229785919,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",bge_dense,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,116.0,0.49887847900390625,False,2,2.1.2,[66],"Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema a",bge_dense,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,224.0,0.6176750063896179,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_dense,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,222.0,0.4963163435459137,False,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_dense,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,235.0,0.4899112582206726,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",bge_dense,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+4.0,116.0,0.4887274205684662,False,2,2.1.2,[66],"Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema a",bge_dense,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+5.0,28.0,0.48727449774742126,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",bge_dense,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.6471834182739258,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_dense,14,Which attribute can uniquely identify each entity?,en
+2.0,233.0,0.6029098629951477,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_dense,14,Which attribute can uniquely identify each entity?,en
+3.0,217.0,0.6004230380058289,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_dense,14,Which attribute can uniquely identify each entity?,en
+4.0,218.0,0.5833046436309814,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",bge_dense,14,Which attribute can uniquely identify each entity?,en
+5.0,239.0,0.5703282356262207,False,3,3.3.3,[101],"[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements desc",bge_dense,14,Which attribute can uniquely identify each entity?,en
+1.0,231.0,0.5113704204559326,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_dense,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,217.0,0.4941319227218628,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_dense,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,233.0,0.48359137773513794,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_dense,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,227.0,0.47510218620300293,False,3,3.3.1,"[97, 98]","Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+comp",bge_dense,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,222.0,0.4741174578666687,False,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_dense,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+1.0,8.0,0.24468597769737244,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_sparse,0,What is a database management system?,en
+2.0,82.0,0.17381146550178528,False,1,1.7.2,[55],Early experimental relational systems developed in the late 1970s and the commercial relational database management systems (RDBMS) introduced in the early 1980,bge_sparse,0,What is a database management system?,en
+3.0,7.0,0.14782637357711792,False,1,1.1,"[36, 37]","An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, ele",bge_sparse,0,What is a database management system?,en
+4.0,95.0,0.14185824990272522,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_sparse,0,What is a database management system?,en
+5.0,10.0,0.13674010336399078,False,1,1.1,[37],It is not absolutely necessary to use general-purpose DBMS software to implement a computerized database. It is possible to write a customized set of programs t,bge_sparse,0,What is a database management system?,en
+1.0,195.0,0.005280625075101852,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,196.0,0.004096789285540581,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,97.0,0.0010913335718214512,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,114.0,0.19156458973884583,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",bge_sparse,2,What is a database schema?,en
+2.0,191.0,0.18839290738105774,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",bge_sparse,2,What is a database schema?,en
+3.0,118.0,0.1853337287902832,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",bge_sparse,2,What is a database schema?,en
+4.0,210.0,0.18511641025543213,False,3,3.1,"[92, 93]","High-Level Transaction
+Specification
+FUNCTIONAL ANALYSIS
+Figure 3.1 A simplified diagram to illustrate the main phases of database design.
+step is called concep",bge_sparse,2,What is a database schema?,en
+5.0,111.0,0.18490979075431824,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",bge_sparse,2,What is a database schema?,en
+1.0,195.0,0.003970366436988115,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,196.0,0.00308027071878314,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,97.0,0.0008205457124859095,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.24790818989276886,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",bge_sparse,4,What do we call the data in a database at a particular moment?,en
+2.0,3.0,0.22638890147209167,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_sparse,4,What do we call the data in a database at a particular moment?,en
+3.0,5.0,0.17754730582237244,False,1,1.1,[36],"It has an intended group of users and some preconceived applications in which these users are interested.
+In other words, a database has some source from which ",bge_sparse,4,What do we call the data in a database at a particular moment?,en
+4.0,95.0,0.1774897277355194,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_sparse,4,What do we call the data in a database at a particular moment?,en
+5.0,4.0,0.17469054460525513,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_sparse,4,What do we call the data in a database at a particular moment?,en
+1.0,40.0,0.019374225288629532,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",bge_sparse,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,134.0,0.016987379640340805,False,2,2.3.1,[70],There are two main types of DMLs. A high-level or nonprocedural DML can be used on its own to specify complex database operations concisely. Many DBMSs allow hi,bge_sparse,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,146.0,0.01669727824628353,False,2,2.4.1,"[73, 74]","Let us consider the top part of Figure 2.3 first. It shows interfaces for the DBA staff, casual users who work with interactive interfaces to formulate queries,",bge_sparse,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,193.0,0.016001947224140167,False,2,2.7,[85],"A data manipulation language (DML) is used for specifying database retrievals and updates. DMLs can be high level (set-oriented, nonprocedural) or low level (re",bge_sparse,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,129.0,0.015713663771748543,False,2,2.3.1,[70],"[[SECTION 2.3.1: DBMS Languages]]
+Once the design of a database is completed and a DBMS is chosen to implement the database, the first step is to specify concep",bge_sparse,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,126.0,0.24474872648715973,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_sparse,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,27.0,0.1805177628993988,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_sparse,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,124.0,0.16065993905067444,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_sparse,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,127.0,0.145640566945076,False,2,2.2.2,[69],"Whenever we have a multiple-level DBMS, its catalog must be expanded to include information on how to map requests and data among the various levels. The DBMS u",bge_sparse,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,29.0,0.1441144496202469,False,1,1.3.2,[43],"In some types of database systems, such as object-oriented and object-relational systems (see Chapter 12), users can define operations on data as part of the da",bge_sparse,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,195.0,0.005154198966920376,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,196.0,0.003998706117272377,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,97.0,0.001065205316990614,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,125.0,0.244900643825531,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",bge_sparse,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,191.0,0.16610613465309143,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",bge_sparse,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,212.0,0.16575147211551666,False,3,3.1,[93],"The last step is the physical design phase, during which the internal storage structures, file organizations, indexes, access paths, and physical design paramet",bge_sparse,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,118.0,0.15362155437469482,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",bge_sparse,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,122.0,0.1436654031276703,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",bge_sparse,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,224.0,0.0026807684917002916,False,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_sparse,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,195.0,0.0016088915290310979,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,37.0,0.0015890386421233416,False,1,1.3.4,[45],The concept of a transaction has become central to many database applications. A transaction is an executing program or process that includes one or more databa,bge_sparse,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,157.0,0.0013690917985513806,False,2,2.4.3,"[76, 77]","[[SECTION 2.4.3: Tools, Application Environments, and Communications Facilities]]
+Other tools are often available to database designers, users, and the DBMS. CA",bge_sparse,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,196.0,0.0012482026359066367,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,218.0,0.2564079761505127,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",bge_sparse,10,Can an attribute have several values for the same entity?,en
+2.0,222.0,0.25207266211509705,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_sparse,10,Can an attribute have several values for the same entity?,en
+3.0,235.0,0.22808368504047394,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",bge_sparse,10,Can an attribute have several values for the same entity?,en
+4.0,231.0,0.22459910809993744,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_sparse,10,Can an attribute have several values for the same entity?,en
+5.0,217.0,0.21461109817028046,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_sparse,10,Can an attribute have several values for the same entity?,en
+1.0,195.0,0.002908871276304126,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,196.0,0.0022567466367036104,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,97.0,0.0006011691293679178,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,214.0,0.08984753489494324,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",bge_sparse,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,224.0,0.08584577590227127,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_sparse,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,51.0,0.0732647180557251,False,1,1.6.1,[49],"In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each l",bge_sparse,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,50.0,0.06821457296609879,False,1,1.6.1,[49],"This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering ",bge_sparse,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,0.0,0.058192431926727295,False,1,1.intro,[35],"[[SECTION 1.intro: Chapter Introduction]]
+store images, audio clips, and video streams digitally. These types of files are becoming an important component of mu",bge_sparse,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,195.0,0.0014784337254241109,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,196.0,0.001146991504356265,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,97.0,0.0003055442066397518,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.3223055601119995,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_sparse,14,Which attribute can uniquely identify each entity?,en
+2.0,239.0,0.2713693678379059,False,3,3.3.3,[101],"[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements desc",bge_sparse,14,Which attribute can uniquely identify each entity?,en
+3.0,218.0,0.23514032363891602,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",bge_sparse,14,Which attribute can uniquely identify each entity?,en
+4.0,217.0,0.22967679798603058,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_sparse,14,Which attribute can uniquely identify each entity?,en
+5.0,233.0,0.22412264347076416,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_sparse,14,Which attribute can uniquely identify each entity?,en
+1.0,195.0,0.00575617840513587,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",bge_sparse,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,196.0,0.004465730860829353,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",bge_sparse,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,174.0,0.003296023001894355,False,2,2.5.4,[81],". Thus, the user interface, application rules, and data access act as the three tiers. Figure 2.7(b) shows another view of the three-tier architecture used by d",bge_sparse,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,97.0,0.0011896149953827262,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",bge_sparse,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,173.0,7.934774657769594e-06,False,2,2.5.4,[81],"This intermediate layer or middle tier is called the application server or the Web server, depending on the application. This server plays an intermediary role ",bge_sparse,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+1.0,8.0,0.8289148807525635,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_multi,0,What is a database management system?,en
+2.0,144.0,0.7196051478385925,False,2,2.4,[73],"[[SECTION 2.4: The Database System Environment]]
+A DBMS is a complex software system. In this section we discuss the types of software components that constitut",bge_multi,0,What is a database management system?,en
+3.0,95.0,0.7119106650352478,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_multi,0,What is a database management system?,en
+4.0,10.0,0.7118885517120361,False,1,1.1,[37],It is not absolutely necessary to use general-purpose DBMS software to implement a computerized database. It is possible to write a customized set of programs t,bge_multi,0,What is a database management system?,en
+5.0,46.0,0.6949504017829895,False,1,1.5,[48],"[[SECTION 1.5: Workers behind the Scene]]
+In addition to those who design, use, and administer a database, others are associated with the design, development, a",bge_multi,0,What is a database management system?,en
+1.0,8.0,0.6559442281723022,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_multi,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,40.0,0.6178037524223328,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",bge_multi,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,7.0,0.5893834829330444,False,1,1.1,"[36, 37]","An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, ele",bge_multi,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+4.0,10.0,0.585739016532898,False,1,1.1,[37],It is not absolutely necessary to use general-purpose DBMS software to implement a computerized database. It is possible to write a customized set of programs t,bge_multi,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+5.0,145.0,0.5821534991264343,False,2,2.4.1,[73],"[[SECTION 2.4.1: DBMS Component Modules]]
+Figure 2.3 illustrates, in a simplified form, the typical DBMS components. The figure is divided into two parts. The t",bge_multi,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,115.0,0.7286075353622437,False,2,2.1.2,[66],". The schema is sometimes called the intension, and a database state is called an extension of the schema.",bge_multi,2,What is a database schema?,en
+2.0,210.0,0.714945375919342,False,3,3.1,"[92, 93]","High-Level Transaction
+Specification
+FUNCTIONAL ANALYSIS
+Figure 3.1 A simplified diagram to illustrate the main phases of database design.
+step is called concep",bge_multi,2,What is a database schema?,en
+3.0,191.0,0.713365375995636,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",bge_multi,2,What is a database schema?,en
+4.0,111.0,0.7132614850997925,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",bge_multi,2,What is a database schema?,en
+5.0,114.0,0.7132241129875183,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",bge_multi,2,What is a database schema?,en
+1.0,4.0,0.5991427302360535,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_multi,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,3.0,0.5983889102935791,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_multi,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,210.0,0.5747814774513245,False,3,3.1,"[92, 93]","High-Level Transaction
+Specification
+FUNCTIONAL ANALYSIS
+Figure 3.1 A simplified diagram to illustrate the main phases of database design.
+step is called concep",bge_multi,3,Lược đồ cơ sở dữ liệu là gì?,vi
+4.0,184.0,0.5737051367759705,False,2,2.6,[83],"Let us briefly elaborate on the main criterion for classifying DBMSs: the data model. The relational data model represents a database as a collection of tables,",bge_multi,3,Lược đồ cơ sở dữ liệu là gì?,vi
+5.0,200.0,0.5719805359840393,False,2,2.7,[90],"onceptual modeling is a very important phase in designing a successful database application. Generally, the term database application refers to a particular dat",bge_multi,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.7009699940681458,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",bge_multi,4,What do we call the data in a database at a particular moment?,en
+2.0,3.0,0.6697919964790344,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_multi,4,What do we call the data in a database at a particular moment?,en
+3.0,4.0,0.6385291814804077,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_multi,4,What do we call the data in a database at a particular moment?,en
+4.0,95.0,0.6203968524932861,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",bge_multi,4,What do we call the data in a database at a particular moment?,en
+5.0,8.0,0.6196739077568054,False,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,bge_multi,4,What do we call the data in a database at a particular moment?,en
+1.0,113.0,0.5986341238021851,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",bge_multi,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,3.0,0.5902790427207947,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",bge_multi,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,4.0,0.5804617404937744,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",bge_multi,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,23.0,0.5625616312026978,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",bge_multi,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,92.0,0.5521296262741089,False,1,1.7.6,[57],"In the first decade of the twenty-first century, the proliferation of applications and platforms such as social media Web sites, large e-commerce companies, Web",bge_multi,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,124.0,0.7128437161445618,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_multi,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,126.0,0.7080217003822327,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_multi,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,123.0,0.6519302129745483,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",bge_multi,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,27.0,0.6321316361427307,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_multi,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,30.0,0.6144217848777771,False,1,1.3.2,[43],The characteristic that allows program-data independence and program-operation independence is called data abstraction. A DBMS provides users with a conceptual ,bge_multi,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,124.0,0.6152217388153076,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_multi,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,126.0,0.6114585399627686,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_multi,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,123.0,0.6037997603416443,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",bge_multi,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+4.0,27.0,0.5776150226593018,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",bge_multi,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+5.0,75.0,0.5569103360176086,False,1,1.6.10,[54],"using DBMS facilities. Development time using a DBMS is estimated to be onesixth to one-fourth of that for a file system.
+Flexibility. It may be necessary to ch",bge_multi,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,125.0,0.722777247428894,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",bge_multi,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,124.0,0.651417076587677,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_multi,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,122.0,0.5605882406234741,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",bge_multi,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,126.0,0.5409888625144958,False,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_multi,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,191.0,0.5259530544281006,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",bge_multi,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,125.0,0.5694880485534668,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",bge_multi,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,124.0,0.5146899223327637,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",bge_multi,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,126.0,0.4769423305988312,False,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",bge_multi,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,122.0,0.45805779099464417,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",bge_multi,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,81.0,0.4445290267467499,False,1,1.7.2,[55],"[[SECTION 1.7.2: Providing Data Abstraction and Application Flexibility with Relational Databases]]
+Relational databases were originally proposed to separate th",bge_multi,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,222.0,0.7289004921913147,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_multi,10,Can an attribute have several values for the same entity?,en
+2.0,223.0,0.7007843255996704,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",bge_multi,10,Can an attribute have several values for the same entity?,en
+3.0,233.0,0.6972828507423401,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_multi,10,Can an attribute have several values for the same entity?,en
+4.0,231.0,0.6846340894699097,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_multi,10,Can an attribute have several values for the same entity?,en
+5.0,235.0,0.6448560357093811,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",bge_multi,10,Can an attribute have several values for the same entity?,en
+1.0,222.0,0.5945221781730652,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",bge_multi,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,223.0,0.5901198387145996,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",bge_multi,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,231.0,0.5428323745727539,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_multi,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+4.0,227.0,0.5366776585578918,False,3,3.3.1,"[97, 98]","Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+comp",bge_multi,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+5.0,233.0,0.5317205786705017,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_multi,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,224.0,0.6267536282539368,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_multi,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,50.0,0.5089827179908752,False,1,1.6.1,[49],"This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering ",bge_multi,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,116.0,0.4970691502094269,False,2,2.1.2,[66],"Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema a",bge_multi,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,28.0,0.4909679591655731,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",bge_multi,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,214.0,0.4859651029109955,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",bge_multi,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,224.0,0.5541020631790161,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",bge_multi,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,50.0,0.4742600619792938,False,1,1.6.1,[49],"This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering ",bge_multi,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,116.0,0.4639129340648651,False,2,2.1.2,[66],"Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema a",bge_multi,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+4.0,28.0,0.45996758341789246,False,1,1.3.2,[43],"For example, a file access program may be written in such a way that it can access only STUDENT records of the structure shown in Figure 1.4. If we want to add ",bge_multi,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+5.0,214.0,0.42422932386398315,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",bge_multi,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.7194426655769348,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_multi,14,Which attribute can uniquely identify each entity?,en
+2.0,239.0,0.666452169418335,False,3,3.3.3,[101],"[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements desc",bge_multi,14,Which attribute can uniquely identify each entity?,en
+3.0,217.0,0.6587138772010803,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_multi,14,Which attribute can uniquely identify each entity?,en
+4.0,233.0,0.65557461977005,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_multi,14,Which attribute can uniquely identify each entity?,en
+5.0,218.0,0.6300492286682129,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",bge_multi,14,Which attribute can uniquely identify each entity?,en
+1.0,231.0,0.5224072337150574,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,bge_multi,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,217.0,0.4923821687698364,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",bge_multi,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,233.0,0.483661949634552,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",bge_multi,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,239.0,0.48129498958587646,False,3,3.3.3,[101],"[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements desc",bge_multi,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,68.0,0.4799744188785553,False,1,1.6.8,[52],". This is known as a referential integrity constraint. Another type of constraint specifies uniqueness on data item values, such as every course record must hav",bge_multi,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+1.0,8.0,0.03278688524590164,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,hybrid,0,What is a database management system?,en
+2.0,95.0,0.030117753623188408,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",hybrid,0,What is a database management system?,en
+3.0,10.0,0.030090497737556562,False,1,1.1,[37],It is not absolutely necessary to use general-purpose DBMS software to implement a computerized database. It is possible to write a customized set of programs t,hybrid,0,What is a database management system?,en
+4.0,23.0,0.029877369007803793,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",hybrid,0,What is a database management system?,en
+5.0,96.0,0.029236022193768675,False,1,1.9,[59],"We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, ",hybrid,0,What is a database management system?,en
+1.0,8.0,0.01639344262295082,True,1,1.1,[37],A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system,hybrid,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+2.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+3.0,40.0,0.016129032258064516,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",hybrid,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+4.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+5.0,97.0,0.015873015873015872,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",hybrid,1,Hệ quản trị cơ sở dữ liệu là gì?,vi
+1.0,114.0,0.03278688524590164,False,2,2.1.2,[66],"The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At",hybrid,2,What is a database schema?,en
+2.0,191.0,0.03225806451612903,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",hybrid,2,What is a database schema?,en
+3.0,118.0,0.03125763125763126,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",hybrid,2,What is a database schema?,en
+4.0,111.0,0.031009615384615385,True,2,2.1.2,[65],"[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the databa",hybrid,2,What is a database schema?,en
+5.0,210.0,0.030330882352941176,False,3,3.1,"[92, 93]","High-Level Transaction
+Specification
+FUNCTIONAL ANALYSIS
+Figure 3.1 A simplified diagram to illustrate the main phases of database design.
+step is called concep",hybrid,2,What is a database schema?,en
+1.0,184.0,0.01639344262295082,False,2,2.6,[83],"Let us briefly elaborate on the main criterion for classifying DBMSs: the data model. The relational data model represents a database as a collection of tables,",hybrid,3,Lược đồ cơ sở dữ liệu là gì?,vi
+2.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,3,Lược đồ cơ sở dữ liệu là gì?,vi
+3.0,4.0,0.016129032258064516,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",hybrid,3,Lược đồ cơ sở dữ liệu là gì?,vi
+4.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,3,Lược đồ cơ sở dữ liệu là gì?,vi
+5.0,23.0,0.015873015873015872,False,1,1.3.1,"[41, 42]","[[SECTION 1.3.1: Self-Describing Nature of a Database System]]
+A fundamental characteristic of the database approach is that the database system contains not on",hybrid,3,Lược đồ cơ sở dữ liệu là gì?,vi
+1.0,113.0,0.03278688524590164,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",hybrid,4,What do we call the data in a database at a particular moment?,en
+2.0,3.0,0.03225806451612903,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",hybrid,4,What do we call the data in a database at a particular moment?,en
+3.0,4.0,0.03125763125763126,False,1,1.1,[36],"■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected",hybrid,4,What do we call the data in a database at a particular moment?,en
+4.0,95.0,0.03125,False,1,1.9,[58],"[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents s",hybrid,4,What do we call the data in a database at a particular moment?,en
+5.0,5.0,0.03057889822595705,False,1,1.1,[36],"It has an intended group of users and some preconceived applications in which these users are interested.
+In other words, a database has some source from which ",hybrid,4,What do we call the data in a database at a particular moment?,en
+1.0,188.0,0.027046783625730993,False,2,2.6,[84],"Two older, historically important data models, now known as legacy data models, are the network and hierarchical models. The network model represents data as re",hybrid,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+2.0,40.0,0.01639344262295082,False,1,1.4.1,[46],"[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee an",hybrid,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+3.0,113.0,0.01639344262295082,True,2,2.1.2,[66],"The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new ",hybrid,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+4.0,3.0,0.016129032258064516,False,1,1.1,"[35, 36]","A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, t",hybrid,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+5.0,134.0,0.016129032258064516,False,2,2.3.1,[70],There are two main types of DMLs. A high-level or nonprocedural DML can be used on its own to specify complex database operations concisely. Many DBMSs allow hi,hybrid,5,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,vi
+1.0,124.0,0.032266458495966696,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",hybrid,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+2.0,126.0,0.032266458495966696,True,2,2.2.2,[69],"Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and har",hybrid,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+3.0,27.0,0.031754032258064516,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",hybrid,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+4.0,123.0,0.031054405392392875,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",hybrid,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+5.0,127.0,0.031009615384615385,False,2,2.2.2,[69],"Whenever we have a multiple-level DBMS, its catalog must be expanded to include information on how to map requests and data among the various levels. The DBMS u",hybrid,6,Which data independence allows structural and constraint changes without affecting application programs?,en
+1.0,124.0,0.01639344262295082,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",hybrid,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+2.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+3.0,123.0,0.016129032258064516,False,2,2.2.2,[68],"[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the ",hybrid,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+4.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+5.0,27.0,0.015873015873015872,False,1,1.3.2,[43],"[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the app",hybrid,7,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,vi
+1.0,125.0,0.03278688524590164,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",hybrid,8,Why can physical files be reorganized without changing the conceptual schema?,en
+2.0,191.0,0.03128054740957967,False,2,2.7,[85],"■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly sep",hybrid,8,Why can physical files be reorganized without changing the conceptual schema?,en
+3.0,122.0,0.03125763125763126,False,2,2.2.1,[68],"Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user g",hybrid,8,Why can physical files be reorganized without changing the conceptual schema?,en
+4.0,118.0,0.03055037313432836,False,2,2.2.1,"[67, 68]","[[SECTION 2.2.1: The Three-Schema Architecture]]
+The goal of the three-schema architecture, illustrated in Figure 2.2, is to separate the user applications from",hybrid,8,Why can physical files be reorganized without changing the conceptual schema?,en
+5.0,124.0,0.03021353930031804,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",hybrid,8,Why can physical files be reorganized without changing the conceptual schema?,en
+1.0,125.0,0.01639344262295082,True,2,2.2.2,[69],"without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because so",hybrid,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+2.0,224.0,0.01639344262295082,False,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",hybrid,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+3.0,124.0,0.016129032258064516,False,2,2.2.2,[69],"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a ",hybrid,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+4.0,195.0,0.016129032258064516,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+5.0,37.0,0.015873015873015872,False,1,1.3.4,[45],The concept of a transaction has become central to many database applications. A transaction is an executing program or process that includes one or more databa,hybrid,9,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,vi
+1.0,222.0,0.03252247488101534,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",hybrid,10,Can an attribute have several values for the same entity?,en
+2.0,218.0,0.031544957774465976,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",hybrid,10,Can an attribute have several values for the same entity?,en
+3.0,231.0,0.03125,False,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,hybrid,10,Can an attribute have several values for the same entity?,en
+4.0,223.0,0.031054405392392875,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",hybrid,10,Can an attribute have several values for the same entity?,en
+5.0,235.0,0.030798389007344232,False,3,3.3.2,[100],"Value Sets (Domains) of Attributes. Each simple attribute of an entity type is associated with a value set (or domain of values), which specifies the set of val",hybrid,10,Can an attribute have several values for the same entity?,en
+1.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+2.0,223.0,0.01639344262295082,False,3,3.3.1,[97],". A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribut",hybrid,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+3.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+4.0,222.0,0.016129032258064516,True,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",hybrid,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+5.0,97.0,0.015873015873015872,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",hybrid,11,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,vi
+1.0,224.0,0.03252247488101534,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",hybrid,12,Why can age be calculated from birth date instead of being stored separately?,en
+2.0,214.0,0.03131881575727918,False,3,3.2,[94],"■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s",hybrid,12,Why can age be calculated from birth date instead of being stored separately?,en
+3.0,50.0,0.030776515151515152,False,1,1.6.1,[49],"This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering ",hybrid,12,Why can age be calculated from birth date instead of being stored separately?,en
+4.0,51.0,0.03057889822595705,False,1,1.6.1,[49],"In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each l",hybrid,12,Why can age be calculated from birth date instead of being stored separately?,en
+5.0,21.0,0.027984344422700584,False,1,1.3,[41],A number of characteristics distinguish the database approach from the much older approach of writing customized programs to access data stored in files. In tra,hybrid,12,Why can age be calculated from birth date instead of being stored separately?,en
+1.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+2.0,224.0,0.01639344262295082,True,3,3.3.1,[97],"Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a pa",hybrid,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+3.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+4.0,222.0,0.016129032258064516,False,3,3.3.1,[97],"Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example,",hybrid,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+5.0,97.0,0.015873015873015872,False,1,1.9,[59],"1.2. What four main types of actions involve databases? Briefly discuss each.
+1.3. Discuss the main characteristics of the database approach and how it differs
+",hybrid,13,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,vi
+1.0,231.0,0.03278688524590164,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,hybrid,14,Which attribute can uniquely identify each entity?,en
+2.0,233.0,0.0315136476426799,False,3,3.3.2,"[99, 100]","Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, i",hybrid,14,Which attribute can uniquely identify each entity?,en
+3.0,239.0,0.0315136476426799,False,3,3.3.3,[101],"[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements desc",hybrid,14,Which attribute can uniquely identify each entity?,en
+4.0,217.0,0.03149801587301587,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",hybrid,14,Which attribute can uniquely identify each entity?,en
+5.0,218.0,0.03149801587301587,False,3,3.3.1,[95],"will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 ",hybrid,14,Which attribute can uniquely identify each entity?,en
+1.0,195.0,0.01639344262295082,False,2,2.7,[86],"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th",hybrid,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+2.0,231.0,0.01639344262295082,True,3,3.3.2,[99],Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type us,hybrid,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+3.0,196.0,0.016129032258064516,False,2,2.7,"[86, 87]","architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a",hybrid,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+4.0,217.0,0.016129032258064516,False,3,3.3.1,"[94, 95]","[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or objec",hybrid,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi
+5.0,174.0,0.015873015873015872,False,2,2.5.4,[81],". Thus, the user interface, application rules, and data access act as the three tiers. Figure 2.7(b) shows another view of the three-tier architecture used by d",hybrid,15,Thuộc tính nào có thể xác định duy nhất từng thực thể?,vi

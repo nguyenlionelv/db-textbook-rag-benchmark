@@ -1,0 +1,112 @@
+{
+  "strategy": "structure_aware_recursive",
+  "chunks": 233,
+  "queries": 16,
+  "input_sha256": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+  "parser_sha256": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+  "e5_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "models": {
+    "static": {
+      "name": "sentence-transformers/static-retrieval-mrl-en-v1",
+      "revision": "f60985c706f192d45d218078e49e5a8b6f15283a"
+    },
+    "bge_m3": {
+      "name": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    }
+  },
+  "torch_threads": 4,
+  "batch_size": 2,
+  "rrf_k": 60,
+  "rrf_candidates": 20,
+  "packages": {
+    "torch": "2.14.0",
+    "sentence-transformers": "6.1.0",
+    "FlagEmbedding": "1.4.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1"
+  },
+  "cases": [
+    {
+      "topic": "dbms",
+      "en": "What is a database management system?",
+      "vi": "Hệ quản trị cơ sở dữ liệu là gì?",
+      "record_suffix": "p36:b2",
+      "evidence": "A database management system (DBMS) is a computerized system that enables users to create and maintain a database.",
+      "record_id": "863264e73f7a57ea:p36:b2",
+      "start": 0,
+      "end": 114
+    },
+    {
+      "topic": "schema",
+      "en": "What is a database schema?",
+      "vi": "Lược đồ cơ sở dữ liệu là gì?",
+      "record_suffix": "p64:b4",
+      "evidence": "The description of a database is called the database schema, which is specified during database design and is not expected to change frequently.",
+      "record_id": "863264e73f7a57ea:p64:b4",
+      "start": 113,
+      "end": 257
+    },
+    {
+      "topic": "state",
+      "en": "What do we call the data in a database at a particular moment?",
+      "vi": "Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?",
+      "record_suffix": "p65:b3",
+      "evidence": "The data in the database at a particular moment in time is called a database state or snapshot.",
+      "record_id": "863264e73f7a57ea:p65:b3",
+      "start": 167,
+      "end": 262
+    },
+    {
+      "topic": "logical",
+      "en": "Which data independence allows structural and constraint changes without affecting application programs?",
+      "vi": "Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?",
+      "record_suffix": "p68:b3",
+      "evidence": "logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs",
+      "record_id": "863264e73f7a57ea:p68:b3",
+      "start": 351,
+      "end": 488
+    },
+    {
+      "topic": "physical",
+      "en": "Why can physical files be reorganized without changing the conceptual schema?",
+      "vi": "Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?",
+      "record_suffix": "p68:b2",
+      "evidence": "Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema.",
+      "record_id": "863264e73f7a57ea:p68:b2",
+      "start": 105,
+      "end": 403
+    },
+    {
+      "topic": "multivalued",
+      "en": "Can an attribute have several values for the same entity?",
+      "vi": "Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?",
+      "record_suffix": "p96:b2",
+      "evidence": "In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person.",
+      "record_id": "863264e73f7a57ea:p96:b2",
+      "start": 207,
+      "end": 367
+    },
+    {
+      "topic": "derived",
+      "en": "Why can age be calculated from birth date instead of being stored separately?",
+      "vi": "Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?",
+      "record_suffix": "p96:b3",
+      "evidence": "The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute.",
+      "record_id": "863264e73f7a57ea:p96:b3",
+      "start": 294,
+      "end": 442
+    },
+    {
+      "topic": "key",
+      "en": "Which attribute can uniquely identify each entity?",
+      "vi": "Thuộc tính nào có thể xác định duy nhất từng thực thể?",
+      "record_suffix": "p98:b4",
+      "evidence": "Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely.",
+      "record_id": "863264e73f7a57ea:p98:b4",
+      "start": 265,
+      "end": 370
+    }
+  ]
+}
