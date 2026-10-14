@@ -1,8 +1,10 @@
 # Kế hoạch Embedding và Vector Storage
 
-Trạng thái: đề xuất để xem xét, chưa chốt công nghệ và chưa triển khai code.
+- Trạng thái cập nhật ngày 14/10/2026: **E5 + Qdrant Local đã được triển khai trên corpus mẫu**, gồm `E5Embedder`, notebook 03, hàm `build_qdrant_index` và script indexing.
 
-Ngày đối chiếu tài liệu công nghệ: 28/09/2026. Các mức giá bên dưới là giá tham khảo tại thời điểm này, không phải dự toán chi phí toàn bộ sách.
+- Tài liệu này giữ lại đề xuất ban đầu ngày 28/09/2026 để tham khảo; các mục “chưa có”, lựa chọn công nghệ, cấu trúc dự kiến và điểm dừng bên dưới mô tả thời điểm lập kế hoạch, không phải checklist tiến độ hiện tại. Cache embedding, ingestion toàn sách và UI chưa triển khai.
+
+- Ngày đối chiếu tài liệu công nghệ: 28/09/2026. Các mức giá bên dưới là giá tham khảo tại thời điểm này, không phải dự toán chi phí toàn bộ sách.
 
 ## 1. Mục tiêu của phần này
 

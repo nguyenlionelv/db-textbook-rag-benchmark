@@ -21,8 +21,10 @@ E5Embedder = module.E5Embedder
 class FakeModel:
     max_seq_length = 8
 
-    def __init__(self, model_name, revision, device):
+    def __init__(self, model_name, revision, device, cache_folder=None, local_files_only=False):
         self.config = (model_name, revision, device)
+        self.cache_folder = cache_folder
+        self.local_files_only = local_files_only
         self.calls = []
 
     def get_sentence_embedding_dimension(self):
@@ -41,13 +43,16 @@ class FakeModel:
 @pytest.fixture
 def embedder(monkeypatch):
     monkeypatch.setattr(module, "SentenceTransformer", FakeModel)
-    return E5Embedder(revision="test-revision", batch_size=2)
+    return E5Embedder(revision="test-revision", batch_size=2,
+                      cache_folder="test-cache", local_files_only=True)
 
 
 def test_loads_model_once_with_selected_configuration(embedder):
     assert embedder.model.config == (
         "intfloat/multilingual-e5-small", "test-revision", "cpu",
     )
+    assert embedder.model.cache_folder == "test-cache"
+    assert embedder.model.local_files_only is True
     model = embedder.model
     embedder.embed_query("database")
     embedder.embed_query("transaction")

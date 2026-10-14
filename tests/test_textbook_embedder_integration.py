@@ -1,6 +1,7 @@
 """Chạy riêng với E5 thật bằng cách đặt RUN_EMBEDDING_INTEGRATION=1.
 
 Model cần có sẵn trong cache hoặc được tải ở lần chạy đầu tiên.
+Đặt EMBEDDING_MODEL_CACHE và EMBEDDING_LOCAL_FILES_ONLY=1 để kiểm tra offline.
 """
 
 import importlib.util
@@ -28,6 +29,8 @@ def test_real_e5_documents_and_query():
     spec.loader.exec_module(module)
     embedder = module.E5Embedder(
         revision="614241f622f53c4eeff9890bdc4f31cfecc418b3", batch_size=2,
+        cache_folder=os.environ.get("EMBEDDING_MODEL_CACHE"),
+        local_files_only=os.environ.get("EMBEDDING_LOCAL_FILES_ONLY") == "1",
     )
     chunks = [
         Document(page_content="A database is a collection of related data.",

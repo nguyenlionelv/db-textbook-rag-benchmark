@@ -8,6 +8,7 @@ class E5Embedder:
     Nhận Document từ Chunker, trả về vector theo đúng thứ tự đầu vào.
     Caller chọn các chunk cần nhúng; class không lọc chunk hoặc sửa metadata.
     Khi cần tái lập kết quả, truyền revision cụ thể của model.
+    local_files_only=True chỉ đọc model đã cache, không tải model từ mạng.
     """
 
     def __init__(
@@ -16,6 +17,8 @@ class E5Embedder:
         revision=None,
         device="cpu",
         batch_size=8,
+        cache_folder=None,
+        local_files_only=False,
     ):
         if type(batch_size) is not int or batch_size <= 0:
             raise ValueError("batch_size phải là số nguyên lớn hơn 0")
@@ -25,6 +28,7 @@ class E5Embedder:
         self.batch_size = batch_size
         self.model = SentenceTransformer(
             model_name, revision=revision, device=device,
+            cache_folder=cache_folder, local_files_only=local_files_only,
         )
 
     def embed_documents(self, chunks):
