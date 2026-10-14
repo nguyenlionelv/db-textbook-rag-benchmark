@@ -1,0 +1,35 @@
+﻿query,method,score,preview
+How do I bake a chocolate cake?,bm25,7.491702917731888,"CS3380 CS3320
+CS3380 MATH2410
+CS3320 CS1310
+PREREQUISITE
+Figure 1.2 A database that stores student and course information.
+single character from the set {‘A’, ‘"
+How do I bake a chocolate cake?,dense,0.7791469365245322,"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th"
+How do I bake a chocolate cake?,hybrid,0.03252247488101534,"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th"
+How can I repair a bicycle tire?,bm25,7.491702917731888,"CS3380 CS3320
+CS3380 MATH2410
+CS3320 CS1310
+PREREQUISITE
+Figure 1.2 A database that stores student and course information.
+single character from the set {‘A’, ‘"
+How can I repair a bicycle tire?,dense,0.7847259856387402,"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th"
+How can I repair a bicycle tire?,hybrid,0.029906956136464335,"2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is th"
+Làm thế nào để làm bánh sô-cô-la?,bm25,,
+Làm thế nào để làm bánh sô-cô-la?,dense,0.7479880553646691,"architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a"
+Làm thế nào để làm bánh sô-cô-la?,hybrid,0.01639344262295082,"architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+2.11. What is the additional functionality incorporated in n-tier a"
+Cách sửa lốp xe đạp bị thủng là gì?,bm25,,
+Cách sửa lốp xe đạp bị thủng là gì?,dense,0.7259482555966749,"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a "
+Cách sửa lốp xe đạp bị thủng là gì?,hybrid,0.01639344262295082,"may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a "

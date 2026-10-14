@@ -7,6 +7,7 @@ __pycache__/
 output/model_cache/
 # Dữ liệu Qdrant sinh từ notebook
 output/qdrant_db/
+output/pytest_tmp/
 
 data/raw/
 data/interim/

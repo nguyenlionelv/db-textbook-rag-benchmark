@@ -1,0 +1,9 @@
+split,language,method,hit_at_5,mrr_at_5,candidate_hit_at_20,seconds
+dev,en,hybrid,1.0,1.0,1.0,0.06947877496713772
+dev,en,hybrid_rerank,1.0,1.0,1.0,26.677154275006615
+dev,vi,hybrid,0.625,0.5,0.875,0.07057643751613796
+dev,vi,hybrid_rerank,0.875,0.75,0.875,27.167405862535816
+eval,en,hybrid,1.0,0.9375,1.0,0.053360987396445125
+eval,en,hybrid_rerank,1.0,1.0,1.0,22.79676692490466
+eval,vi,hybrid,0.5,0.34375,0.875,0.04526309989159927
+eval,vi,hybrid_rerank,0.875,0.875,0.875,24.274865637533367

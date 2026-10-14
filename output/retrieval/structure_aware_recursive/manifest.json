@@ -1,0 +1,37 @@
+{
+  "collection": "e5_183a932fed56",
+  "chunks": 233,
+  "queries": 32,
+  "chunk_sha256": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+  "parser_sha256": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "candidate_k": 20,
+  "top_k": 5,
+  "rrf_constant": 60,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "epsilon": 0.25,
+    "tokenizer": "Unicode words + lowercase"
+  },
+  "methods": [
+    "bm25",
+    "dense",
+    "hybrid"
+  ],
+  "reranker": null,
+  "reranker_revision": null,
+  "reranker_max_length": 512,
+  "load_seconds": {
+    "bm25": 0.02060909988358617,
+    "e5": 10.162961499765515,
+    "reranker": null
+  },
+  "packages": {
+    "rank-bm25": "0.2.2",
+    "qdrant-client": "1.19.1",
+    "sentence-transformers": "6.1.0",
+    "torch": "2.14.0"
+  }
+}

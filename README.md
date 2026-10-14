@@ -24,7 +24,8 @@ db-rag-eval/
 ├── output/                     # Kết quả xử lý và dữ liệu lưu trữ
 ├── scripts/                    # Script thực thi pipeline
 ├── src/
-│   └── ingestion/              # Mã nguồn Parsing và Chunking
+│   ├── ingestion/              # Parsing, Chunking, Embedding
+│   └── retrieval/              # Hybrid Retrieval và Reranking
 ├── tests/                      # Kiểm thử
 ├── requirements.txt
 └── README.md
@@ -38,7 +39,7 @@ db-rag-eval/
 | Xử lý PDF | PyMuPDF, pdfplumber |
 | Chunking | LangChain Core, LangChain Text Splitters |
 | Embedding | PyTorch, Sentence Transformers, FlagEmbedding |
-| Xử lý dữ liệu | NumPy, pandas, SciPy, scikit-learn |
+| Xử lý dữ liệu | Numpy, Pandas, SciPy, Scikit-learn |
 | Vector Storage | Qdrant Local |
 | Môi trường thực nghiệm | Jupyter Notebook |
 | Kiểm thử | pytest |
@@ -72,7 +73,17 @@ Chọn kernel tương ứng với `.venv` và đặt tài liệu PDF tại `data
 | Document Processing | PDF Inspection, Parsing, Metadata | Đã hiện thực |
 | Chunking | Fixed, Recursive, Structure-aware | Đã hiện thực |
 | Thực nghiệm phương pháp | TF-IDF, Static, Dense, Sparse, Multi-vector, Hybrid | Đã thực nghiệm |
-| Embedding & Vector Storage | E5, Qdrant, Persistence | Đã hiện thực trong notebook |
-| Retrieval | Retrieval Pipeline, Reranking | Chưa triển khai thành phần hệ thống |
+| Embedding & Vector Storage | E5, Qdrant, Persistence | Có E5Embedder, hàm indexing và script ngoài notebook |
+| Retrieval | BM25 + Dense → RRF → Reranker | Có hai class, 49 test đạt; notebook/class và 32 câu đã chạy model thật |
 | Generation | Context Assembly, LLM | Chưa triển khai |
 | Evaluation | End-to-end RAG Evaluation | Chưa triển khai |
+
+Kế hoạch tiếp theo, Generation ưu tiên **LLM local (Ollama)**:
+[rag_completion_plan.md](docs/pipelines/rag_completion_plan.md).
+Thứ tự: Context Assembly → Generation local → Evaluation → mở rộng corpus/tối ưu → UI.
+
+## Kiểm thử
+
+```powershell
+python -m pytest -q -ra
+```

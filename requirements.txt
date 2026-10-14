@@ -8,3 +8,4 @@ langchain-text-splitters
 torch --index-url https://download.pytorch.org/whl/cpu
 sentence-transformers
 qdrant-client
+rank-bm25==0.2.2

@@ -1,0 +1,657 @@
+{
+  "query": "What is a database schema?",
+  "method": "bm25_e5_rrf",
+  "collection": "e5_183a932fed56",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "candidate_k": 20,
+  "top_k": 5,
+  "rrf_constant": 60,
+  "results": [
+    {
+      "rank": 1,
+      "point_id": 111,
+      "score": 0.03128054740957967,
+      "score_type": "rrf",
+      "page_content": "[[SECTION 2.1.2: Schemas, Instances, and Database State]]\nIn a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.\nSection_identifier Semester Course_number Instructor Year\nSECTION\nCourse_name Course_number Credit_hours Department\nCOURSE\nName Student_number Class Major\nSTUDENT\nCourse_number Prerequisite_number PREREQUISITE\nStudent_number Grade Section_identifier\nGRADE_REPORT\nFigure 2.1 Schema diagram for the database in Figure 1.2.",
+      "metadata": {
+        "chapter_number": "2",
+        "chapter_title": "Database System Concepts and Architecture",
+        "strategy": "structure_aware_recursive",
+        "chunk_index": 9,
+        "section_ids": [
+          "sec_2.1.2"
+        ],
+        "section_id": "sec_2.1.2",
+        "section_number": "2.1.2",
+        "section_title": "Schemas, Instances, and Database State",
+        "parent_section_id": "sec_2.1",
+        "section_unit_index": 3,
+        "offset_scope": "section",
+        "start_index": 0,
+        "end_index": 929,
+        "sources": [
+          {
+            "record_id": "863264e73f7a57ea:p64:b4",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              116.99551391601562,
+              250.83737182617188,
+              467.59503173828125,
+              333.34039306640625
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 550,
+            "chunk_start_index": 58,
+            "chunk_end_index": 608,
+            "metadata": {
+              "footnote_refs": [
+                {
+                  "marker": "6",
+                  "raw_offset": 261,
+                  "bbox": [
+                    208.69500732421875,
+                    284.5343017578125,
+                    212.47500610351562,
+                    292.4093017578125
+                  ],
+                  "anchor_text": "atabase itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently.",
+                  "footnote_id": "863264e73f7a57ea:p64:fn6:b5",
+                  "status": "resolved"
+                },
+                {
+                  "marker": "7",
+                  "raw_offset": 341,
+                  "bbox": [
+                    208.5189971923828,
+                    296.5343017578125,
+                    214.16537475585938,
+                    304.4093017578125
+                  ],
+                  "anchor_text": "ich is specified during database design and is not expected to change frequently.6 Most data models have certain conventions for displaying schemas as diagrams.",
+                  "footnote_id": "863264e73f7a57ea:p64:fn7:b6",
+                  "status": "resolved"
+                }
+              ]
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b7",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              160.0469970703125,
+              495.3357849121094,
+              420.1039123535156,
+              504.3348388671875
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 57,
+            "chunk_start_index": 609,
+            "chunk_end_index": 666,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b8",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              155.0469970703125,
+              481.33367919921875,
+              194.06849670410156,
+              490.3344421386719
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 7,
+            "chunk_start_index": 667,
+            "chunk_end_index": 674,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b9",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              160.0469970703125,
+              416.5319519042969,
+              397.6172180175781,
+              425.5319519042969
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 49,
+            "chunk_start_index": 675,
+            "chunk_end_index": 724,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b10",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              155.04600524902344,
+              402.53466796875,
+              193.3212890625,
+              411.5354309082031
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 6,
+            "chunk_start_index": 725,
+            "chunk_end_index": 731,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b11",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              160.0469970703125,
+              377.3597717285156,
+              321.73388671875,
+              386.35882568359375
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 31,
+            "chunk_start_index": 732,
+            "chunk_end_index": 763,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b12",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              155.0469970703125,
+              363.1365966796875,
+              196.85894775390625,
+              372.1373596191406
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 7,
+            "chunk_start_index": 764,
+            "chunk_end_index": 771,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b13",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              155.0469970703125,
+              441.93359375,
+              310.26312255859375,
+              464.6578369140625
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 46,
+            "chunk_start_index": 772,
+            "chunk_end_index": 818,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b14",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              160.0469970703125,
+              534.9686889648438,
+              332.6422424316406,
+              543.9677124023438
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 39,
+            "chunk_start_index": 819,
+            "chunk_end_index": 858,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b15",
+            "pdf_page": 64,
+            "type": "normal_text",
+            "bbox": [
+              155.0469970703125,
+              520.7337036132812,
+              226.1318359375,
+              529.7344360351562
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 12,
+            "chunk_start_index": 859,
+            "chunk_end_index": 871,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p64:b16",
+            "pdf_page": 64,
+            "type": "figure_caption",
+            "bbox": [
+              30.0,
+              361.29461669921875,
+              108.39901733398438,
+              403.7703552246094
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 57,
+            "chunk_start_index": 872,
+            "chunk_end_index": 929,
+            "metadata": {
+              "footnote_refs": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "point_id": 114,
+      "score": 0.031009615384615385,
+      "score_type": "rrf",
+      "page_content": "The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At this point, the corresponding database state is the empty state with no data. We get the initial state of the database when the database is first populated or loaded with the initial data. From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state. The DBMS is partly responsible for ensuring that every state of the database is a valid state—that is, a state that satisfies the structure and constraints specified in the schema. Hence, specifying a correct schema to the DBMS is extremely important and the schema must be designed with utmost care. The DBMS stores the descriptions of the schema constructs and constraints—also called the meta-data—in the DBMS catalog so that DBMS software can refer to the schema whenever it needs to",
+      "metadata": {
+        "chapter_number": "2",
+        "chapter_title": "Database System Concepts and Architecture",
+        "strategy": "structure_aware_recursive",
+        "chunk_index": 12,
+        "section_ids": [
+          "sec_2.1.2"
+        ],
+        "section_id": "sec_2.1.2",
+        "section_number": "2.1.2",
+        "section_title": "Schemas, Instances, and Database State",
+        "parent_section_id": "sec_2.1",
+        "section_unit_index": 3,
+        "offset_scope": "section",
+        "start_index": 2326,
+        "end_index": 3323,
+        "sources": [
+          {
+            "record_id": "863264e73f7a57ea:p65:b4",
+            "pdf_page": 65,
+            "type": "normal_text",
+            "bbox": [
+              65.9954833984375,
+              308.8424377441406,
+              416.44110107421875,
+              487.3493347167969
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 0,
+            "source_end_index": 997,
+            "chunk_start_index": 0,
+            "chunk_end_index": 997,
+            "metadata": {
+              "footnote_refs": [
+                {
+                  "marker": "8",
+                  "raw_offset": 516,
+                  "bbox": [
+                    247.85499572753906,
+                    378.5343017578125,
+                    253.5958709716797,
+                    386.4093017578125
+                  ],
+                  "anchor_text": " From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state.",
+                  "footnote_id": "863264e73f7a57ea:p65:fn8:b6",
+                  "status": "resolved"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "point_id": 115,
+      "score": 0.030886196246139225,
+      "score_type": "rrf",
+      "page_content": ". The schema is sometimes called the intension, and a database state is called an extension of the schema.",
+      "metadata": {
+        "chapter_number": "2",
+        "chapter_title": "Database System Concepts and Architecture",
+        "strategy": "structure_aware_recursive",
+        "chunk_index": 13,
+        "section_ids": [
+          "sec_2.1.2"
+        ],
+        "section_id": "sec_2.1.2",
+        "section_number": "2.1.2",
+        "section_title": "Schemas, Instances, and Database State",
+        "parent_section_id": "sec_2.1",
+        "section_unit_index": 3,
+        "offset_scope": "section",
+        "start_index": 3323,
+        "end_index": 3429,
+        "sources": [
+          {
+            "record_id": "863264e73f7a57ea:p65:b4",
+            "pdf_page": 65,
+            "type": "normal_text",
+            "bbox": [
+              65.9954833984375,
+              308.8424377441406,
+              416.44110107421875,
+              487.3493347167969
+            ],
+            "section_number": "2.1.2",
+            "section_title": "Schemas, Instances, and Database State",
+            "source_start_index": 997,
+            "source_end_index": 1103,
+            "chunk_start_index": 0,
+            "chunk_end_index": 106,
+            "metadata": {
+              "footnote_refs": [
+                {
+                  "marker": "8",
+                  "raw_offset": 516,
+                  "bbox": [
+                    247.85499572753906,
+                    378.5343017578125,
+                    253.5958709716797,
+                    386.4093017578125
+                  ],
+                  "anchor_text": " From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state.",
+                  "footnote_id": "863264e73f7a57ea:p65:fn8:b6",
+                  "status": "resolved"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "point_id": 120,
+      "score": 0.030090497737556562,
+      "score_type": "rrf",
+      "page_content": "views. Each external schema describes the part of the database that a particular user group is interested in and hides the rest of the database from that user group. As in the previous level, each external schema is typically implemented using a representational data model, possibly based on an external schema design in a high-level conceptual data model.",
+      "metadata": {
+        "chapter_number": "2",
+        "chapter_title": "Database System Concepts and Architecture",
+        "strategy": "structure_aware_recursive",
+        "chunk_index": 18,
+        "section_ids": [
+          "sec_2.2.1"
+        ],
+        "section_id": "sec_2.2.1",
+        "section_number": "2.2.1",
+        "section_title": "The Three-Schema Architecture",
+        "parent_section_id": "sec_2.2",
+        "section_unit_index": 5,
+        "offset_scope": "section",
+        "start_index": 1349,
+        "end_index": 1706,
+        "sources": [
+          {
+            "record_id": "863264e73f7a57ea:p67:b3",
+            "pdf_page": 67,
+            "type": "normal_text",
+            "bbox": [
+              96.001953125,
+              161.8388671875,
+              416.3990783691406,
+              220.3448486328125
+            ],
+            "section_number": "2.2.1",
+            "section_title": "The Three-Schema Architecture",
+            "source_start_index": 0,
+            "source_end_index": 357,
+            "chunk_start_index": 0,
+            "chunk_end_index": 357,
+            "metadata": {
+              "footnote_refs": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "point_id": 190,
+      "score": 0.029437229437229435,
+      "score_type": "rrf",
+      "page_content": "[[SECTION 2.7: Summary]]\nIn this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categories:\n■ High-level or conceptual data models (based on entities and relationships)\n■ Low-level or physical data models\n■ Representational or implementation data models (record-based, object-\noriented)\nWe distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:\n■ An internal schema describes the physical storage structure of the database.\n■ A conceptual schema is a high-level description of the whole database.\n■ External schemas describe the views of different user groups.",
+      "metadata": {
+        "chapter_number": "2",
+        "chapter_title": "Database System Concepts and Architecture",
+        "strategy": "structure_aware_recursive",
+        "chunk_index": 88,
+        "section_ids": [
+          "sec_2.7"
+        ],
+        "section_id": "sec_2.7",
+        "section_number": "2.7",
+        "section_title": "Summary",
+        "parent_section_id": "chapter_2",
+        "section_unit_index": 19,
+        "offset_scope": "section",
+        "start_index": 0,
+        "end_index": 875,
+        "sources": [
+          {
+            "record_id": "863264e73f7a57ea:p84:b2",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              117.0,
+              83.79440307617188,
+              467.5633544921875,
+              106.29592895507812
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 141,
+            "chunk_start_index": 25,
+            "chunk_end_index": 166,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b3",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              116.29440307617188,
+              459.3379821777344,
+              126.79440307617188
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 76,
+            "chunk_start_index": 167,
+            "chunk_end_index": 243,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b4",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              131.29440307617188,
+              289.5634460449219,
+              141.79440307617188
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 35,
+            "chunk_start_index": 244,
+            "chunk_end_index": 279,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b5",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              146.29437255859375,
+              464.91156005859375,
+              156.79437255859375
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 71,
+            "chunk_start_index": 280,
+            "chunk_end_index": 351,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b6",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              147.00498962402344,
+              158.29586791992188,
+              186.53749084472656,
+              168.79586791992188
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 9,
+            "chunk_start_index": 352,
+            "chunk_end_index": 361,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b7",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              117.00648498535156,
+              178.7918701171875,
+              467.4461975097656,
+              225.29635620117188
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 297,
+            "chunk_start_index": 362,
+            "chunk_end_index": 659,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b8",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              234.79437255859375,
+              463.5275573730469,
+              245.29437255859375
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 78,
+            "chunk_start_index": 660,
+            "chunk_end_index": 738,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b9",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              249.79437255859375,
+              441.9710388183594,
+              260.29437255859375
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 72,
+            "chunk_start_index": 739,
+            "chunk_end_index": 811,
+            "metadata": {
+              "footnote_refs": []
+            }
+          },
+          {
+            "record_id": "863264e73f7a57ea:p84:b10",
+            "pdf_page": 84,
+            "type": "normal_text",
+            "bbox": [
+              135.0,
+              264.79437255859375,
+              402.3335876464844,
+              275.29437255859375
+            ],
+            "section_number": "2.7",
+            "section_title": "Summary",
+            "source_start_index": 0,
+            "source_end_index": 63,
+            "chunk_start_index": 812,
+            "chunk_end_index": 875,
+            "metadata": {
+              "footnote_refs": []
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

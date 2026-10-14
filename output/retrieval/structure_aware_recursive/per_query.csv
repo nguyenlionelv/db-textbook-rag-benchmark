@@ -1,0 +1,385 @@
+﻿method,k,query_index,topic,split,language,query,hit,mrr
+bm25,1,0,dbms,dev,en,What is a database management system?,0,0.0
+bm25,1,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+bm25,1,2,schema,dev,en,What is a database schema?,0,0.0
+bm25,1,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bm25,1,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+bm25,1,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+bm25,1,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+bm25,1,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+bm25,1,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bm25,1,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+bm25,1,10,multivalued,dev,en,Can an attribute have several values for the same entity?,0,0.0
+bm25,1,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+bm25,1,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bm25,1,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+bm25,1,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+bm25,1,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bm25,1,16,metadata,eval,en,What is the information in the DBMS catalog called?,0,0.0
+bm25,1,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+bm25,1,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+bm25,1,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+bm25,1,20,dba,eval,en,Who authorizes database access and monitors database use?,0,0.0
+bm25,1,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,0,0.0
+bm25,1,22,transaction,eval,en,What is a transaction in a database system?,0,0.0
+bm25,1,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+bm25,1,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+bm25,1,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+bm25,1,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+bm25,1,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,0,0.0
+bm25,1,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+bm25,1,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+bm25,1,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+bm25,1,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+bm25,3,0,dbms,dev,en,What is a database management system?,1,0.3333333333333333
+bm25,3,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+bm25,3,2,schema,dev,en,What is a database schema?,0,0.0
+bm25,3,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bm25,3,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+bm25,3,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+bm25,3,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+bm25,3,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+bm25,3,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bm25,3,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+bm25,3,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,0.5
+bm25,3,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+bm25,3,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bm25,3,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+bm25,3,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+bm25,3,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bm25,3,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+bm25,3,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+bm25,3,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+bm25,3,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+bm25,3,20,dba,eval,en,Who authorizes database access and monitors database use?,0,0.0
+bm25,3,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,0,0.0
+bm25,3,22,transaction,eval,en,What is a transaction in a database system?,1,0.3333333333333333
+bm25,3,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+bm25,3,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+bm25,3,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+bm25,3,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+bm25,3,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,0,0.0
+bm25,3,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+bm25,3,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+bm25,3,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+bm25,3,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+bm25,5,0,dbms,dev,en,What is a database management system?,1,0.3333333333333333
+bm25,5,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+bm25,5,2,schema,dev,en,What is a database schema?,0,0.0
+bm25,5,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bm25,5,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+bm25,5,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+bm25,5,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+bm25,5,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+bm25,5,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bm25,5,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+bm25,5,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,0.5
+bm25,5,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+bm25,5,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bm25,5,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+bm25,5,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+bm25,5,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bm25,5,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+bm25,5,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+bm25,5,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+bm25,5,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+bm25,5,20,dba,eval,en,Who authorizes database access and monitors database use?,1,0.2
+bm25,5,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,0,0.0
+bm25,5,22,transaction,eval,en,What is a transaction in a database system?,1,0.3333333333333333
+bm25,5,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+bm25,5,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+bm25,5,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+bm25,5,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+bm25,5,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,0,0.0
+bm25,5,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+bm25,5,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+bm25,5,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+bm25,5,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+bm25,10,0,dbms,dev,en,What is a database management system?,1,0.3333333333333333
+bm25,10,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,0,0.0
+bm25,10,2,schema,dev,en,What is a database schema?,1,0.16666666666666666
+bm25,10,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+bm25,10,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+bm25,10,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+bm25,10,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+bm25,10,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+bm25,10,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+bm25,10,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,0,0.0
+bm25,10,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,0.5
+bm25,10,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+bm25,10,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+bm25,10,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,0,0.0
+bm25,10,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+bm25,10,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+bm25,10,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+bm25,10,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,1,0.14285714285714285
+bm25,10,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+bm25,10,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+bm25,10,20,dba,eval,en,Who authorizes database access and monitors database use?,1,0.2
+bm25,10,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,0,0.0
+bm25,10,22,transaction,eval,en,What is a transaction in a database system?,1,0.3333333333333333
+bm25,10,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+bm25,10,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+bm25,10,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+bm25,10,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+bm25,10,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,0,0.0
+bm25,10,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+bm25,10,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+bm25,10,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+bm25,10,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+dense,1,0,dbms,dev,en,What is a database management system?,1,1.0
+dense,1,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+dense,1,2,schema,dev,en,What is a database schema?,0,0.0
+dense,1,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+dense,1,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+dense,1,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+dense,1,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+dense,1,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+dense,1,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+dense,1,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+dense,1,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+dense,1,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+dense,1,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+dense,1,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+dense,1,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+dense,1,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+dense,1,16,metadata,eval,en,What is the information in the DBMS catalog called?,0,0.0
+dense,1,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+dense,1,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+dense,1,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+dense,1,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+dense,1,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+dense,1,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+dense,1,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+dense,1,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+dense,1,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+dense,1,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+dense,1,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+dense,1,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+dense,1,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+dense,1,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+dense,1,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+dense,3,0,dbms,dev,en,What is a database management system?,1,1.0
+dense,3,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+dense,3,2,schema,dev,en,What is a database schema?,1,0.5
+dense,3,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+dense,3,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+dense,3,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+dense,3,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+dense,3,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+dense,3,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+dense,3,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+dense,3,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+dense,3,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+dense,3,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+dense,3,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+dense,3,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+dense,3,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+dense,3,16,metadata,eval,en,What is the information in the DBMS catalog called?,0,0.0
+dense,3,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+dense,3,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+dense,3,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+dense,3,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+dense,3,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+dense,3,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+dense,3,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+dense,3,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+dense,3,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+dense,3,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+dense,3,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+dense,3,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+dense,3,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+dense,3,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+dense,3,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5
+dense,5,0,dbms,dev,en,What is a database management system?,1,1.0
+dense,5,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+dense,5,2,schema,dev,en,What is a database schema?,1,0.5
+dense,5,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+dense,5,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+dense,5,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+dense,5,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+dense,5,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+dense,5,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+dense,5,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+dense,5,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+dense,5,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+dense,5,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+dense,5,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+dense,5,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+dense,5,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+dense,5,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.2
+dense,5,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+dense,5,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+dense,5,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+dense,5,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+dense,5,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+dense,5,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+dense,5,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,1,0.25
+dense,5,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+dense,5,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+dense,5,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+dense,5,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+dense,5,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+dense,5,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+dense,5,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+dense,5,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5
+dense,10,0,dbms,dev,en,What is a database management system?,1,1.0
+dense,10,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+dense,10,2,schema,dev,en,What is a database schema?,1,0.5
+dense,10,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+dense,10,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+dense,10,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+dense,10,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+dense,10,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+dense,10,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+dense,10,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+dense,10,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+dense,10,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+dense,10,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+dense,10,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+dense,10,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+dense,10,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+dense,10,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.2
+dense,10,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,1,0.14285714285714285
+dense,10,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+dense,10,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+dense,10,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+dense,10,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+dense,10,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+dense,10,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,1,0.25
+dense,10,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+dense,10,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,1,0.16666666666666666
+dense,10,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+dense,10,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+dense,10,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+dense,10,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+dense,10,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+dense,10,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5
+hybrid,1,0,dbms,dev,en,What is a database management system?,1,1.0
+hybrid,1,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+hybrid,1,2,schema,dev,en,What is a database schema?,1,1.0
+hybrid,1,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+hybrid,1,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+hybrid,1,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+hybrid,1,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+hybrid,1,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,0,0.0
+hybrid,1,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+hybrid,1,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+hybrid,1,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+hybrid,1,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,0,0.0
+hybrid,1,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+hybrid,1,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+hybrid,1,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+hybrid,1,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+hybrid,1,16,metadata,eval,en,What is the information in the DBMS catalog called?,0,0.0
+hybrid,1,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+hybrid,1,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+hybrid,1,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+hybrid,1,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+hybrid,1,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+hybrid,1,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+hybrid,1,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+hybrid,1,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+hybrid,1,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+hybrid,1,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+hybrid,1,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+hybrid,1,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+hybrid,1,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+hybrid,1,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+hybrid,1,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,0,0.0
+hybrid,3,0,dbms,dev,en,What is a database management system?,1,1.0
+hybrid,3,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+hybrid,3,2,schema,dev,en,What is a database schema?,1,1.0
+hybrid,3,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+hybrid,3,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+hybrid,3,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+hybrid,3,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+hybrid,3,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+hybrid,3,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+hybrid,3,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+hybrid,3,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+hybrid,3,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+hybrid,3,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+hybrid,3,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+hybrid,3,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+hybrid,3,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+hybrid,3,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+hybrid,3,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+hybrid,3,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+hybrid,3,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+hybrid,3,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+hybrid,3,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+hybrid,3,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+hybrid,3,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,0,0.0
+hybrid,3,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+hybrid,3,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+hybrid,3,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+hybrid,3,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+hybrid,3,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+hybrid,3,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+hybrid,3,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+hybrid,3,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5
+hybrid,5,0,dbms,dev,en,What is a database management system?,1,1.0
+hybrid,5,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+hybrid,5,2,schema,dev,en,What is a database schema?,1,1.0
+hybrid,5,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+hybrid,5,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+hybrid,5,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+hybrid,5,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+hybrid,5,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+hybrid,5,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+hybrid,5,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+hybrid,5,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+hybrid,5,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+hybrid,5,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+hybrid,5,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+hybrid,5,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+hybrid,5,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+hybrid,5,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+hybrid,5,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,0,0.0
+hybrid,5,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+hybrid,5,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+hybrid,5,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+hybrid,5,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+hybrid,5,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+hybrid,5,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,1,0.25
+hybrid,5,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+hybrid,5,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,0,0.0
+hybrid,5,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+hybrid,5,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+hybrid,5,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+hybrid,5,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+hybrid,5,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+hybrid,5,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5
+hybrid,10,0,dbms,dev,en,What is a database management system?,1,1.0
+hybrid,10,1,dbms,dev,vi,Hệ quản trị cơ sở dữ liệu là gì?,1,1.0
+hybrid,10,2,schema,dev,en,What is a database schema?,1,1.0
+hybrid,10,3,schema,dev,vi,Lược đồ cơ sở dữ liệu là gì?,0,0.0
+hybrid,10,4,state,dev,en,What do we call the data in a database at a particular moment?,1,1.0
+hybrid,10,5,state,dev,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,0,0.0
+hybrid,10,6,logical,dev,en,Which data independence allows structural and constraint changes without affecting application programs?,1,1.0
+hybrid,10,7,logical,dev,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,1,0.5
+hybrid,10,8,physical,dev,en,Why can physical files be reorganized without changing the conceptual schema?,1,1.0
+hybrid,10,9,physical,dev,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,1,1.0
+hybrid,10,10,multivalued,dev,en,Can an attribute have several values for the same entity?,1,1.0
+hybrid,10,11,multivalued,dev,vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,1,0.5
+hybrid,10,12,derived,dev,en,Why can age be calculated from birth date instead of being stored separately?,1,1.0
+hybrid,10,13,derived,dev,vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,1,1.0
+hybrid,10,14,key,dev,en,Which attribute can uniquely identify each entity?,1,1.0
+hybrid,10,15,key,dev,vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,0,0.0
+hybrid,10,16,metadata,eval,en,What is the information in the DBMS catalog called?,1,0.5
+hybrid,10,17,metadata,eval,vi,Thông tin lưu trong catalog của DBMS được gọi là gì?,1,0.14285714285714285
+hybrid,10,18,abstraction,eval,en,Which characteristic supports program-data and program-operation independence?,1,1.0
+hybrid,10,19,abstraction,eval,vi,Đặc tính nào hỗ trợ độc lập chương trình–dữ liệu và chương trình–thao tác?,0,0.0
+hybrid,10,20,dba,eval,en,Who authorizes database access and monitors database use?,1,1.0
+hybrid,10,21,dba,eval,vi,Ai cấp quyền truy cập và giám sát việc sử dụng cơ sở dữ liệu?,1,1.0
+hybrid,10,22,transaction,eval,en,What is a transaction in a database system?,1,1.0
+hybrid,10,23,transaction,eval,vi,Giao dịch trong hệ thống cơ sở dữ liệu là gì?,1,0.25
+hybrid,10,24,isolation,eval,en,Which property makes a transaction appear to execute alone despite concurrent transactions?,1,1.0
+hybrid,10,25,isolation,eval,vi,Thuộc tính nào khiến giao dịch có vẻ thực thi riêng dù nhiều giao dịch chạy đồng thời?,1,0.16666666666666666
+hybrid,10,26,atomicity,eval,en,Which property ensures all operations in a transaction happen or none happen?,1,1.0
+hybrid,10,27,atomicity,eval,vi,Thuộc tính nào đảm bảo tất cả thao tác của giao dịch được thực hiện hoặc không thao tác nào được thực hiện?,1,1.0
+hybrid,10,28,composite,eval,en,Can a composite attribute be divided into smaller meaningful parts?,1,1.0
+hybrid,10,29,composite,eval,vi,Thuộc tính phức hợp có thể chia thành các phần nhỏ có ý nghĩa riêng không?,0,0.0
+hybrid,10,30,weak_entity,eval,en,What is an entity type without a key called?,1,1.0
+hybrid,10,31,weak_entity,eval,vi,Kiểu thực thể không có khóa được gọi là gì?,1,0.5

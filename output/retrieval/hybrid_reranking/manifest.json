@@ -1,0 +1,37 @@
+{
+  "collection": "e5_183a932fed56",
+  "chunks": 233,
+  "queries": 32,
+  "chunk_sha256": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+  "parser_sha256": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "candidate_k": 20,
+  "top_k": 5,
+  "rrf_constant": 60,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "epsilon": 0.25,
+    "tokenizer": "Unicode words + lowercase"
+  },
+  "methods": [
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "reranker_max_length": 512,
+  "packages": {
+    "rank-bm25": "0.2.2",
+    "qdrant-client": "1.19.1",
+    "sentence-transformers": "6.1.0",
+    "torch": "2.14.0"
+  },
+  "device": "cpu",
+  "torch_num_threads": 4,
+  "timing": "1 warm-up, 1 pass/query/method; includes query encoding, excludes loading",
+  "queries_sha256": "14fdadf3b6dbcef5d5846e853ea4abf2bea55db486b46c1cfad1034a59e139f7",
+  "reranker_batch_size": 2,
+  "index_verification": "SQLite backup of the open original index; all point IDs and payloads matched the corpus; parser/chunk hashes matched baseline manifest."
+}
