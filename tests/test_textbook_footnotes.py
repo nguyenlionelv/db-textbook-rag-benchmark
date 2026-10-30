@@ -167,6 +167,26 @@ def test_note_section_comes_from_reference_before_later_heading():
     assert records[-1]["section_number"] == "1.1"
 
 
+@pytest.mark.parametrize("table_text", ["7.5 20.0", "10.0 40.0", "10.0 NULL"])
+def test_decimal_table_cells_do_not_replace_current_section(table_text):
+    chapter = block(0, [span("Chapter 7 More SQL", y=40)])
+    heading = block(1, [span("7.1 Complex Queries", y=100)])
+    table = block(2, [span(table_text, y=200)])
+    paragraph = block(3, [span("The query groups the rows.", y=300)])
+    records = parser([chapter, heading, table, paragraph]).parse_pages(0, 0)
+    assert records[0]["text"] == table_text
+    assert all(record["section_number"] == "7.1" for record in records)
+
+
+def test_running_header_page_number_is_not_part_of_chapter_title():
+    header = block(0, [span("Chapter 25 Big Data Technologies", y=30)],
+                   [span("913", y=45)])
+    instance = parser([header])
+    assert instance.detect_chapter_from_page(instance.doc[0]) == {
+        "number": "25", "title": "Big Data Technologies",
+    }
+
+
 def test_footnote_is_detected_before_footer_filter_and_continuation_is_merged():
     continuation = block(2, [span("This definition is important to retain.", 8, 60, 782)])
     records = parser([body(), note(y=770), continuation]).parse_pages(0, 0)

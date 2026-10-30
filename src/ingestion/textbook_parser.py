@@ -275,7 +275,9 @@ class TextbookParser:
             if y0 >= 50:
                 continue
 
-            cleaned_text = self.clean_text(text)
+            # A running header may contain a separate line with the page number.
+            header_lines = [line for line in text.splitlines() if not line.strip().isdigit()]
+            cleaned_text = self.clean_text("\n".join(header_lines))
 
             match = self.chapter_pattern.search(
                 cleaned_text
@@ -293,6 +295,12 @@ class TextbookParser:
         match = self.section_pattern.match(text)
 
         if not match:
+            return None
+
+        # Decimal table cells such as "10.0 40.0" are not section headings.
+        if not any(char.isalpha() for char in match.group(2)):
+            return None
+        if self.current_chapter and match.group(1).split(".")[0] != self.current_chapter["number"]:
             return None
 
         return {
