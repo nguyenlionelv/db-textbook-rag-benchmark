@@ -7,7 +7,10 @@ __pycache__/
 output/model_cache/
 # Dữ liệu Qdrant sinh từ notebook
 output/qdrant_db/
+output/qdrant_full_book/
 output/pytest_tmp/
+# Local Generation runs and manual review artifacts.
+output/generation/
 
 data/raw/
 data/interim/
