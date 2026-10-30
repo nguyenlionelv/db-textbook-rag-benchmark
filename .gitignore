@@ -10,7 +10,8 @@ output/qdrant_db/
 output/qdrant_full_book/
 output/pytest_tmp/
 
-data/raw/
+data/raw/*
+!data/raw/README.md
 data/interim/
 data/processed/
 
