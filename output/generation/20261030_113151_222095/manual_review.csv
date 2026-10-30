@@ -1,0 +1,718 @@
+﻿split,case_id,condition,review_id,review_answerable,review_correct,review_complete,review_supported,review_citations,review_notes,language,query,reference,answer,context_text,status,expected_status
+dev,q0,selected_context,1abf8d28331f8f4507fcc5127d03b159a10a42ad885477d48c0d7a7553ab5bb5,True,True,True,True,True,"S1 (chunk 8) định nghĩa DBMS và nêu đầy đủ các chức năng, metadata, truy vấn/cập nhật/báo cáo trong đáp án.",en,What is a database management system?,A database management system (DBMS) is a computerized system that enables users to create and maintain a database.,"A database management system (DBMS) is a computerized system that enables users to create and maintain a database. It facilitates defining, constructing, manipulating, and sharing databases among various users and applications. The DBMS stores metadata, such as data types and structures, and allows users to query, update, and generate reports from the database.","[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",answered,answered
+dev,q1,selected_context,131044305eb4a8c89059af9e0ff3b97e870253b069b35e26658198cff215a442,True,True,True,True,True,Diễn đạt tiếng Việt đúng định nghĩa và chức năng ở S1 (8); trả lời đủ câu hỏi DBMS là gì.,vi,Hệ quản trị cơ sở dữ liệu là gì?,DBMS cho phép tạo và duy trì cơ sở dữ liệu.,"Hệ quản trị cơ sở dữ liệu là một phần mềm tổng hợp giúp người dùng tạo, duy trì và chia sẻ cơ sở dữ liệu. Nó hỗ trợ các chức năng như định nghĩa, xây dựng, thao tác và chia sẻ dữ liệu trong môi trường đa người dùng.","[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",answered,answered
+dev,q2,selected_context,0b4e1ac99a285ddea77440b6a18648a9e5a285b5fd11f18dc95fadca67da11cf,True,True,True,True,True,"S1 (111) mô tả schema được xác định khi thiết kế, ít thay đổi và sơ đồ cấu trúc record; diễn giải về field/quan hệ phù hợp sơ đồ minh họa.",en,What is a database schema?,"The description of a database is called the database schema, which is specified during database design and is not expected to change frequently.","A database schema is the description of a database's structure, specified during design and not expected to change frequently. It includes the structure of records, such as fields and relationships, and is often depicted as a schema diagram. The schema defines the format and organization of data in a database.","[S1] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.",answered,answered
+dev,q3,selected_context,8e86b944ddf3f063e7601bcce639c140f939f19c07c6312bd9f021f8b41ba5d3,True,True,True,False,False,Định nghĩa chính đúng. S1 (111) chưa cung cấp các kiểu dữ liệu cụ thể để hỗ trợ phần mở rộng về data types; câu về ít thay đổi trong quá trình thiết kế cũng diễn đạt chưa sát nguồn. Chấm bám nguồn thận trọng.,vi,Lược đồ cơ sở dữ liệu là gì?,"Lược đồ mô tả cơ sở dữ liệu, được xác định khi thiết kế và ít thay đổi.","Lược đồ cơ sở dữ liệu là mô tả cấu trúc của cơ sở dữ liệu, bao gồm các loại dữ liệu, các thuộc tính và mối quan hệ giữa chúng. Nó được thể hiện bằng các sơ đồ (schema diagrams) và không thay đổi thường xuyên trong quá trình thiết kế cơ sở dữ liệu.","[S1] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.",answered,answered
+dev,q4,selected_context,4d9eb1e0feb8144f167d8f81cc549981d2b27af874afaf053cc8b8fc3f9eb4d7,True,True,True,True,True,S1 (113) nêu trực tiếp database state/snapshot; đáp án ngắn nhưng đầy đủ với câu hỏi gọi tên.,en,What do we call the data in a database at a particular moment?,The data in the database at a particular moment in time is called a database state or snapshot.,The data in a database at a particular moment is called a database state or snapshot.,"[S1] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.",answered,answered
+dev,q5,selected_context,c26215c7c0b96a913a85c008538ccf820cd3de561851726d43db0f049a5df9af,True,True,True,True,True,Gọi đúng database state/snapshot theo S1 (113); chấp nhận giữ thuật ngữ tiếng Anh trong câu tiếng Việt.,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,Dữ liệu tại một thời điểm là trạng thái cơ sở dữ liệu hoặc snapshot.,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là database state hoặc snapshot.,"[S1] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.",answered,answered
+dev,q6,selected_context,54d17aa3c5e250010a065ac797070f4225b1e09b8033c54079bb3189c84b1a36,True,True,True,True,True,S1 (126) nêu trực tiếp logical data independence cho structural/constraint changes không ảnh hưởng ứng dụng.,en,Which data independence allows structural and constraint changes without affecting application programs?,logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs,Logical data independence allows structural and constraint changes without affecting application programs.,"[S1] PDF pages: 69
+Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and hardware details of storage encoding, placement, compression, splitting, merging of records, and so on are hidden from the user. Applications remain unaware of these details. On the other hand, logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs—a much stricter requirement.",answered,answered
+dev,q7,selected_context,09ef143f1e8b2b9f1050754e44791ad62fec20aedefc5379735bfe78085c731b,True,True,True,True,True,Tên khái niệm độc lập dữ liệu logic trả lời đủ câu hỏi loại nào; không bắt buộc lặp lại toàn bộ câu hỏi. S1 (126) hỗ trợ.,vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,Độc lập dữ liệu logic cho phép đổi cấu trúc và ràng buộc mà không ảnh hưởng ứng dụng.,Độc lập dữ liệu logic,"[S1] PDF pages: 69
+Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and hardware details of storage encoding, placement, compression, splitting, merging of records, and so on are hidden from the user. Applications remain unaware of these details. On the other hand, logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs—a much stricter requirement.",answered,answered
+dev,q8,selected_context,60857647ce0c27273d49718c92758ffe54bc0feef5af8ff2811f36179d04519c,True,True,True,True,True,S1 (125) cho phép đổi internal/access structures mà giữ conceptual và external/query. Đáp án giải thích đúng physical independence; có thể nêu rõ hơn điều kiện dữ liệu vẫn giữ nguyên.,en,Why can physical files be reorganized without changing the conceptual schema?,"Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema.","Physical files can be reorganized without changing the conceptual schema because the conceptual schema defines the logical structure of the database and remains unchanged even when physical storage is modified. Reorganization may involve changes to the internal schema, such as adding access structures, but the conceptual schema remains the same. This allows external schemas to remain consistent with the conceptual schema, ensuring that applications continue to function correctly.","[S1] PDF pages: 69
+without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema. For example, providing an access path to improve retrieval speed of SECTION records (Figure 1.2) by semester and year should not require a query such as list all sections offered in fall 2008 to be changed, although the query would be executed more efficiently by the DBMS by utilizing the new access path.",answered,answered
+dev,q9,selected_context,f3ac90b2467f9f05a1e934ee8ec60e3c548d84438f6fabc0d24203810ec91f64,True,False,False,False,False,"Câu đầu gán chức năng chỉ định cách truy cập dữ liệu cho conceptual schema, lẫn với internal/access paths. S1 (125) chỉ hỗ trợ việc đổi tổ chức vật lý khi dữ liệu không đổi; nguyên nhân giải thích chưa đúng.",vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,Độc lập dữ liệu vật lý cho phép đổi tổ chức lưu trữ mà không đổi lược đồ khái niệm nếu dữ liệu không đổi.,"Có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm vì lược đồ khái niệm chỉ định cách truy cập dữ liệu, không phải cấu trúc vật lý. Việc reorganize tệp vật lý có thể cải thiện hiệu suất, nhưng không cần thay đổi lược đồ khái niệm nếu dữ liệu vẫn giữ nguyên. Ví dụ, việc tạo thêm access structures để tăng tốc độ truy xuất dữ liệu không cần thay đổi lược đồ khái niệm.","[S1] PDF pages: 69
+without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema. For example, providing an access path to improve retrieval speed of SECTION records (Figure 1.2) by semester and year should not require a query such as list all sections offered in fall 2008 to be changed, although the query would be executed more efficiently by the DBMS by utilizing the new access path.",answered,answered
+dev,q10,selected_context,c688baf2bffc120447ad722af10cf55067fc295a50e87f50a4c98d48e7e1d126,True,True,True,True,True,S1 (222) cho biết một thực thể có thể có tập giá trị và College_degrees là ví dụ đa trị; đáp án đúng và có nguồn.,en,Can an attribute have several values for the same entity?,"In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person.","Yes, an attribute can have several values for the same entity. Multivalued attributes, like College_degrees, can represent different numbers of degrees for different individuals.","[S1] PDF pages: 97
+Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example, Age is a single-valued attribute of a person. In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person. Cars with one color have a single value, whereas two-tone cars have two color values. Similarly, one person may not have any college degrees, another person may have one, and a third person may have two or more degrees; therefore, different people can have different numbers of values for the College_degrees attribute. Such attributes are called multivalued. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity",answered,answered
+dev,q11,selected_context,15260a02e03fd175bb860d318a979f19ed779fbe589f469ad79cd5b4eb5df295,True,False,True,False,False,"Ý chính có thuộc tính đa trị là đúng và đủ trả lời có/không. Tuy nhiên ví dụ số lượng học vị là một số đếm, khác tập các học vị College_degrees trong S1 (222); ví dụ làm lẫn đơn trị với đa trị.",vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,Thuộc tính đa trị có thể có nhiều giá trị với cùng một thực thể.,"Có, một thuộc tính có thể có nhiều giá trị cho cùng một thực thể. Những thuộc tính được gọi là multivalued khi chúng có thể có nhiều giá trị cho cùng một thực thể, ví dụ như số lượng học vị của một người.","[S1] PDF pages: 97
+Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example, Age is a single-valued attribute of a person. In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person. Cars with one color have a single value, whereas two-tone cars have two color values. Similarly, one person may not have any college degrees, another person may have one, and a third person may have two or more degrees; therefore, different people can have different numbers of values for the College_degrees attribute. Such attributes are called multivalued. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity",answered,answered
+dev,q12,selected_context,108d6733429957922f3c01acff7ab24c9d059a132348fc1f0858f395ea68be03,True,True,True,False,False,Giải thích tuổi là derived attribute từ ngày sinh và ngày hiện tại đúng theo S1 (224). Khẳng định hệ thống hiệu quả hơn là phần thêm chưa được đoạn này chứng minh; lợi ích hiệu năng không tự suy ra chỉ từ phép tính tuổi.,en,Why can age be calculated from birth date instead of being stored separately?,"The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute.","Age can be calculated from the birth date because it is a derived attribute that can be computed using the current date and the birth date of a person. This eliminates the need to store age separately, making the system more efficient and reducing storage requirements.","[S1] PDF pages: 97
+Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a particular person entity, the value of Age can be determined from the current (today’s) date and the value of that person’s Birth_date. The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute. Some attribute values can be derived from related entities; for example, an attribute Number_of_employees of a DEPARTMENT entity can be derived by counting the number of employees related to (working for) that department.",answered,answered
+dev,q13,selected_context,e6123d9da595f4e9bdf131e4f05a30fc45ecaab6663aa2965e08ab9d4469571c,True,True,True,True,True,"Phân biệt stored Birth_date và derived Age đúng, đủ và bám S1 (224).",vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,"Tuổi là thuộc tính dẫn xuất, có thể tính từ ngày sinh đã lưu.","Tuổi có thể tính từ ngày sinh vì ngày sinh là một thuộc tính được lưu trữ (stored attribute), trong khi tuổi là một thuộc tính được tính toán từ ngày sinh (derived attribute).","[S1] PDF pages: 97
+Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a particular person entity, the value of Age can be determined from the current (today’s) date and the value of that person’s Birth_date. The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute. Some attribute values can be derived from related entities; for example, an attribute Number_of_employees of a DEPARTMENT entity can be derived by counting the number of employees related to (working for) that department.",answered,answered
+dev,q14,selected_context,adabf31fab20bcc21fb932730cd8fc2d79cb1780d674e57aebdade79ed8ab069,True,True,True,True,True,Key attribute là đúng tên thuộc tính theo S1 (231); đáp án một cụm từ đủ cho câu hỏi which attribute.,en,Which attribute can uniquely identify each entity?,"Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely.",Key attribute,"[S1] PDF pages: 99
+Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type usually has one or more attributes whose values are distinct for each individual entity in the entity set. Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely. For example, the Name attribute is a key of the COMPANY entity type in Figure 3.6 because no two companies are allowed to have the same name. For the PERSON entity type, a typical key attribute is Ssn (Social Security number). Sometimes several attributes together form a key, meaning that the combination of the attribute values must be distinct for each entity. If a set of attributes possesses this property, the proper way to represent this in the ER model that we describe here is to define a composite attribute and designate it as a key attribute of the entity type",answered,answered
+dev,q15,selected_context,2d59451d3e9171dd90f610c3024262e630607322d049e9572040ba4884cb9442,True,False,False,True,True,"Cần trả lời thuộc tính khóa (key attribute), không phải tên tính chất tính duy nhất. Cụm tính duy nhất có trong nội dung S1 (231), nên không coi là bịa nguồn, nhưng trả lời sai loại khái niệm.",vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,Thuộc tính khóa có giá trị xác định duy nhất từng thực thể.,Tính duy nhất,"[S1] PDF pages: 99
+Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type usually has one or more attributes whose values are distinct for each individual entity in the entity set. Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely. For example, the Name attribute is a key of the COMPANY entity type in Figure 3.6 because no two companies are allowed to have the same name. For the PERSON entity type, a typical key attribute is Ssn (Social Security number). Sometimes several attributes together form a key, meaning that the combination of the attribute values must be distinct for each entity. If a set of attributes possesses this property, the proper way to represent this in the ER model that we describe here is to define a composite attribute and designate it as a key attribute of the entity type",answered,answered
+dev,multi_en,selected_context,5d27a545f7aa3df6f5c2b6b967c1ec3b5a0463fbd798c5855154ce9106383b36,True,True,True,False,False,"Phân biệt schema/structure và state/data tại thời điểm là đúng, đủ theo S1 (111) và S2 (113). Phần thêm constraints không được hai đoạn này nêu; chấm bám nguồn và citation ở mức toàn bộ phát biểu, không chỉ ý chính.",en,How does a database schema differ from a database state?,Schema describes structure; state is the actual data at a particular time.,"A database schema is the description of a database's structure, including entities, relationships, and constraints, while a database state refers to the actual current data in the database at a specific moment.","[S1] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.
+
+[S2] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.",answered,answered
+dev,multi_vi,selected_context,d771f9204fbc7cd8759be834df411a194b31103d2af49b682dd61ddf1355d434,True,False,False,False,False,"Có đủ S1 (111) và S2 (113) nhưng chỉ lặp nguyên câu hỏi, không đưa ra sự khác biệt. Citation S1 không biến câu hỏi thành một đáp án có bằng chứng.",vi,Lược đồ cơ sở dữ liệu khác trạng thái cơ sở dữ liệu như thế nào?,Lược đồ mô tả cấu trúc; trạng thái là dữ liệu thực tế tại một thời điểm.,Lược đồ cơ sở dữ liệu khác trạng thái cơ sở dữ liệu như thế nào?,"[S1] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.
+
+[S2] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.",answered,answered
+dev,empty_context_en,selected_context,9d7b04d6526b4e8b443b532a5e6f04831e174d7ce41fdd86433f8823cf6c8c72,False,True,,,,"Context rỗng; báo thiếu bằng chứng là đúng. called_model=False nên đây là kiểm tra nhánh Python, không phải khả năng từ chối của LLM.",en,What is a database schema?,Insufficient evidence in the supplied context.,Insufficient evidence in context.,(No source excerpts supplied.),insufficient_evidence,insufficient_evidence
+dev,empty_context_vi,selected_context,33f0b9cdc73fc18dcb42ea023d2068d90ddb1cc5e8f38df0177f3878685b7bcf,False,True,,,,"Context rỗng; báo thiếu bằng chứng là đúng. called_model=False nên đây là kiểm tra nhánh Python, không phải khả năng từ chối của LLM.",vi,Lược đồ cơ sở dữ liệu là gì?,Context không đủ bằng chứng.,Chưa đủ bằng chứng trong context.,(No source excerpts supplied.),insufficient_evidence,insufficient_evidence
+dev,unknown_person_en,selected_context,bc108caa27da4c21e0abb12707840a634035a8dfb1a90c4a9466d3d742bebd46,False,False,False,False,False,"S1 (8) chỉ định nghĩa DBMS, không cho biết tổ chức/người quản trị trường cụ thể. Tự khẳng định IT department là thông tin không có bằng chứng.",en,Who currently administers my university's production database?,Insufficient evidence in the supplied context.,The university's production database is administered by the university's information technology department.,"[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",answered,insufficient_evidence
+dev,unknown_person_vi,selected_context,1bed9ecea363f3d4848cca308717b9a0ca1678a7ce6b2b848ac497bfbff74536,False,False,False,False,False,"S1 (8) không xác định ai quản trị trường thực tế. Đáp án đưa lời khuyên kiểm tra thông tin, không trả lời hay nói rõ nguồn thiếu bằng chứng, nhưng vẫn gắn answered và citation không hỗ trợ.",vi,Ai hiện quản trị cơ sở dữ liệu production tại trường đại học của tôi?,Context không đủ bằng chứng.,Bạn cần kiểm tra thông tin quản trị cơ sở dữ liệu production tại trường đại học của bạn thông qua các nguồn dữ liệu hoặc phần mềm quản lý cơ sở dữ liệu.,"[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",answered,insufficient_evidence
+dev,unknown_hardware_en,selected_context,53302b6419c385eff596d4cbe987669e5f0e11b604783ea0f469ddba0a40cd0c,False,True,,,,S1 (8) không có RAM của máy chủ trường; nội dung và trạng thái insufficient_evidence cùng citation rỗng đều phù hợp.,en,How much RAM is installed on my university's production database server?,Insufficient evidence in the supplied context.,The information cannot be determined from the provided source excerpts.,"[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",insufficient_evidence,insufficient_evidence
+dev,unknown_hardware_vi,selected_context,298ced1cb1f4f5049dfea6796a33692e12b3e165d3cd94b0680fbff49b13b78f,False,True,,,,S1 (8) không có RAM của máy chủ trường; nội dung và trạng thái insufficient_evidence cùng citation rỗng đều phù hợp.,vi,Máy chủ cơ sở dữ liệu production của trường tôi đang có bao nhiêu RAM?,Context không đủ bằng chứng.,Không có thông tin cụ thể về số RAM của máy chủ cơ sở dữ liệu production trong nguồn tài liệu cung cấp.,"[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.",insufficient_evidence,insufficient_evidence
+dev,q0,retrieved,a7df1394bfe19a69a031247ce901d7c31337746f76e2591d1d7d5c1605a3d06f,True,True,True,True,True,Định nghĩa/chức năng dựa S1 (8); bảo vệ lỗi/truy cập và tiến hóa hệ thống dựa S5 (9). Các nguồn đã dẫn hỗ trợ đủ phát biểu chính.,en,What is a database management system?,A database management system (DBMS) is a computerized system that enables users to create and maintain a database.,"A database management system (DBMS) is a software system that enables users to create, maintain, and manage databases. It facilitates defining, constructing, manipulating, and sharing databases, including defining data structures, storing data, querying, updating, and reporting. DBMSs protect databases from hardware/software failures and unauthorized access, and they allow systems to evolve with changing requirements.","[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.
+
+[S2] PDF pages: 73
+[[SECTION 2.4: The Database System Environment]]
+A DBMS is a complex software system. In this section we discuss the types of software components that constitute a DBMS and the types of computer system software with which the DBMS interacts.
+
+[S3] PDF pages: 58
+[[SECTION 1.9: Summary]]
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents some aspect of the real world and is used for specific purposes by one or more groups of users. A DBMS is a generalized software package for implementing and maintaining a computerized database. The database and software together form a database system. We identified several characteristics that distinguish the database approach from traditional file-processing applications, and we discussed the main categories of database users, or the actors on the scene. We noted that in addition to database users, there are several categories of support personnel, or workers behind the scene, in a database environment.
+
+[S4] PDF pages: 82
+[[SECTION 2.6: Classification of Database Management Systems]]
+Several criteria can be used to classify DBMSs. The first is the data model on which the DBMS is based. The main data model used in many current commercial DBMSs is the relational data model, and the systems based on this model are known as SQL systems. The object data model has been implemented in some commercial systems but has not had widespread use. Recently, so-called big data systems, also known as key-value storage systems and NOSQL systems, use various data models: document-based, graph-based, column-based, and key-value data models. Many legacy applications still run on database systems based on the hierarchical and network data models.
+
+[S5] PDF pages: 37
+An application program accesses the database by sending queries or requests for data to the DBMS. A query typically causes some data to be retrieved; a transaction may cause some data to be read and some data to be written into the database.
+Other important functions provided by the DBMS include protecting the database and maintaining it over a long period of time. Protection includes system protection against hardware or software malfunction (or crashes) and security protection against unauthorized or malicious access. A typical large database may have a life cycle of many years, so the DBMS must be able to maintain the database system by allowing the system to evolve as requirements change over time.",answered,answered
+dev,q1,retrieved,2f8086effc4097ec1ebe0dd41db452ed616e20d15540c992454fd1d48580be07,True,True,True,True,False,"Đáp án đúng và đủ. Phân loại DBMS theo mô hình có trong context S2 (177), nhưng chỉ dẫn S1 (8), không hỗ trợ phần phân loại ở câu cuối.",vi,Hệ quản trị cơ sở dữ liệu là gì?,DBMS cho phép tạo và duy trì cơ sở dữ liệu.,"Hệ quản trị cơ sở dữ liệu là một hệ thống phần mềm có thể tạo và duy trì cơ sở dữ liệu, giúp người dùng định nghĩa, xây dựng, thao tác và chia sẻ dữ liệu. Nó bao gồm các chức năng như định nghĩa cơ sở dữ liệu, lưu trữ dữ liệu, và cho phép nhiều người dùng truy cập cùng lúc. Hệ thống này được phân loại dựa trên mô hình dữ liệu, ví dụ như mô hình quan hệ, mô hình đối tượng, và các mô hình khác.","[S1] PDF pages: 37
+A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS. Manipulating a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the miniworld, and generating reports from the data. Sharing a database allows multiple users and programs to access the database simultaneously.
+
+[S2] PDF pages: 82
+[[SECTION 2.6: Classification of Database Management Systems]]
+Several criteria can be used to classify DBMSs. The first is the data model on which the DBMS is based. The main data model used in many current commercial DBMSs is the relational data model, and the systems based on this model are known as SQL systems. The object data model has been implemented in some commercial systems but has not had widespread use. Recently, so-called big data systems, also known as key-value storage systems and NOSQL systems, use various data models: document-based, graph-based, column-based, and key-value data models. Many legacy applications still run on database systems based on the hierarchical and network data models.
+
+[S3] PDF pages: 46
+[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee and manage these resources. In a database environment, the primary resource is the database itself, and the secondary resource is the DBMS and related software. Administering these resources is the responsibility of the database administrator (DBA). The DBA is responsible for authorizing access to the database, coordinating and monitoring its use, and acquiring software and hardware resources as needed. The DBA is accountable for problems such as security breaches and poor system response time. In large organizations, the DBA is assisted by a staff that carries out these functions.
+
+[S4] PDF pages: 86
+Finally, we classified DBMSs according to several criteria: data model, number of users, number of sites, types of access paths, and cost. We discussed the availability of DBMSs and additional modules—from no cost in the form of open source software to configurations that annually cost millions to maintain. We also pointed out the variety of licensing arrangements for DBMS and related products. The main classification of DBMSs is based on the data model. We briefly discussed the main data models used in current commercial DBMSs.
+Review Questions
+2.1. Define the following terms: data model, database schema, database state,
+internal schema, conceptual schema, external schema, data independence, DDL, DML, SDL, VDL, query language, host language, data sublanguage, database utility, catalog, client/server architecture, three-tier architecture, and n-tier architecture.
+2.2. Discuss the main categories of data models. What are the basic differences
+
+[S5] PDF pages: 80
+[[SECTION 2.5.3: Two-Tier Client/Server Architectures for DBMSs]]
+In relational database management systems (RDBMSs), many of which started as centralized systems, the system components that were first moved to the client side were the user interface and application programs. Because SQL (see Chapters 6 and 7) provided a standard language for RDBMSs, this created a logical dividing point between client and server. Hence, the query and transaction functionality related to SQL processing remained on the server side. In such an architecture, the server is often called a query server or transaction server because it provides these two functionalities. In an RDBMS, the server is also often called an SQL server.",answered,answered
+dev,q2,retrieved,07e019cd56e54f0c876830f961211a279f824feea55f164729ee15e90a85f24d,True,True,True,True,True,"S1 (111), S2 (190), S5 (114) hỗ trợ định nghĩa schema, cấu trúc/ràng buộc và phân biệt state. Đúng nội dung; có bốn câu, vượt yêu cầu ba câu của prompt nhưng không trừ điểm kiến thức vì format được ghi riêng.",en,What is a database schema?,"The description of a database is called the database schema, which is specified during database design and is not expected to change frequently.","A database schema is the description of a database, including its structure and constraints, specified during design and not changed frequently. It defines the structure of data, such as tables, records, and relationships, and is used by the DBMS to manage and enforce data integrity. The schema is separate from the actual data (database state), which can change with insertions, deletions, or modifications. The schema is crucial for ensuring consistency and correctness in the database.","[S1] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.
+
+[S2] PDF pages: 85
+[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categories:
+■ High-level or conceptual data models (based on entities and relationships)
+■ Low-level or physical data models
+■ Representational or implementation data models (record-based, object-
+oriented)
+We distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:
+■ An internal schema describes the physical storage structure of the database.
+■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+
+[S3] PDF pages: 85
+■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly separates the three levels must have mappings among the schemas to transform requests and query results from one level to the next. Most DBMSs do not separate the three levels completely. We used the three-schema architecture to define the concepts of logical and physical data independence.
+
+[S4] PDF pages: 93
+During or after the conceptual schema design, the basic data model operations can be used to specify the high-level user queries and operations identified during functional analysis. This also serves to confirm that the conceptual schema meets all the identified functional requirements. Modifications to the conceptual schema can be introduced if some functional requirements cannot be specified using the initial schema.
+The next step in database design is the actual implementation of the database, using a commercial DBMS. Most current commercial DBMSs use an implementation data model—such as the relational (SQL) model—so the conceptual schema is transformed from the high-level data model into the implementation data model. This step is called logical design or data model mapping; its result is a database schema in the implementation data model of the DBMS. Data model mapping is often automated or semiautomated within the database design tools.
+
+[S5] PDF pages: 66
+The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At this point, the corresponding database state is the empty state with no data. We get the initial state of the database when the database is first populated or loaded with the initial data. From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state. The DBMS is partly responsible for ensuring that every state of the database is a valid state—that is, a state that satisfies the structure and constraints specified in the schema. Hence, specifying a correct schema to the DBMS is extremely important and the schema must be designed with utmost care. The DBMS stores the descriptions of the schema constructs and constraints—also called the meta-data—in the DBMS catalog so that DBMS software can refer to the schema whenever it needs to",answered,answered
+dev,q3,retrieved,90fda2eb9f9919f069f844c4716c2057d2ed2a44b7bb937b650a9295cbab6dc9,True,False,False,False,False,"Dù gold_covered=False, S2 (190) vẫn cho biết schema là description và ít đổi nên context trả lời được. Đáp án lại đồng nhất schema nói chung với mô hình/conceptual schema cao cấp và dùng tên lược đồ cơ bản sai thuật ngữ.",vi,Lược đồ cơ sở dữ liệu là gì?,"Lược đồ mô tả cơ sở dữ liệu, được xác định khi thiết kế và ít thay đổi.","Lược đồ cơ sở dữ liệu là một mô hình cao cấp mô tả toàn bộ cơ sở dữ liệu, bao gồm các đối tượng và mối quan hệ. Nó được chia thành ba cấp: lược đồ cơ bản (conceptual schema), lược đồ bên ngoài (external schema), và lược đồ nội (internal schema). Lược đồ cơ bản là mô tả tổng quát của cơ sở dữ liệu, trong khi lược đồ bên ngoài mô tả các view cho các nhóm người dùng cụ thể.","[S1] PDF pages: 85
+■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+A DBMS that cleanly separates the three levels must have mappings among the schemas to transform requests and query results from one level to the next. Most DBMSs do not separate the three levels completely. We used the three-schema architecture to define the concepts of logical and physical data independence.
+
+[S2] PDF pages: 85
+[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categories:
+■ High-level or conceptual data models (based on entities and relationships)
+■ Low-level or physical data models
+■ Representational or implementation data models (record-based, object-
+oriented)
+We distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:
+■ An internal schema describes the physical storage structure of the database.
+■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+
+[S3] PDF pages: 84
+Two older, historically important data models, now known as legacy data models, are the network and hierarchical models. The network model represents data as record types and also represents a limited type of 1:N relationship, called a set type. A 1:N, or one-to-many, relationship relates one instance of a record to many record instances using some pointer linking mechanism in these models. The network model, also known as the CODASYL DBTG model, has an associated record-ata-time language that must be embedded in a host programming language. The network DML was proposed in the 1971 Database Task Group (DBTG) Report as an extension of the COBOL language.
+
+[S4] PDF pages: 84
+The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for the hierarchical model. A popular hierarchical DML is DL/1 of the IMS system. It dominated the DBMS market for over 20 years between 1965 and 1985. Its DML, called DL/1, was a de facto industry standard for a long time.
+
+[S5] PDF pages: 68
+[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the capacity to change the schema at one level of a database system without having to change the schema at the next higher level. We can define two types of data independence:
+1. Logical data independence is the capacity to change the conceptual schema
+without having to change external schemas or application programs. We",answered,
+dev,q4,retrieved,556efad9ad6dd057b9fe1172de6c4f55e3ef3d3b7ab2be660eacef6ff791a16c,True,True,True,True,True,S1 (113) định nghĩa trực tiếp state/snapshot; đáp án đúng và đủ.,en,What do we call the data in a database at a particular moment?,The data in the database at a particular moment in time is called a database state or snapshot.,The data in a database at a particular moment is called a database state or snapshot.,"[S1] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.
+
+[S2] PDF pages: 101
+V = P(P(V1) × P(V2) × . . . × P(Vn))
+The value set provides all possible values. Usually only a small number of these values exist in the database at a particular time. Those values represent the data from the current state of the miniworld and correspond to the data as it actually exists in the miniworld.
+
+[S3] PDF pages: 35, 36
+A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, telephone numbers, and addresses of the people you know. Nowadays, this data is typically stored in mobile phones, which have their own simple database software. This data can also be recorded in an indexed address book or stored on a hard drive, using a personal computer and software such as Microsoft Access or Excel. This collection of related data with an implicit meaning is a database.
+The preceding definition of database is quite general; for example, we may consider the collection of words that make up this page of text to be related data and hence to
+constitute a database. However, the common use of the term database is usually more restricted. A database has the following implicit properties:
+■ A database represents some aspect of the real world, sometimes called the
+
+[S4] PDF pages: 36
+■ A database represents some aspect of the real world, sometimes called the
+miniworld or the universe of discourse (UoD). Changes to the miniworld are reflected in the database.
+■ A database is a logically coherent collection of data with some inherent
+meaning. A random assortment of data cannot correctly be referred to as a database.
+■ A database is designed, built, and populated with data for a specific purpose.
+It has an intended group of users and some preconceived applications in which these users are interested.
+
+[S5] PDF pages: 66
+The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At this point, the corresponding database state is the empty state with no data. We get the initial state of the database when the database is first populated or loaded with the initial data. From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state. The DBMS is partly responsible for ensuring that every state of the database is a valid state—that is, a state that satisfies the structure and constraints specified in the schema. Hence, specifying a correct schema to the DBMS is extremely important and the schema must be designed with utmost care. The DBMS stores the descriptions of the schema constructs and constraints—also called the meta-data—in the DBMS catalog so that DBMS software can refer to the schema whenever it needs to",answered,answered
+dev,q5,retrieved,7669b8f69e10adab29e942f21e8ab327cd5a8be5c02d25d7d17c125a12957821,True,True,True,True,True,S1 (113) hỗ trợ tên database state/snapshot; thuật ngữ tiếng Anh vẫn trả lời đúng câu hỏi tiếng Việt.,vi,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là gì?,Dữ liệu tại một thời điểm là trạng thái cơ sở dữ liệu hoặc snapshot.,Dữ liệu trong cơ sở dữ liệu tại một thời điểm được gọi là database state hoặc snapshot.,"[S1] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.
+
+[S2] PDF pages: 71
+that they can be extracted by a precompiler and processed by the DBMS. A lowlevel or procedural DML must be embedded in a general-purpose programming language. This type of DML typically retrieves individual records or objects from the database and processes each separately. Therefore, it needs to use programming language constructs, such as looping, to retrieve and process each record from a set of records. Low-level DMLs are also called record-at-a-time DMLs because of this property. High-level DMLs, such as SQL, can specify and retrieve many records in a single DML statement; therefore, they are called set-at-a-time or set-oriented DMLs. A query in a high-level DML often specifies which data to retrieve rather than how to retrieve it; therefore, such languages are also called declarative.
+
+[S3] PDF pages: 84
+Two older, historically important data models, now known as legacy data models, are the network and hierarchical models. The network model represents data as record types and also represents a limited type of 1:N relationship, called a set type. A 1:N, or one-to-many, relationship relates one instance of a record to many record instances using some pointer linking mechanism in these models. The network model, also known as the CODASYL DBTG model, has an associated record-ata-time language that must be embedded in a host programming language. The network DML was proposed in the 1971 Database Task Group (DBTG) Report as an extension of the COBOL language.
+
+[S4] PDF pages: 84
+The hierarchical model represents data as hierarchical tree structures. Each hierarchy represents a number of related records. There is no standard language for the hierarchical model. A popular hierarchical DML is DL/1 of the IMS system. It dominated the DBMS market for over 20 years between 1965 and 1985. Its DML, called DL/1, was a de facto industry standard for a long time.
+
+[S5] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.",answered,answered
+dev,q6,retrieved,4ac9509eeb71e054ea1a5d136e01ba487828ed442716b75964ef04e98def117f,True,True,True,True,True,"S3 (123) định nghĩa logical independence và S2 (124) nêu đổi cấu trúc/ràng buộc; cả hai được dẫn, không bắt buộc dẫn đúng chunk gold S1.",en,Which data independence allows structural and constraint changes without affecting application programs?,logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs,Logical data independence allows structural and constraint changes without affecting application programs.,"[S1] PDF pages: 69
+Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and hardware details of storage encoding, placement, compression, splitting, merging of records, and so on are hidden from the user. Applications remain unaware of these details. On the other hand, logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs—a much stricter requirement.
+
+[S2] PDF pages: 69
+may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a record type or data item). In the last case, external schemas that refer only to the remaining data should not be affected. For example, the external schema of Figure 1.5(a) should not be affected by changing the GRADE_REPORT file (or record type) shown in Figure 1.2 into the one shown in Figure 1.6(a). Only the view definition and the mappings need to be changed in a DBMS that supports logical data independence. After the conceptual schema undergoes a logical reorganization, application programs that reference the external schema constructs must work as before. Changes to constraints can be applied to the conceptual schema without affecting the external schemas or application programs. 2. Physical data independence is the capacity to change the internal schema
+
+[S3] PDF pages: 68
+[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the capacity to change the schema at one level of a database system without having to change the schema at the next higher level. We can define two types of data independence:
+1. Logical data independence is the capacity to change the conceptual schema
+without having to change external schemas or application programs. We
+
+[S4] PDF pages: 43
+[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the application programs, so any changes to the structure of a file may require changing all programs that access that file. By contrast, DBMS access programs do not require such changes in most cases. The structure of data files is stored in the DBMS catalog separately from the access programs. We call this property program-data independence.
+
+[S5] PDF pages: 69
+Whenever we have a multiple-level DBMS, its catalog must be expanded to include information on how to map requests and data among the various levels. The DBMS uses additional software to accomplish these mappings by referring to the mapping information in the catalog. Data independence occurs because when the schema is changed at some level, the schema at the next higher level remains unchanged; only the mapping between the two levels is changed. Hence, application programs referring to the higher-level schema need not be changed.",answered,answered
+dev,q7,retrieved,28098a870c666cf12d86d64bcc950dc266dadff5742a7973a2047ee8f19bd906,True,True,True,True,True,"Gọi đúng logical data independence; S2 (123) có định nghĩa đổi conceptual mà không đổi application, context S3 (124) làm rõ thay đổi constraints.",vi,Loại độc lập dữ liệu nào cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng?,Độc lập dữ liệu logic cho phép đổi cấu trúc và ràng buộc mà không ảnh hưởng ứng dụng.,Loại độc lập dữ liệu cho phép thay đổi cấu trúc và ràng buộc mà không ảnh hưởng chương trình ứng dụng là độc lập dữ liệu logic.,"[S1] PDF pages: 69
+Generally, physical data independence exists in most databases and file environments where physical details, such as the exact location of data on disk, and hardware details of storage encoding, placement, compression, splitting, merging of records, and so on are hidden from the user. Applications remain unaware of these details. On the other hand, logical data independence is harder to achieve because it allows structural and constraint changes without affecting application programs—a much stricter requirement.
+
+[S2] PDF pages: 68
+[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the capacity to change the schema at one level of a database system without having to change the schema at the next higher level. We can define two types of data independence:
+1. Logical data independence is the capacity to change the conceptual schema
+without having to change external schemas or application programs. We
+
+[S3] PDF pages: 69
+may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a record type or data item). In the last case, external schemas that refer only to the remaining data should not be affected. For example, the external schema of Figure 1.5(a) should not be affected by changing the GRADE_REPORT file (or record type) shown in Figure 1.2 into the one shown in Figure 1.6(a). Only the view definition and the mappings need to be changed in a DBMS that supports logical data independence. After the conceptual schema undergoes a logical reorganization, application programs that reference the external schema constructs must work as before. Changes to constraints can be applied to the conceptual schema without affecting the external schemas or application programs. 2. Physical data independence is the capacity to change the internal schema
+
+[S4] PDF pages: 43
+[[SECTION 1.3.2: Insulation between Programs and Data, and Data Abstraction]]
+In traditional file processing, the structure of data files is embedded in the application programs, so any changes to the structure of a file may require changing all programs that access that file. By contrast, DBMS access programs do not require such changes in most cases. The structure of data files is stored in the DBMS catalog separately from the access programs. We call this property program-data independence.
+
+[S5] PDF pages: 43
+The characteristic that allows program-data independence and program-operation independence is called data abstraction. A DBMS provides users with a conceptual representation of data that does not include many of the details of how the data is stored or how the operations are implemented. Informally, a data model is a type of data abstraction that is used to provide this conceptual representation. The data model uses logical concepts, such as objects, their properties, and their interrelationships, that may be easier for most users to understand than computer storage concepts. Hence, the data model hides storage and implementation details that are not of interest to most database users.",answered,answered
+dev,q8,retrieved,698657ca9d0c7779ee064ae80c6a1966c5cd7fcde8719ef06f24ce6a51cb683b,True,True,True,True,True,"S1 (125), S2 (124), S3 (123) cùng hỗ trợ đổi internal/access paths mà giữ cấp cao hơn và ứng dụng. Đáp án giải thích được cơ chế độc lập vật lý; nên nêu rõ điều kiện dữ liệu không đổi.",en,Why can physical files be reorganized without changing the conceptual schema?,"Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema.","Physical files can be reorganized without changing the conceptual schema because the conceptual schema defines the structure and relationships of the data, and reorganization may only affect the internal schema. Changes to the physical structure, such as adding access paths, do not require altering the conceptual schema, as the external schemas and application programs remain unaffected. This allows for efficient reorganization without impacting the overall data model.","[S1] PDF pages: 69
+without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema. For example, providing an access path to improve retrieval speed of SECTION records (Figure 1.2) by semester and year should not require a query such as list all sections offered in fall 2008 to be changed, although the query would be executed more efficiently by the DBMS by utilizing the new access path.
+
+[S2] PDF pages: 69
+may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a record type or data item). In the last case, external schemas that refer only to the remaining data should not be affected. For example, the external schema of Figure 1.5(a) should not be affected by changing the GRADE_REPORT file (or record type) shown in Figure 1.2 into the one shown in Figure 1.6(a). Only the view definition and the mappings need to be changed in a DBMS that supports logical data independence. After the conceptual schema undergoes a logical reorganization, application programs that reference the external schema constructs must work as before. Changes to constraints can be applied to the conceptual schema without affecting the external schemas or application programs. 2. Physical data independence is the capacity to change the internal schema
+
+[S3] PDF pages: 68
+[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the capacity to change the schema at one level of a database system without having to change the schema at the next higher level. We can define two types of data independence:
+1. Logical data independence is the capacity to change the conceptual schema
+without having to change external schemas or application programs. We
+
+[S4] PDF pages: 68
+Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user group refers to its own external schema. Hence, the DBMS must transform a request specified on an external schema into a request against the conceptual schema, and then into a request on the internal schema for processing over the stored database. If the request is a database retrieval, the data extracted from the stored database must be reformatted to match the user’s external view. The processes of transforming requests and results between levels are called mappings. These mappings may be time-consuming, so some DBMSs—especially those that are meant to support small databases—do not support external views. Even in such systems, however, it is necessary to transform requests between the conceptual and internal levels.
+
+[S5] PDF pages: 55
+[[SECTION 1.7.2: Providing Data Abstraction and Application Flexibility with Relational Databases]]
+Relational databases were originally proposed to separate the physical storage of data from its conceptual representation and to provide a mathematical foundation for data representation and querying. The relational data model also introduced high-level query languages that provided an alternative to programming language interfaces, making it much faster to write new queries. Relational representation of data somewhat resembles the example we presented in Figure 1.2. Relational systems were initially targeted to the same applications as earlier systems, and provided flexibility to develop new queries quickly and to reorganize the database as requirements changed. Hence, data abstraction and program-data independence were much improved when compared to earlier systems.",answered,answered
+dev,q9,retrieved,6373434872fcee442d3d641b3f6df0b9bd11538bcc929ae18ebd0fa423b410a7,True,False,False,False,False,Lẫn logical independence (đổi conceptual mà không ảnh hưởng external/application) với lý do không phải đổi conceptual khi tổ chức lại vật lý. Có một câu đúng về dữ liệu không đổi nhưng toàn bộ giải thích vẫn sai trọng tâm.,vi,Vì sao có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm?,Độc lập dữ liệu vật lý cho phép đổi tổ chức lưu trữ mà không đổi lược đồ khái niệm nếu dữ liệu không đổi.,"Có thể tổ chức lại các tệp vật lý mà không đổi lược đồ khái niệm vì lược đồ khái niệm có thể được điều chỉnh để phù hợp với yêu cầu thực tế, và các thay đổi này không ảnh hưởng đến các ứng dụng hoặc lược đồ ngoại. Các tệp vật lý có thể được reorganize để cải thiện hiệu suất, nhưng không cần thay đổi lược đồ khái niệm nếu dữ liệu vẫn giữ nguyên. Lược đồ khái niệm có thể được tái cấu trúc mà không ảnh hưởng đến các ứng dụng hoặc lược đồ ngoại, nhờ vào tính chất của dữ liệu khái niệm.","[S1] PDF pages: 69
+without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema. For example, providing an access path to improve retrieval speed of SECTION records (Figure 1.2) by semester and year should not require a query such as list all sections offered in fall 2008 to be changed, although the query would be executed more efficiently by the DBMS by utilizing the new access path.
+
+[S2] PDF pages: 69
+may change the conceptual schema to expand the database (by adding a record type or data item), to change constraints, or to reduce the database (by removing a record type or data item). In the last case, external schemas that refer only to the remaining data should not be affected. For example, the external schema of Figure 1.5(a) should not be affected by changing the GRADE_REPORT file (or record type) shown in Figure 1.2 into the one shown in Figure 1.6(a). Only the view definition and the mappings need to be changed in a DBMS that supports logical data independence. After the conceptual schema undergoes a logical reorganization, application programs that reference the external schema constructs must work as before. Changes to constraints can be applied to the conceptual schema without affecting the external schemas or application programs. 2. Physical data independence is the capacity to change the internal schema
+
+[S3] PDF pages: 68
+[[SECTION 2.2.2: Data Independence]]
+The three-schema architecture can be used to further explain the concept of data independence, which can be defined as the capacity to change the schema at one level of a database system without having to change the schema at the next higher level. We can define two types of data independence:
+1. Logical data independence is the capacity to change the conceptual schema
+without having to change external schemas or application programs. We
+
+[S4] PDF pages: 68
+Notice that the three schemas are only descriptions of data; the actual data is stored at the physical level only. In the three-schema architecture, each user group refers to its own external schema. Hence, the DBMS must transform a request specified on an external schema into a request against the conceptual schema, and then into a request on the internal schema for processing over the stored database. If the request is a database retrieval, the data extracted from the stored database must be reformatted to match the user’s external view. The processes of transforming requests and results between levels are called mappings. These mappings may be time-consuming, so some DBMSs—especially those that are meant to support small databases—do not support external views. Even in such systems, however, it is necessary to transform requests between the conceptual and internal levels.
+
+[S5] PDF pages: 55
+[[SECTION 1.7.2: Providing Data Abstraction and Application Flexibility with Relational Databases]]
+Relational databases were originally proposed to separate the physical storage of data from its conceptual representation and to provide a mathematical foundation for data representation and querying. The relational data model also introduced high-level query languages that provided an alternative to programming language interfaces, making it much faster to write new queries. Relational representation of data somewhat resembles the example we presented in Figure 1.2. Relational systems were initially targeted to the same applications as earlier systems, and provided flexibility to develop new queries quickly and to reorganize the database as requirements changed. Hence, data abstraction and program-data independence were much improved when compared to earlier systems.",answered,answered
+dev,q10,retrieved,75d38502fdece5b4ee54f8d4ce01b7d049e55f63816a8265a7edb1c0f75bda51,True,True,True,True,True,S1 (222) định nghĩa multivalued và S4 (223) minh họa một/hai màu với điều kiện của ví dụ; đáp án và citation phù hợp.,en,Can an attribute have several values for the same entity?,"In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person.","Yes, an attribute can have several values for the same entity. Multivalued attributes are attributes that can hold multiple values for a single entity, such as the Colors attribute of a car, which can have one or two values.","[S1] PDF pages: 97
+Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example, Age is a single-valued attribute of a person. In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person. Cars with one color have a single value, whereas two-tone cars have two color values. Similarly, one person may not have any college degrees, another person may have one, and a third person may have two or more degrees; therefore, different people can have different numbers of values for the College_degrees attribute. Such attributes are called multivalued. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity
+
+[S2] PDF pages: 99, 100
+Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, it is a constraint that prohibits any two entities from having the same value for the key attribute at the same time. It is not the property of a particular entity set; rather, it is a constraint on any entity set of the entity type at any point in time. This key constraint (and other constraints we discuss later) is derived from the constraints of the miniworld that the database represents.
+Some entity types have more than one key attribute. For example, each of the Vehicle_id and Registration attributes of the entity type CAR (Figure 3.7) is a key in
+its own right. The Registration attribute is an example of a composite key formed from two simple component attributes, State and Number, neither of which is a key on its own. An entity type may also have no key, in which case it is called a weak entity type (see Section 3.5).
+
+[S3] PDF pages: 99
+Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type usually has one or more attributes whose values are distinct for each individual entity in the entity set. Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely. For example, the Name attribute is a key of the COMPANY entity type in Figure 3.6 because no two companies are allowed to have the same name. For the PERSON entity type, a typical key attribute is Ssn (Social Security number). Sometimes several attributes together form a key, meaning that the combination of the attribute values must be distinct for each entity. If a set of attributes possesses this property, the proper way to represent this in the ER model that we describe here is to define a composite attribute and designate it as a key attribute of the entity type
+
+[S4] PDF pages: 97
+. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribute of a car may be restricted to have between one and two values, if we assume that a car can have two colors at most.
+
+[S5] PDF pages: 101
+Mathematically, an attribute A of entity set E whose value set is V can be defined as a function from E to the power set P(V) of V:
+A : E → P(V)
+We refer to the value of attribute A for entity e as A(e). The previous definition covers both single-valued and multivalued attributes, as well as NULLs. A NULL value is represented by the empty set. For single-valued attributes, A(e) is restricted to being a singleton set for each entity e in E, whereas there is no restriction on multivalued attributes. For a composite attribute A, the value set V is the power set of the Cartesian product of P(V1), P(V2), . . . , P(Vn), where V1, V2, . . . , Vn are the value sets of the simple component attributes that form A:
+V = P(P(V1) × P(V2) × . . . × P(Vn))",answered,answered
+dev,q11,retrieved,e1238faa5b90a770c7ec2ab336a639efdae8abbacaa98465723e797c3ed9406d,True,True,True,True,True,"Trả lời có và gọi đúng thuộc tính đa trị theo S2 (222), không thêm ví dụ sai về số đếm.",vi,Một thuộc tính có thể có nhiều giá trị cho cùng một thực thể không?,Thuộc tính đa trị có thể có nhiều giá trị với cùng một thực thể.,"Có, một thuộc tính có thể có nhiều giá trị cho cùng một thực thể, đặc biệt là thuộc tính đa giá trị.","[S1] PDF pages: 97
+. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity. For example, the Colors attribute of a car may be restricted to have between one and two values, if we assume that a car can have two colors at most.
+
+[S2] PDF pages: 97
+Single-Valued versus Multivalued Attributes. Most attributes have a single value for a particular entity; such attributes are called single-valued. For example, Age is a single-valued attribute of a person. In some cases an attribute can have a set of values for the same entity—for instance, a Colors attribute for a car, or a College_degrees attribute for a person. Cars with one color have a single value, whereas two-tone cars have two color values. Similarly, one person may not have any college degrees, another person may have one, and a third person may have two or more degrees; therefore, different people can have different numbers of values for the College_degrees attribute. Such attributes are called multivalued. A multivalued attribute may have lower and upper bounds to constrain the number of values allowed for each individual entity
+
+[S3] PDF pages: 97, 98
+Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+components of a composite attribute between parentheses ( ) and separating the components with commas, and by displaying multivalued attributes between braces { }. Such attributes are called complex attributes. For example, if a person can have more than one residence and each residence can have a single address and multiple phones, an attribute Address_phone for a person can be specified as shown in Figure 3.5. Both Phone and Address are themselves composite attributes.
+
+[S4] PDF pages: 97
+Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a particular person entity, the value of Age can be determined from the current (today’s) date and the value of that person’s Birth_date. The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute. Some attribute values can be derived from related entities; for example, an attribute Number_of_employees of a DEPARTMENT entity can be derived by counting the number of employees related to (working for) that department.
+
+[S5] PDF pages: 101
+Mathematically, an attribute A of entity set E whose value set is V can be defined as a function from E to the power set P(V) of V:
+A : E → P(V)
+We refer to the value of attribute A for entity e as A(e). The previous definition covers both single-valued and multivalued attributes, as well as NULLs. A NULL value is represented by the empty set. For single-valued attributes, A(e) is restricted to being a singleton set for each entity e in E, whereas there is no restriction on multivalued attributes. For a composite attribute A, the value set V is the power set of the Cartesian product of P(V1), P(V2), . . . , P(Vn), where V1, V2, . . . , Vn are the value sets of the simple component attributes that form A:
+V = P(P(V1) × P(V2) × . . . × P(Vn))",answered,answered
+dev,q12,retrieved,cd85a3a2feacd6ccbf462724f763755c1ddfa8f20cc26df44b2bc7d9309b54fd,True,True,True,True,True,"S1 (224) hỗ trợ công thức tuổi dẫn xuất; S3 (50) và S5 (21) hỗ trợ giảm lặp dữ liệu, công cập nhật và lỗi nhất quán. Đáp án tổng hợp hợp lý và dẫn các nguồn này.",en,Why can age be calculated from birth date instead of being stored separately?,"The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute.",Age can be calculated from birth date instead of stored separately because it is a derived attribute that can be computed using the birth date and current date. This avoids redundancy and ensures consistency. The database approach allows efficient updates and reduces storage space by deriving attributes from other data points.,"[S1] PDF pages: 97
+Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a particular person entity, the value of Age can be determined from the current (today’s) date and the value of that person’s Birth_date. The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute. Some attribute values can be derived from related entities; for example, an attribute Number_of_employees of a DEPARTMENT entity can be derived by counting the number of employees related to (working for) that department.
+
+[S2] PDF pages: 49
+In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each logical data item—such as a student’s name or birth date—in only one place in the database. This is known as data normalization, and it ensures consistency and saves storage space (data normalization is described in Part 6 of the text).
+However, in practice, it is sometimes necessary to use controlled redundancy to improve the performance of queries. For example, we may store Student_name and Course_number redundantly in a GRADE_REPORT file (Figure 1.6(a)) because whenever we retrieve a GRADE_REPORT record, we want to retrieve the student name and course number along with the grade, student number, and section identifier. By placing all the data together, we do not have to search multiple files to collect this data. This is known as denormalization. In such cases, the DBMS should
+
+[S3] PDF pages: 49
+This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering data on a new student—multiple times: once for each file where student data is recorded. This leads to duplication of effort. Second, storage space is wasted when the same data is stored repeatedly, and this problem may be serious for large databases. Third, files that represent the same data may become inconsistent. This may happen because an update is applied to some of the files but not to others. Even if an update—such as adding a new student—is applied to all the appropriate files, the data concerning the student may still be inconsistent because the updates are applied independently by each user group. For example, one user group may enter a student’s birth date erroneously as ‘JAN-19-1988’, whereas the other user groups may enter the correct value of ‘JAN-29-1988’.
+
+[S4] PDF pages: 94
+■ A department controls a number of projects, each of which has a unique
+name, a unique number, and a single location.
+■ The database will store each employee’s name, Social Security number,
+address, salary, sex (gender), and birth date. An employee is assigned to one department, but may work on several projects, which are not necessarily controlled by the same department. It is required to keep track of the current number of hours per week that an employee works on each project, as well as the direct supervisor of each employee (who is another employee).
+■ The database will keep track of the dependents of each employee for insur-
+ance purposes, including each dependent’s first name, sex, birth date, and relationship to the employee.
+
+[S5] PDF pages: 41
+A number of characteristics distinguish the database approach from the much older approach of writing customized programs to access data stored in files. In traditional file processing, each user defines and implements the files needed for a specific software application as part of programming the application. For example, one user, the grade reporting office, may keep files on students and their grades. Programs to print a student’s transcript and to enter new grades are implemented as part of the application. A second user, the accounting office, may keep track of students’ fees and their payments. Although both users are interested in data about students, each user maintains separate files—and programs to manipulate these files—because each requires some data not available from the other user’s files. This redundancy in defining and storing data results in wasted storage space and in redundant efforts to maintain common up-to-date data.",answered,answered
+dev,q13,retrieved,577dde6d487ef1514df6c2f9c40f93918d4f720e6c87a8d3ada0520d7ea6b6fc,True,True,True,True,False,"Derived/stored đúng theo S1 (224). Ý tránh trùng lặp/tối ưu có trong S2 (51) và S4 (50), nhưng không được dẫn; citation chỉ có S1 nên chưa bao phủ toàn bộ phát biểu.",vi,Vì sao tuổi có thể tính từ ngày sinh thay vì lưu riêng?,"Tuổi là thuộc tính dẫn xuất, có thể tính từ ngày sinh đã lưu.","Tuổi có thể tính từ ngày sinh vì nó là một thuộc tính được tính toán từ dữ liệu đã lưu trữ (Birth_date), không cần lưu trữ riêng. Việc tính tuổi giúp tối ưu hóa dữ liệu và tránh trùng lặp thông tin.","[S1] PDF pages: 97
+Stored versus Derived Attributes. In some cases, two (or more) attribute values are related—for example, the Age and Birth_date attributes of a person. For a particular person entity, the value of Age can be determined from the current (today’s) date and the value of that person’s Birth_date. The Age attribute is hence called a derived attribute and is said to be derivable from the Birth_date attribute, which is called a stored attribute. Some attribute values can be derived from related entities; for example, an attribute Number_of_employees of a DEPARTMENT entity can be derived by counting the number of employees related to (working for) that department.
+
+[S2] PDF pages: 49
+In the database approach, the views of different user groups are integrated during database design. Ideally, we should have a database design that stores each logical data item—such as a student’s name or birth date—in only one place in the database. This is known as data normalization, and it ensures consistency and saves storage space (data normalization is described in Part 6 of the text).
+However, in practice, it is sometimes necessary to use controlled redundancy to improve the performance of queries. For example, we may store Student_name and Course_number redundantly in a GRADE_REPORT file (Figure 1.6(a)) because whenever we retrieve a GRADE_REPORT record, we want to retrieve the student name and course number along with the grade, student number, and section identifier. By placing all the data together, we do not have to search multiple files to collect this data. This is known as denormalization. In such cases, the DBMS should
+
+[S3] PDF pages: 66
+Although, as mentioned earlier, the schema is not supposed to change frequently, it is not uncommon that changes occasionally need to be applied to the schema as the application requirements change. For example, we may decide that another data item needs to be stored for each record in a file, such as adding the Date_of_birth to the STUDENT schema in Figure 2.1. This is known as schema evolution. Most modern DBMSs include some operations for schema evolution that can be applied while the database is operational.
+
+[S4] PDF pages: 49
+This redundancy in storing the same data multiple times leads to several problems. First, there is the need to perform a single logical update—such as entering data on a new student—multiple times: once for each file where student data is recorded. This leads to duplication of effort. Second, storage space is wasted when the same data is stored repeatedly, and this problem may be serious for large databases. Third, files that represent the same data may become inconsistent. This may happen because an update is applied to some of the files but not to others. Even if an update—such as adding a new student—is applied to all the appropriate files, the data concerning the student may still be inconsistent because the updates are applied independently by each user group. For example, one user group may enter a student’s birth date erroneously as ‘JAN-19-1988’, whereas the other user groups may enter the correct value of ‘JAN-29-1988’.
+
+[S5] PDF pages: 95
+will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 shows two entities and the values of their attributes. The EMPLOYEE entity e1 has four attributes: Name, Address, Age, and Home_phone; their values are ‘John Smith,’ ‘2311 Kirby, Houston, Texas 77001’, ‘55’, and ‘713-749-2630’, respectively. The COMPANY entity c1 has three attributes: Name, Headquarters, and President; their values are ‘Sunco Oil’, ‘Houston’, and ‘John Smith’, respectively.
+EMPLOYEE
+Fname Minit Lname
+Name Address
+Sex
+Salary
+Ssn
+Bdate
+Supervisor Supervisee
+SUPERVISION 1 N
+Hours
+WORKS_ON
+CONTROLS
+M N
+1
+DEPENDENTS_OF
+Name
+Location
+N
+1 1 1
+PROJECT
+DEPARTMENT
+Locations
+Name Number
+Number
+Number_of_employees
+MANAGES
+Start_date
+WORKS_FOR 1 N
+N
+DEPENDENT
+Sex Birth_date Relationship Name",answered,answered
+dev,q14,retrieved,a3564fcbebe3c4bbe7ebec8a2b7bd4c7ca4de3ef084348cad4e153ee9947d757,True,True,True,True,True,S1 (231) hỗ trợ trực tiếp key attribute xác định duy nhất mỗi thực thể.,en,Which attribute can uniquely identify each entity?,"Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely.",A key attribute is an attribute that uniquely identifies each entity.,"[S1] PDF pages: 99
+Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type usually has one or more attributes whose values are distinct for each individual entity in the entity set. Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely. For example, the Name attribute is a key of the COMPANY entity type in Figure 3.6 because no two companies are allowed to have the same name. For the PERSON entity type, a typical key attribute is Ssn (Social Security number). Sometimes several attributes together form a key, meaning that the combination of the attribute values must be distinct for each entity. If a set of attributes possesses this property, the proper way to represent this in the ER model that we describe here is to define a composite attribute and designate it as a key attribute of the entity type
+
+[S2] PDF pages: 101
+[[SECTION 3.3.3: Initial Conceptual Design of the COMPANY Database]]
+We can now define the entity types for the COMPANY database, based on the requirements described in Section 3.2. After defining several entity types and their attributes here, we refine our design in Section 3.4 after we introduce the concept of a relationship. According to the requirements listed in Section 3.2, we can identify four entity types—one corresponding to each of the four items in the specification (see Figure 3.8):
+1. An entity type DEPARTMENT with attributes Name, Number, Locations,
+Manager, and Manager_start_date. Locations is the only multivalued attribute. We can specify that both Name and Number are (separate) key attributes because each was specified to be unique.
+2. An entity type PROJECT with attributes Name, Number, Location, and
+Controlling_department. Both Name and Number are (separate) key attributes. 3. An entity type EMPLOYEE with attributes Name, Ssn, Sex, Address, Salary,
+
+[S3] PDF pages: 94, 95
+[[SECTION 3.3.1: Entities and Attributes]]
+Entities and Their Attributes. The basic concept that the ER model represents is an entity, which is a thing or object in the real world with an independent existence. An entity may be an object with a physical existence (for example, a particular person, car, house, or employee) or it may be an object with a conceptual existence (for instance, a company, a job, or a university course). Each entity has attributes—the particular properties that describe it. For example, an EMPLOYEE entity may be described by the employee’s name, age, address, salary, and job. A particular entity
+will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+
+[S4] PDF pages: 99, 100
+Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, it is a constraint that prohibits any two entities from having the same value for the key attribute at the same time. It is not the property of a particular entity set; rather, it is a constraint on any entity set of the entity type at any point in time. This key constraint (and other constraints we discuss later) is derived from the constraints of the miniworld that the database represents.
+Some entity types have more than one key attribute. For example, each of the Vehicle_id and Registration attributes of the entity type CAR (Figure 3.7) is a key in
+its own right. The Registration attribute is an example of a composite key formed from two simple component attributes, State and Number, neither of which is a key on its own. An entity type may also have no key, in which case it is called a weak entity type (see Section 3.5).
+
+[S5] PDF pages: 95
+will have a value for each of its attributes. The attribute values that describe each entity become a major part of the data stored in the database.
+Figure 3.3 shows two entities and the values of their attributes. The EMPLOYEE entity e1 has four attributes: Name, Address, Age, and Home_phone; their values are ‘John Smith,’ ‘2311 Kirby, Houston, Texas 77001’, ‘55’, and ‘713-749-2630’, respectively. The COMPANY entity c1 has three attributes: Name, Headquarters, and President; their values are ‘Sunco Oil’, ‘Houston’, and ‘John Smith’, respectively.
+EMPLOYEE
+Fname Minit Lname
+Name Address
+Sex
+Salary
+Ssn
+Bdate
+Supervisor Supervisee
+SUPERVISION 1 N
+Hours
+WORKS_ON
+CONTROLS
+M N
+1
+DEPENDENTS_OF
+Name
+Location
+N
+1 1 1
+PROJECT
+DEPARTMENT
+Locations
+Name Number
+Number
+Number_of_employees
+MANAGES
+Start_date
+WORKS_FOR 1 N
+N
+DEPENDENT
+Sex Birth_date Relationship Name",answered,answered
+dev,q15,retrieved,535270e43fbbb0991fc37917d9bc88af9d57c431702eeb08749dcbe51b308e3a,True,True,True,True,True,"Đã nêu thuộc tính khóa (key attribute) theo S2 (231), đủ trả lời dù câu tiếng Việt còn có thể diễn đạt tự nhiên hơn.",vi,Thuộc tính nào có thể xác định duy nhất từng thực thể?,Thuộc tính khóa có giá trị xác định duy nhất từng thực thể.,Tính chất duy nhất của một thực thể được xác định bởi thuộc tính khóa (key attribute).,"[S1] PDF pages: 99
+. Notice that such a composite key must be minimal; that is, all component attributes must be included in the composite attribute to have the uniqueness property. Superfluous attributes must not be included in a key. In ER diagrammatic notation, each key attribute has its name underlined inside the oval, as illustrated in Figure 3.7(a).
+
+[S2] PDF pages: 99
+Key Attributes of an Entity Type. An important constraint on the entities of an entity type is the key or uniqueness constraint on attributes. An entity type usually has one or more attributes whose values are distinct for each individual entity in the entity set. Such an attribute is called a key attribute, and its values can be used to identify each entity uniquely. For example, the Name attribute is a key of the COMPANY entity type in Figure 3.6 because no two companies are allowed to have the same name. For the PERSON entity type, a typical key attribute is Ssn (Social Security number). Sometimes several attributes together form a key, meaning that the combination of the attribute values must be distinct for each entity. If a set of attributes possesses this property, the proper way to represent this in the ER model that we describe here is to define a composite attribute and designate it as a key attribute of the entity type
+
+[S3] PDF pages: 99, 100
+Specifying that an attribute is a key of an entity type means that the preceding uniqueness property must hold for every entity set of the entity type. Hence, it is a constraint that prohibits any two entities from having the same value for the key attribute at the same time. It is not the property of a particular entity set; rather, it is a constraint on any entity set of the entity type at any point in time. This key constraint (and other constraints we discuss later) is derived from the constraints of the miniworld that the database represents.
+Some entity types have more than one key attribute. For example, each of the Vehicle_id and Registration attributes of the entity type CAR (Figure 3.7) is a key in
+its own right. The Registration attribute is an example of a composite key formed from two simple component attributes, State and Number, neither of which is a key on its own. An entity type may also have no key, in which case it is called a weak entity type (see Section 3.5).
+
+[S4] PDF pages: 97, 98
+Complex Attributes. Notice that, in general, composite and multivalued attributes can be nested arbitrarily. We can represent arbitrary nesting by grouping
+components of a composite attribute between parentheses ( ) and separating the components with commas, and by displaying multivalued attributes between braces { }. Such attributes are called complex attributes. For example, if a person can have more than one residence and each residence can have a single address and multiple phones, an attribute Address_phone for a person can be specified as shown in Figure 3.5. Both Phone and Address are themselves composite attributes.
+
+[S5] PDF pages: 52
+. This is known as a referential integrity constraint. Another type of constraint specifies uniqueness on data item values, such as every course record must have a unique value for Course_number. This is known as a key or uniqueness constraint. These constraints are derived from the meaning or semantics of the data and of the miniworld it represents. It is the responsibility of the database designers to identify integrity constraints during database design. Some constraints can be specified to the DBMS and automatically enforced. Other constraints may have to be checked by update programs or at the time of data entry. For typical large applications, it is customary to call such constraints business rules.",answered,answered
+dev,multi_en,retrieved,ad20c8466b1056e39fb170c02f2884aa39193b35c77bbb09736eb7bc37645e2f,True,True,True,True,False,"Phân biệt schema và state đúng, đủ. S1 (114)/S5 (113) hỗ trợ ý chính và ràng buộc; phần entities/relationships được làm rõ ở S3 (190) trong context nhưng không dẫn nguồn đó, nên chấm độ phủ citation thận trọng.",en,How does a database schema differ from a database state?,Schema describes structure; state is the actual data at a particular time.,"A database schema is a static description of the database's structure, including entities, relationships, and constraints, while a database state refers to the actual current data in the database at a specific point in time. The schema remains unchanged unless explicitly modified, whereas the database state can vary with each update operation.","[S1] PDF pages: 66
+The distinction between database schema and database state is very important. When we define a new database, we specify its database schema only to the DBMS. At this point, the corresponding database state is the empty state with no data. We get the initial state of the database when the database is first populated or loaded with the initial data. From then on, every time an update operation is applied to the database, we get another database state. At any point in time, the database has a current state. The DBMS is partly responsible for ensuring that every state of the database is a valid state—that is, a state that satisfies the structure and constraints specified in the schema. Hence, specifying a correct schema to the DBMS is extremely important and the schema must be designed with utmost care. The DBMS stores the descriptions of the schema constructs and constraints—also called the meta-data—in the DBMS catalog so that DBMS software can refer to the schema whenever it needs to
+
+[S2] PDF pages: 66
+. The schema is sometimes called the intension, and a database state is called an extension of the schema.
+
+[S3] PDF pages: 85
+[[SECTION 2.7: Summary]]
+In this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categories:
+■ High-level or conceptual data models (based on entities and relationships)
+■ Low-level or physical data models
+■ Representational or implementation data models (record-based, object-
+oriented)
+We distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:
+■ An internal schema describes the physical storage structure of the database.
+■ A conceptual schema is a high-level description of the whole database.
+■ External schemas describe the views of different user groups.
+
+[S4] PDF pages: 65
+[[SECTION 2.1.2: Schemas, Instances, and Database State]]
+In a data model, it is important to distinguish between the description of the database and the database itself. The description of a database is called the database schema, which is specified during database design and is not expected to change frequently. Most data models have certain conventions for displaying schemas as diagrams. A displayed schema is called a schema diagram. Figure 2.1 shows a schema diagram for the database shown in Figure 1.2; the diagram displays the structure of each record type but not the actual instances of records.
+Section_identifier Semester Course_number Instructor Year
+SECTION
+Course_name Course_number Credit_hours Department
+COURSE
+Name Student_number Class Major
+STUDENT
+Course_number Prerequisite_number PREREQUISITE
+Student_number Grade Section_identifier
+GRADE_REPORT
+Figure 2.1 Schema diagram for the database in Figure 1.2.
+
+[S5] PDF pages: 66
+The actual data in a database may change quite frequently. For example, the database shown in Figure 1.2 changes every time we add a new student or enter a new grade. The data in the database at a particular moment in time is called a database state or snapshot. It is also called the current set of occurrences or instances in the database. In a given database state, each schema construct has its own current set of instances; for example, the STUDENT construct will contain the set of individual student entities (records) as its instances. Many database states can be constructed to correspond to a particular database schema. Every time we insert or delete a record or change the value of a data item in a record, we change one state of the database into another state.",answered,answered
+dev,multi_vi,retrieved,e4cbe7f2096817ae6f2d0dcd82e8fa6e4aa4f053fe3c814d5ff2c4462e5bf6ab,False,False,False,False,False,"Context không có định nghĩa state để so sánh đầy đủ: S2 (195) chỉ liệt kê câu hỏi ôn tập, S5 (121) nói kiến trúc ba mức. Đáp án lẫn schema/state và còn nói đổi file vật lý có thể buộc đổi external trái S1 (125); nên báo thiếu bằng chứng.",vi,Lược đồ cơ sở dữ liệu khác trạng thái cơ sở dữ liệu như thế nào?,Lược đồ mô tả cấu trúc; trạng thái là dữ liệu thực tế tại một thời điểm.,"Lược đồ cơ sở dữ liệu khác trạng thái cơ sở dữ liệu thông qua việc phân tách các cấp schema (conceptual, external, internal). Lược đồ bên ngoài không cần thay đổi khi lược đồ bên trong thay đổi, nhưng có thể cần thay đổi nếu các file vật lý được tái tổ chức. Trạng thái cơ sở dữ liệu là phiên bản cụ thể của lược đồ, và lược đồ cơ sở dữ liệu bao gồm các cấp khác nhau để đảm bảo tính độc lập về dữ liệu.","[S1] PDF pages: 69
+without having to change the conceptual schema. Hence, the external schemas need not be changed as well. Changes to the internal schema may be needed because some physical files were reorganized—for example, by creating additional access structures—to improve the performance of retrieval or update. If the same data as before remains in the database, we should not have to change the conceptual schema. For example, providing an access path to improve retrieval speed of SECTION records (Figure 1.2) by semester and year should not require a query such as list all sections offered in fall 2008 to be changed, although the query would be executed more efficiently by the DBMS by utilizing the new access path.
+
+[S2] PDF pages: 86
+2.2. Discuss the main categories of data models. What are the basic differences
+among the relational model, the object model, and the XML model?
+2.3. What is the difference between a database schema and a database state?
+2.4. Describe the three-schema architecture. Why do we need mappings among
+schema levels? How do different schema definition languages support this architecture?
+2.5. What is the difference between logical data independence and physical data
+independence? Which one is harder to achieve? Why?
+2.6. What is the difference between procedural and nonprocedural DMLs?
+2.7. Discuss the different types of user-friendly interfaces and the types of users
+who typically use each.
+2.8. With what other computer system software does a DBMS interact?
+2.9. What is the difference between the two-tier and three-tier client/server
+architectures?
+2.10. Discuss some types of database utilities and tools and their functions.
+
+[S3] PDF pages: 94
+ance purposes, including each dependent’s first name, sex, birth date, and relationship to the employee.
+Figure 3.2 shows how the schema for this database application can be displayed by means of the graphical notation known as ER diagrams. This figure will be explained gradually as the ER model concepts are presented. We describe the stepby-step process of deriving this schema from the stated requirements—and explain the ER diagrammatic notation—as we introduce the ER model concepts.
+
+[S4] PDF pages: 86
+Finally, we classified DBMSs according to several criteria: data model, number of users, number of sites, types of access paths, and cost. We discussed the availability of DBMSs and additional modules—from no cost in the form of open source software to configurations that annually cost millions to maintain. We also pointed out the variety of licensing arrangements for DBMS and related products. The main classification of DBMSs is based on the data model. We briefly discussed the main data models used in current commercial DBMSs.
+Review Questions
+2.1. Define the following terms: data model, database schema, database state,
+internal schema, conceptual schema, external schema, data independence, DDL, DML, SDL, VDL, query language, host language, data sublanguage, database utility, catalog, client/server architecture, three-tier architecture, and n-tier architecture.
+2.2. Discuss the main categories of data models. What are the basic differences
+
+[S5] PDF pages: 68
+The three-schema architecture is a convenient tool with which the user can visualize the schema levels in a database system. Most DBMSs do not separate the three levels completely and explicitly, but they support the three-schema architecture to some extent. Some older DBMSs may include physical-level details in the conceptual schema. The three-level ANSI architecture has an important place in database technology development because it clearly separates the users’ external level, the database’s conceptual level, and the internal storage level for designing a database. It is very much applicable in the design of DBMSs, even today. In most DBMSs that support user views, external schemas are specified in the same data model that describes the conceptual-level information (for example, a relational DBMS like Oracle or SQLServer uses SQL for this).",answered,
+dev,unknown_person_en,retrieved,04da77ab4a8f4c3ef4598f4fc6720b8b03b7e18fb03d1f8b036eec292d7ed153,False,False,False,False,False,"S1 (40) mô tả trách nhiệm DBA nói chung, không xác nhận ai đang phụ trách trường thực tế. Không được suy từ vai trò tổng quát sang tổ chức cụ thể; cần nêu không đủ thông tin.",en,Who currently administers my university's production database?,Insufficient evidence in the supplied context.,"The database administrator (DBA) is responsible for managing the university's production database. The DBA oversees access, coordinates use, and ensures system performance. The DBA is accountable for security and performance issues.","[S1] PDF pages: 46
+[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee and manage these resources. In a database environment, the primary resource is the database itself, and the secondary resource is the DBMS and related software. Administering these resources is the responsibility of the database administrator (DBA). The DBA is responsible for authorizing access to the database, coordinating and monitoring its use, and acquiring software and hardware resources as needed. The DBA is accountable for problems such as security breaches and poor system response time. In large organizations, the DBA is assisted by a staff that carries out these functions.
+
+[S2] PDF pages: 48, 49
+[[SECTION 1.6.1: Controlling Redundancy]]
+In traditional software development utilizing file processing, every user group maintains its own files for handling its data-processing applications. For example, consider the UNIVERSITY database example of Section 1.2; here, two groups of users might be the course registration personnel and the accounting office. In the traditional approach, each group independently keeps files on students. The
+accounting office keeps data on registration and related billing information, whereas the registration office keeps track of student courses and grades. Other groups may further duplicate some or all of the same data in their own files.
+
+[S3] PDF pages: 35
+To understand the fundamentals of database technology, however, we must start from the basics of traditional database applications. In Section 1.1 we start by defining a database, and then we explain other basic terms. In Section 1.2, we provide a simple UNIVERSITY database example to illustrate our discussion. Section 1.3 describes some of the main characteristics of database systems, and Sections 1.4 and 1.5 categorize the types of personnel whose jobs involve using and interacting with database systems. Sections 1.6, 1.7, and 1.8 offer a more thorough discussion of the various capabilities provided by database systems and discuss some typical database applications. Section 1.9 summarizes the chapter.
+The reader who desires a quick introduction to database systems can study Sections 1.1 through 1.5, then skip or browse through Sections 1.6 through 1.8 and go on to Chapter 2.
+
+[S4] PDF pages: 37, 38
+[[SECTION 1.2: An Example]]
+Let us consider a simple example that most readers may be familiar with: a UNIVERSITY database for maintaining information concerning students, courses, and grades in a university environment. Figure 1.2 shows the database structure and a few sample data records. The database is organized as five files, each of which
+stores data records of the same type. The STUDENT file stores data on each student, the COURSE file stores data on each course, the SECTION file stores data on each section of a course, the GRADE_REPORT file stores the grades that students receive in the various sections they have completed, and the PREREQUISITE file stores the prerequisites of each course.
+
+[S5] PDF pages: 40
+To construct the UNIVERSITY database, we store data to represent each student, course, section, grade report, and prerequisite as a record in the appropriate file. Notice that records in the various files may be related. For example, the record for Smith in the STUDENT file is related to two records in the GRADE_REPORT file that specify Smith’s grades in two sections. Similarly, each record in the PREREQUISITE file relates two course records: one representing the course and the other representing the prerequisite. Most medium-size and large databases include many types of records and have many relationships among the records.
+Database manipulation involves querying and updating. Examples of queries are as follows:
+■ Retrieve the transcript—a list of all courses and grades—of ‘Smith’
+■ List the names of students who took the section of the ‘Database’ course
+offered in fall 2008 and their grades in that section
+■ List the prerequisites of the ‘Database’ course",answered,insufficient_evidence
+dev,unknown_person_vi,retrieved,987e5107442589272ede1c80db74db778f438b06391c1938682b4685d42ac624,False,False,False,False,False,"S3 (40) chỉ nói vai trò DBA, không có danh tính/đơn vị quản trị trường cụ thể. Gán DBA cho hệ thống production của người hỏi là kết luận ngoài bằng chứng.",vi,Ai hiện quản trị cơ sở dữ liệu production tại trường đại học của tôi?,Context không đủ bằng chứng.,Cơ sở dữ liệu production tại trường đại học của bạn được quản trị bởi Database Administrator (DBA).,"[S1] PDF pages: 48, 49
+[[SECTION 1.6.1: Controlling Redundancy]]
+In traditional software development utilizing file processing, every user group maintains its own files for handling its data-processing applications. For example, consider the UNIVERSITY database example of Section 1.2; here, two groups of users might be the course registration personnel and the accounting office. In the traditional approach, each group independently keeps files on students. The
+accounting office keeps data on registration and related billing information, whereas the registration office keeps track of student courses and grades. Other groups may further duplicate some or all of the same data in their own files.
+
+[S2] PDF pages: 37, 38
+[[SECTION 1.2: An Example]]
+Let us consider a simple example that most readers may be familiar with: a UNIVERSITY database for maintaining information concerning students, courses, and grades in a university environment. Figure 1.2 shows the database structure and a few sample data records. The database is organized as five files, each of which
+stores data records of the same type. The STUDENT file stores data on each student, the COURSE file stores data on each course, the SECTION file stores data on each section of a course, the GRADE_REPORT file stores the grades that students receive in the various sections they have completed, and the PREREQUISITE file stores the prerequisites of each course.
+
+[S3] PDF pages: 46
+[[SECTION 1.4.1: Database Administrators]]
+In any organization where many people use the same resources, there is a need for a chief administrator to oversee and manage these resources. In a database environment, the primary resource is the database itself, and the secondary resource is the DBMS and related software. Administering these resources is the responsibility of the database administrator (DBA). The DBA is responsible for authorizing access to the database, coordinating and monitoring its use, and acquiring software and hardware resources as needed. The DBA is accountable for problems such as security breaches and poor system response time. In large organizations, the DBA is assisted by a staff that carries out these functions.
+
+[S4] PDF pages: 40
+To construct the UNIVERSITY database, we store data to represent each student, course, section, grade report, and prerequisite as a record in the appropriate file. Notice that records in the various files may be related. For example, the record for Smith in the STUDENT file is related to two records in the GRADE_REPORT file that specify Smith’s grades in two sections. Similarly, each record in the PREREQUISITE file relates two course records: one representing the course and the other representing the prerequisite. Most medium-size and large databases include many types of records and have many relationships among the records.
+Database manipulation involves querying and updating. Examples of queries are as follows:
+■ Retrieve the transcript—a list of all courses and grades—of ‘Smith’
+■ List the names of students who took the section of the ‘Database’ course
+offered in fall 2008 and their grades in that section
+■ List the prerequisites of the ‘Database’ course
+
+[S5] PDF pages: 46
+[[SECTION 1.4: Actors on the Scene]]
+For a small personal database, such as the list of addresses discussed in Section 1.1, one person typically defines, constructs, and manipulates the database, and there is no sharing. However, in large organizations, many people are involved in the design, use, and maintenance of a large database with hundreds or thousands of users. In this section we identify the people whose jobs involve the day-to-day use of a large database; we call them the actors on the scene. In Section 1.5 we consider people who may be called workers behind the scene—those who work to maintain the database system environment but who are not actively interested in the database contents as part of their daily job.",answered,insufficient_evidence
+dev,unknown_hardware_en,retrieved,b8e0ec661959c05cd326c60d4b6670979c7822f6efe7af719bd0cbb67f571bb0,False,True,True,True,False,Nội dung thừa nhận nguồn không nêu RAM là đúng sau khi đọc toàn context. Tuy nhiên status=answered và citation S3 (7) không phù hợp: cần insufficient_evidence và citations=[]. Không trộn lỗi trạng thái vào điểm đúng của phần văn bản.,en,How much RAM is installed on my university's production database server?,Insufficient evidence in the supplied context.,The exact amount of RAM installed on the university's production database server is not provided in the sources.,"[S1] PDF pages: 40
+To construct the UNIVERSITY database, we store data to represent each student, course, section, grade report, and prerequisite as a record in the appropriate file. Notice that records in the various files may be related. For example, the record for Smith in the STUDENT file is related to two records in the GRADE_REPORT file that specify Smith’s grades in two sections. Similarly, each record in the PREREQUISITE file relates two course records: one representing the course and the other representing the prerequisite. Most medium-size and large databases include many types of records and have many relationships among the records.
+Database manipulation involves querying and updating. Examples of queries are as follows:
+■ Retrieve the transcript—a list of all courses and grades—of ‘Smith’
+■ List the names of students who took the section of the ‘Database’ course
+offered in fall 2008 and their grades in that section
+■ List the prerequisites of the ‘Database’ course
+
+[S2] PDF pages: 75
+It is common to have the client program that accesses the DBMS running on a separate computer or device from the computer on which the database resides. The former is called the client computer running DBMS client software and the latter is called the database server. In many cases, the client accesses a middle computer, called the application server, which in turn accesses the database server. We elaborate on this topic in Section 2.5.
+Figure 2.3 is not meant to describe a specific DBMS; rather, it illustrates typical DBMS modules. The DBMS interacts with the operating system when disk accesses— to the database or to the catalog—are needed. If the computer system is shared by many users, the OS will schedule DBMS disk access requests and DBMS processing along with other processes. On the other hand, if the computer system is mainly dedicated to running the database server, the DBMS will control main memory
+
+[S3] PDF pages: 36, 37
+An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, electronics, apparel, and other items. The database occupies over 42 terabytes (a terabyte is 1012 bytes worth of storage) and is stored on hundreds of computers (called servers). Millions of visitors access Amazon.com each day and use the database to make purchases. The database is continually updated as new books and other items are added to the inventory, and stock quantities are updated as purchases are transacted.
+A database may be generated and maintained manually or it may be computerized. For example, a library card catalog is a database that may be created and maintained manually. A computerized database may be created and maintained either by a group of application programs written specifically for that task or by a
+database management system. Of course, we are only concerned with computerized databases in this text.
+
+[S4] PDF pages: 37, 38
+[[SECTION 1.2: An Example]]
+Let us consider a simple example that most readers may be familiar with: a UNIVERSITY database for maintaining information concerning students, courses, and grades in a university environment. Figure 1.2 shows the database structure and a few sample data records. The database is organized as five files, each of which
+stores data records of the same type. The STUDENT file stores data on each student, the COURSE file stores data on each course, the SECTION file stores data on each section of a course, the GRADE_REPORT file stores the grades that students receive in the various sections they have completed, and the PREREQUISITE file stores the prerequisites of each course.
+
+[S5] PDF pages: 81
+This intermediate layer or middle tier is called the application server or the Web server, depending on the application. This server plays an intermediary role by running application programs and storing business rules (procedures or constraints) that are used to access data from the database server. It can also improve database security by checking a client’s credentials before forwarding a request to the database server. Clients contain user interfaces and Web browsers. The intermediate server accepts requests from the client, processes the request and sends database queries and commands to the database server, and then acts as a conduit for passing (partially) processed data from the database server to the clients, where it may be processed further and filtered to be presented to the users. Thus, the user interface, application rules, and data access act as the three tiers",answered,insufficient_evidence
+dev,unknown_hardware_vi,retrieved,a24cb34fbe72dd0a12c85d4e6fdeb53e98cbca23c76fb9c9c6c498a2b73aa00b,False,True,True,True,False,Đọc toàn context không thấy RAM của máy chủ trường; câu trả lời thừa nhận thiếu thông tin là đúng. status=answered và dẫn cả năm nguồn không phù hợp với hành vi từ chối; lỗi được thể hiện riêng ở status_match/citation.,vi,Máy chủ cơ sở dữ liệu production của trường tôi đang có bao nhiêu RAM?,Context không đủ bằng chứng.,Máy chủ cơ sở dữ liệu production của trường bạn không có thông tin về lượng RAM được cung cấp trong các nguồn tài liệu.,"[S1] PDF pages: 39, 40
+CS3380 CS3320
+CS3380 MATH2410
+CS3320 CS1310
+PREREQUISITE
+Figure 1.2 A database that stores student and course information.
+single character from the set {‘A’, ‘B’, ‘C’, ‘D’, ‘F’, ‘I’}. We may also use a coding scheme to represent the values of a data item. For example, in Figure 1.2 we represent the Class of a STUDENT as 1 for freshman, 2 for sophomore, 3 for junior, 4 for senior, and 5 for graduate student.
+
+[S2] PDF pages: 45
+The preceding characteristics are important in distinguishing a DBMS from traditional file-processing software. In Section 1.6 we discuss additional features that characterize a DBMS. First, however, we categorize the different types of people who work in a database system environment.
+Student_name
+Student_transcript
+Course_number Grade Semester Year Section_id
+Smith
+CS1310 C Fall 08 119
+MATH2410 B Fall 08 112
+Brown
+MATH2410 A Fall 07 85
+CS1310 A Fall 07 92
+CS3320 B Spring 08 102
+CS3380 A Fall 08 135
+TRANSCRIPT
+Course_name Course_number Prerequisites
+Database CS3380
+CS3320
+MATH2410
+Data Structures CS3320 CS1310
+COURSE_PREREQUISITES
+(a)
+(b)
+Figure 1.5 Two views derived from the database in Figure 1.2. (a) The TRANSCRIPT view. (b) The COURSE_PREREQUISITES view.
+
+[S3] PDF pages: 36, 37
+An example of a large commercial database is Amazon.com. It contains data for over 60 million active users, and millions of books, CDs, videos, DVDs, games, electronics, apparel, and other items. The database occupies over 42 terabytes (a terabyte is 1012 bytes worth of storage) and is stored on hundreds of computers (called servers). Millions of visitors access Amazon.com each day and use the database to make purchases. The database is continually updated as new books and other items are added to the inventory, and stock quantities are updated as purchases are transacted.
+A database may be generated and maintained manually or it may be computerized. For example, a library card catalog is a database that may be created and maintained manually. A computerized database may be created and maintained either by a group of application programs written specifically for that task or by a
+database management system. Of course, we are only concerned with computerized databases in this text.
+
+[S4] PDF pages: 38, 39
+Software to Process
+Queries/Programs
+Software to Access
+Stored Data
+Stored Database Stored Database
+Definition (Meta-Data)
+DBMS Software
+Figure 1.1 A simplified database system environment.
+Name Student_number Class Major
+Smith 17 1 CS
+Brown 8 2 CS
+STUDENT
+Course_name Course_number Credit_hours Department
+Intro to Computer Science CS1310 4 CS
+Data Structures CS3320 4 CS
+Discrete Mathematics MATH2410 3 MATH
+Database CS3380 3 CS
+COURSE
+Section_identifier Course_number Semester Year Instructor
+85 MATH2410 Fall 07 King
+92 CS1310 Fall 07 Anderson
+102 CS3320 Spring 08 Knuth
+112 MATH2410 Fall 08 Chang
+119 CS1310 Fall 08 Anderson
+135 CS3380 Fall 08 Stone
+SECTION
+Student_number Section_identifier Grade
+17 112 B
+17 119 C
+8 85 A
+8 92 A
+8 102 B
+8 135 A
+GRADE_REPORT
+Course_number Prerequisite_number
+CS3380 CS3320
+CS3380 MATH2410
+CS3320 CS1310
+PREREQUISITE
+Figure 1.2 A database that stores student and course information.
+
+[S5] PDF pages: 75
+In the lower part of Figure 2.3, the runtime database processor executes (1) the privileged commands, (2) the executable query plans, and (3) the canned transactions with runtime parameters. It works with the system catalog and may update it with statistics. It also works with the stored data manager, which in turn uses basic operating system services for carrying out low-level input/output (read/write) operations between the disk and main memory. The runtime database processor handles other aspects of data transfer, such as management of buffers in the main memory. Some DBMSs have their own buffer management module whereas others depend on the OS for buffer management. We have shown concurrency control and backup and recovery systems separately as a module in this figure. They are integrated into the working of the runtime database processor for purposes of transaction management.",answered,insufficient_evidence
