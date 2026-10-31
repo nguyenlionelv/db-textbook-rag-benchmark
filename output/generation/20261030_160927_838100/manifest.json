@@ -1,0 +1,203 @@
+{
+  "created_at": "2026-10-30T16:48:29.581123+07:00",
+  "run_id": "20261030_160927_838100",
+  "config_id": "19ee92b2b0b4a5ce89c6e6162bd714675f33c34c1ea86376cdcf9ba3a52fe938",
+  "configuration": {
+    "generation": {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "num_ctx": 4096,
+      "max_new_tokens": 256
+    },
+    "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "search": {
+      "top_k": 5,
+      "candidate_k": 20
+    },
+    "retrieval_profile": {
+      "collection": "e5_183a932fed56",
+      "chunks": 233,
+      "queries": 32,
+      "chunk_sha256": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+      "parser_sha256": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+      "model": "intfloat/multilingual-e5-small",
+      "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "candidate_k": 20,
+      "top_k": 5,
+      "rrf_constant": 60,
+      "bm25": {
+        "k1": 1.5,
+        "b": 0.75,
+        "epsilon": 0.25,
+        "tokenizer": "Unicode words + lowercase"
+      },
+      "methods": [
+        "hybrid",
+        "hybrid_rerank"
+      ],
+      "reranker": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 512,
+      "packages": {
+        "rank-bm25": "0.2.2",
+        "qdrant-client": "1.19.1",
+        "sentence-transformers": "6.1.0",
+        "torch": "2.14.0"
+      },
+      "device": "cpu",
+      "torch_num_threads": 4,
+      "timing": "1 warm-up, 1 pass/query/method; includes query encoding, excludes loading",
+      "queries_sha256": "14fdadf3b6dbcef5d5846e853ea4abf2bea55db486b46c1cfad1034a59e139f7",
+      "reranker_batch_size": 2,
+      "index_verification": "SQLite backup of the open original index; all point IDs and payloads matched the corpus; parser/chunk hashes matched baseline manifest."
+    },
+    "input_hashes": {
+      "output\\chunks\\structure_aware_recursive.jsonl": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+      "output\\parsed_chapter1.jsonl": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+      "output\\retrieval\\structure_aware_recursive\\queries.jsonl": "14fdadf3b6dbcef5d5846e853ea4abf2bea55db486b46c1cfad1034a59e139f7",
+      "output\\retrieval\\generation_contexts\\topk.jsonl": "76bfb6a6ec7920f29bcf1d5dcb73e0cd8b5c9aa90d2fbc19b4799a55e27263da",
+      "output\\retrieval\\generation_contexts\\manifest.json": "3b9b2e9679eaa58859d02b5b03ad3bb034876ece4e91dbd01014572045970012"
+    },
+    "retrieval_mode": "saved_hybrid_rerank_top5",
+    "tokenizer_source": {
+      "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    "tokenizer_hashes": {
+      "source.json": "bbe876e7ec2fe2c801cf35b5ad62042ee799593490caf14ce53bc5621568803a",
+      "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+      "tokenizer_config.json": "a312139b5701f38b824c42b238cf3a99b89a81ba0cdd364e3ca02caccb4c52d1"
+    },
+    "generation_code_sha256": "59b60d7d727966f212d359abf92830a3a58e22b8f7e5143b6b4fcedc24b518d7",
+    "temperature": 0,
+    "seed": 42,
+    "thinking": false,
+    "device": "cpu",
+    "ollama_threads": 4
+  },
+  "frozen_eval_configuration": {
+    "generation": {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "num_ctx": 4096,
+      "max_new_tokens": 256
+    },
+    "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "search": {
+      "top_k": 5,
+      "candidate_k": 20
+    },
+    "retrieval_profile": {
+      "collection": "e5_183a932fed56",
+      "chunks": 233,
+      "queries": 32,
+      "chunk_sha256": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+      "parser_sha256": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+      "model": "intfloat/multilingual-e5-small",
+      "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "candidate_k": 20,
+      "top_k": 5,
+      "rrf_constant": 60,
+      "bm25": {
+        "k1": 1.5,
+        "b": 0.75,
+        "epsilon": 0.25,
+        "tokenizer": "Unicode words + lowercase"
+      },
+      "methods": [
+        "hybrid",
+        "hybrid_rerank"
+      ],
+      "reranker": "BAAI/bge-reranker-v2-m3",
+      "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "reranker_max_length": 512,
+      "packages": {
+        "rank-bm25": "0.2.2",
+        "qdrant-client": "1.19.1",
+        "sentence-transformers": "6.1.0",
+        "torch": "2.14.0"
+      },
+      "device": "cpu",
+      "torch_num_threads": 4,
+      "timing": "1 warm-up, 1 pass/query/method; includes query encoding, excludes loading",
+      "queries_sha256": "14fdadf3b6dbcef5d5846e853ea4abf2bea55db486b46c1cfad1034a59e139f7",
+      "reranker_batch_size": 2,
+      "index_verification": "SQLite backup of the open original index; all point IDs and payloads matched the corpus; parser/chunk hashes matched baseline manifest."
+    },
+    "input_hashes": {
+      "output\\chunks\\structure_aware_recursive.jsonl": "3ed6089291a1a43c49dea0c8e1164b848254e8358746b1f8f28d68097bf62a72",
+      "output\\parsed_chapter1.jsonl": "d72c3fd0a54aed65105852d73d8070967b507b47d8a223a2608cadf3745bdadd",
+      "output\\retrieval\\structure_aware_recursive\\queries.jsonl": "14fdadf3b6dbcef5d5846e853ea4abf2bea55db486b46c1cfad1034a59e139f7",
+      "output\\retrieval\\generation_contexts\\topk.jsonl": "76bfb6a6ec7920f29bcf1d5dcb73e0cd8b5c9aa90d2fbc19b4799a55e27263da",
+      "output\\retrieval\\generation_contexts\\manifest.json": "3b9b2e9679eaa58859d02b5b03ad3bb034876ece4e91dbd01014572045970012"
+    },
+    "retrieval_mode": "saved_hybrid_rerank_top5",
+    "tokenizer_source": {
+      "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    "tokenizer_hashes": {
+      "source.json": "bbe876e7ec2fe2c801cf35b5ad62042ee799593490caf14ce53bc5621568803a",
+      "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+      "tokenizer_config.json": "a312139b5701f38b824c42b238cf3a99b89a81ba0cdd364e3ca02caccb4c52d1"
+    },
+    "generation_code_sha256": "59b60d7d727966f212d359abf92830a3a58e22b8f7e5143b6b4fcedc24b518d7",
+    "temperature": 0,
+    "seed": 42,
+    "thinking": false,
+    "device": "cpu",
+    "ollama_threads": 4
+  },
+  "runtime": {
+    "version": "0.40.4",
+    "model": {
+      "name": "qwen3:4b-instruct-2507-q4_K_M",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "modified_at": "2026-10-30T15:59:52.1615394+07:00",
+      "size": 2497293803,
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "tools",
+        "thinking",
+        "completion"
+      ]
+    },
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "4.0B",
+      "quantization_level": "Q4_K_M"
+    },
+    "template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>')) %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {%- if loop.last or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%- else %}\n                {{- '<|im_start|>' + message.role + '\\n' + content }}\n            {%- endif %}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}",
+    "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.7\ntop_k                          20\ntop_p                          0.8"
+  },
+  "notebook_code_sha256": "1587f76ab9a97885492fc4b46baa0fbf4ebb587987bc15227249493aa3ca7c3f",
+  "packages": {
+    "transformers": "5.17.0",
+    "pandas": "3.0.5",
+    "qdrant-client": "1.19.1",
+    "sentence-transformers": "6.1.0"
+  },
+  "results": 78,
+  "eval_ran": true,
+  "manual_review": "complete",
+  "reviewed_cases": 78,
+  "timing": "Warm-up excluded. generation_seconds includes context, local HTTP, validation and any Ollama reload. Retrieval uses verified saved top-5 snapshots; retrieval_seconds and total_seconds are null. Tokenizer setup excluded.",
+  "review_method": "Source-based review by the coding agent; no external judge model.",
+  "eval_limit": "Existing eval topics have been partly observed in earlier experiments."
+}

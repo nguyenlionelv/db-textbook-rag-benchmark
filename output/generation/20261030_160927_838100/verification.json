@@ -1,0 +1,32 @@
+{
+  "results": 78,
+  "dev_results": 46,
+  "eval_results": 32,
+  "eval_queries": 16,
+  "reviewed_cases": 78,
+  "runtime_errors": 0,
+  "tests": {
+    "passed": 212,
+    "skipped": 1,
+    "command": ".venv/Scripts/python.exe -m pytest -q -ra --basetemp output/pytest_tmp/generation_eval_final_tests"
+  },
+  "checks": [
+    "frozen configuration and config ID",
+    "source metadata and PDF pages",
+    "prompt token budgets",
+    "input, tokenizer and code hashes",
+    "notebook source hash",
+    "review keys and summary counts",
+    "README byte hash unchanged"
+  ],
+  "readme_sha256": "a16a402d09a1203e564f40cd2691d5d42dea6c29c4f7164a02a772954652a05e",
+  "artifacts": {
+    "per_query.jsonl": "852d89da2532e3aebe592860f6fdca8fd55609e10aa519d1ba0b33084ee20a11",
+    "manual_review.csv": "e6d37e5cfe52f48a7487983c7331c59a9fb47d6b74ba85974c29fc8770c1e895",
+    "summary.csv": "92974cd39f67ea60c5914b1051123f42d214023f6a3e832478ea4cb2927457ed",
+    "manifest.json": "d9ed21d780d3c967c01814587e2e1bb648c6858e3bde992e2b7bd0469b252c59",
+    "frozen_config.json": "1192d94fcc534cf113425ad07839da4fc8b31ae65626849951e2e9dc7b110019",
+    "review_rubric.md": "2b4031ad2e00d9a2bb8badf9171bdf8d4faeca5ee1fbdec4b2394e93924b4a95",
+    "report.md": "39ca02d7d471993f489d999ec5e705bc3d682211399de1f664c1c27439ec9735"
+  }
+}
