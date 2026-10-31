@@ -15,7 +15,7 @@ PDF -> Parsing -> Chunking -> Embedding -> Qdrant -> Retrieval -> Generation
 | Embedding and storage | Multilingual E5 embeddings and a persistent Qdrant Local index | Implemented and tested |
 | Retrieval | BM25 and dense search, RRF fusion and BGE reranking | Evaluated on 32 queries |
 | Generation | Context assembly, token budget, local Ollama calls and citation validation | Implemented |
-| RAG evaluation | Selected context and retrieved context, answer review and result export | 46 dev results reviewed; Generation eval has not run |
+| RAG evaluation | Selected context and saved retrieval context, answer review and result export | 46 dev and 32 Generation eval results reviewed |
 | Full-book evaluation and UI | Corpus expansion and user interface | Pending |
 
 The evaluated pilot index contains **233 chunks with source references from Chapters 1-3**. The results below apply to this pilot corpus.
@@ -89,21 +89,15 @@ The default database path is `output/qdrant_db`. Close any notebook client using
 
 ### Prepare the model files
 
-The Generation notebook uses `intfloat/multilingual-e5-small`, `BAAI/bge-reranker-v2-m3` and `qwen3:1.7b`. Build the pilot index first to prepare the E5 cache.
+Notebook 07 uses `qwen3:4b-instruct-2507-q4_K_M` with selected chunks and the [saved retrieval contexts](output/retrieval/generation_contexts/manifest.json). It reads the saved top-5 results without loading E5, the reranker or Qdrant.
 
-Download the reranker to the cache expected by the notebook:
-
-```powershell
-python -c "from huggingface_hub import snapshot_download; snapshot_download('BAAI/bge-reranker-v2-m3', revision='953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e', cache_dir='output/model_cache/reranker_hub')"
-```
-
-Save the Qwen tokenizer for local token counting:
+From the repository root, use the `.venv` environment to download the pinned tokenizer and save it under `output/model_cache/qwen3_4b_instruct_tokenizer/`:
 
 ```powershell
-python -c "from transformers import AutoTokenizer; AutoTokenizer.from_pretrained('Qwen/Qwen3-1.7B', revision='70d244cc86ccca08cf5af4e1e306ecf908b1ad5e').save_pretrained('output/model_cache/qwen3_tokenizer')"
+python scripts/prepare_generation_tokenizer.py
 ```
 
-These downloads require an internet connection. See the [Hugging Face download guide](https://huggingface.co/docs/huggingface_hub/guides/download) for cache settings.
+The tokenizer download requires an internet connection. See the [Hugging Face download guide](https://huggingface.co/docs/huggingface_hub/guides/download) for cache settings.
 
 Download the portable Windows package from the [Ollama Windows instructions](https://docs.ollama.com/windows#standalone-cli). Extract the executable and its libraries into `output/model_cache/ollama_runtime/`. The startup script expects `output/model_cache/ollama_runtime/ollama.exe`.
 
@@ -120,7 +114,7 @@ The server listens at `http://127.0.0.1:11434` and stores models in `output/mode
 In a second terminal, download the Generation model once:
 
 ```powershell
-.\output\model_cache\ollama_runtime\ollama.exe pull qwen3:1.7b
+.\output\model_cache\ollama_runtime\ollama.exe pull qwen3:4b-instruct-2507-q4_K_M
 ```
 
 The model download uses the running local server. See the [Ollama CLI reference](https://docs.ollama.com/cli) for model commands.
@@ -134,7 +128,7 @@ Open [notebook 07](notebooks/07_rag_generation.ipynb). Its default configuration
 3. Review the answers in `manual_review.csv`, then rerun the review and summary cells to load the scores.
 4. Set `RUN_EVAL = True` only after completing the dev review and choosing the final configuration. Run the eval cases, review their answers and rerun the export cells.
 
-Each run saves a manifest, per-query results, review scores and a summary under `output/generation/<run-id>/`. Rerunning the configuration cell creates a new run ID. A dev run can take about 20 minutes on the reference CPU setup, mainly due to reranking and text generation.
+Each run saves a manifest, per-query results, review scores and a summary under `output/generation/<run-id>/`. Rerunning the configuration cell creates a new run ID. Generation timing depends on the context and answer length. The saved eval run averages about 15–18 seconds per answer with selected context and 36–37 seconds with saved retrieval context on CPU; these times exclude live retrieval.
 
 Stop Ollama with `Ctrl+C` in its terminal, or run:
 
@@ -169,18 +163,26 @@ See the [retrieval report](output/retrieval/hybrid_reranking/report.md) for meth
 
 ### Generation
 
-The [saved dev run](output/generation/20261030_113151_222095/manifest.json) contains 46 reviewed results: 24 with selected context and 22 with retrieved context. Selected context uses chunks chosen from known evidence; retrieved context uses live hybrid retrieval and reranking.
+The [saved Generation run](output/generation/20261030_160927_838100/manifest.json) uses `qwen3:4b-instruct-2507-q4_K_M` and contains **78 reviewed results**: 46 dev results and 32 eval results. The eval set contains 16 questions, each evaluated under both context conditions.
 
-| Context | Language | Correct answers | Correct rate |
-| --- | --- | ---: | ---: |
-| Selected | English | 11/12 | 91.7% |
-| Selected | Vietnamese | 7/12 | 58.3% |
-| Retrieved | English | 10/11 | 90.9% |
-| Retrieved | Vietnamese | 7/11 | 63.6% |
+Selected context uses chunks chosen from known evidence. Retrieved context uses verified top-5 snapshots from hybrid retrieval with reranking. Generation timing covers context preparation, the local model call and output validation; retrieval and end-to-end timing are not measured in this run.
 
-The selected-context group includes two empty-context cases that are excluded from the retrieved-context group, so the groups differ in size. Correctness, evidence support and citation support are scored separately; a correct answer can still contain unsupported claims.
+| Split | Context | Language | Correct answers | Correct rate |
+| --- | --- | --- | ---: | ---: |
+| Dev | Selected | English | 11/12 | 91.7% |
+| Dev | Selected | Vietnamese | 9/12 | 75.0% |
+| Dev | Retrieved snapshot | English | 10/11 | 90.9% |
+| Dev | Retrieved snapshot | Vietnamese | 10/11 | 90.9% |
+| Eval | Selected | English | 8/8 | 100.0% |
+| Eval | Selected | Vietnamese | 7/8 | 87.5% |
+| Eval | Retrieved snapshot | English | 8/8 | 100.0% |
+| Eval | Retrieved snapshot | Vietnamese | 7/8 | 87.5% |
 
-See the [summary](output/generation/20261030_113151_222095/summary.csv) and [review rubric](output/generation/20261030_113151_222095/review_rubric.md). Generation eval has not run. Some existing eval topics were inspected in earlier experiments, which limits their use as an independent final benchmark.
+The dev selected-context group includes two empty-context cases excluded from the retrieved-context group. The eval groups each contain eight English and eight Vietnamese questions. Correctness, evidence support and citation support are scored separately; a correct answer can still contain unsupported claims.
+
+The eval errors concern added transaction properties with selected context and a data-abstraction question with incomplete retrieved evidence. Some eval topics were observed in earlier experiments, so this set is not a fully independent final benchmark. The labels are based on source-based review by the coding agent.
+
+See the [report](output/generation/20261030_160927_838100/report.md), [summary](output/generation/20261030_160927_838100/summary.csv), [per-answer review](output/generation/20261030_160927_838100/manual_review.csv) and [review rubric](output/generation/20261030_160927_838100/review_rubric.md).
 
 ## Tests
 
@@ -203,7 +205,6 @@ These tests use fixed responses and do not require a running Ollama server.
 ## Next work
 
 - Improve Vietnamese answer quality, evidence support and refusal behavior using the dev cases.
-- Choose the final Generation configuration, run eval and review the exported answers.
 - Compare model and context settings with the same questions and review criteria.
 - Validate full-book parsing, chunk coverage and retrieval before expanding the evaluation.
 - Add a user interface after the pipeline and evaluation are stable.
