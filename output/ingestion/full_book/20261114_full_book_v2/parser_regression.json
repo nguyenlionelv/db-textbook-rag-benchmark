@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "default_parsed_records_unchanged": 19874,
+  "current_parser_sha256": "4a5eb3f7b391b0686528069972db6c8c9f7647320f501cd035855cd5fd43dd6f",
+  "current_preparation_manifest": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_final\\manifest.json",
+  "identical_artifacts": {
+    "parsed.jsonl": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+    "chunks.jsonl": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+    "coverage.json": "bcf1a067e40154eab728eff67e6e3e35d239477f27010ac1cd3a88e3d8c4fd18",
+    "page_coverage.csv": "7cdea3a34a015aa4f01666f5c1c524e20c148736297195c651310d9f1db5ad84"
+  },
+  "note": "The appendix-contents guard preserves default parsing. Scoped output matches the indexed run byte for byte; existing vectors remain valid."
+}

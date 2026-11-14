@@ -1,0 +1,20 @@
+{
+  "collection": "e5_116b8a7ac780",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "dimension": 384,
+  "distance": "Cosine",
+  "chunk_sha256": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+  "chunk_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\chunks.jsonl",
+  "input_chunks": 6040,
+  "chunks": 6040,
+  "skipped_without_sources": 0,
+  "selection_policy": "sources must be non-empty",
+  "point_id_policy": "JSONL record index",
+  "batch_size": 64,
+  "upserted": 6040,
+  "status": "complete",
+  "qdrant_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\qdrant_full_book\\20261114_full_book_v2",
+  "parser_sha256": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+  "parser_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\parsed.jsonl"
+}

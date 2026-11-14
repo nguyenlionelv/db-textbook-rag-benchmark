@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-14T00:37:47.039120+07:00",
+  "pdf_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\data\\raw\\Fundamentals_of_Database_System.pdf",
+  "pdf_sha256": "863264e73f7a57ea447db26770cbbd51aad22847845bf0ef90075c3858c96978",
+  "code_sha256": {
+    "scripts\\run_full_book_ingestion.py": "117bba2abb731afba3b1d421d3738cb6b68ffb980ffba9f9ca4a1e40cf14ce99",
+    "src\\ingestion\\textbook_parser.py": "fc6dc3d0f8b32d0a429acaaf24bf1b6ff567e89214210e0c5a37a747b43fb1f4",
+    "src\\ingestion\\textbook_chunker.py": "f4926b1ed4e2415ca8381723350cd35e0db53ea3f51b2e79f2bccea67c1837c4",
+    "src\\ingestion\\textbook_embedder.py": "b1a78e7d16c2c928330c3f4d7f579037fdb484f25bb1c23f241f28de5e5f6555",
+    "src\\ingestion\\textbook_indexer.py": "58396e741fae4b601243e4a7683ea005038787a03bbe41a83cab23206e0af115"
+  },
+  "chunking": {
+    "strategy": "structure_aware_recursive",
+    "chunk_size": 700,
+    "chunk_overlap": 100,
+    "include_footnotes": true
+  },
+  "artifacts": {
+    "parsed.jsonl": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+    "chunks.jsonl": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+    "coverage.json": "bcf1a067e40154eab728eff67e6e3e35d239477f27010ac1cd3a88e3d8c4fd18",
+    "page_coverage.csv": "7cdea3a34a015aa4f01666f5c1c524e20c148736297195c651310d9f1db5ad84",
+    "token_validation.json": "cd583731d4da1e1c28bbcaf97214aa1c37d37dcf830c17deab34850c8810c172",
+    "index_manifest.json": "4b184949645514e02b457430e2484c72c22b9c5a31c7d6506cb5a5a203663e67",
+    "index_verification.json": "b0918bfae5c8c00ed7ea3fb91302c733499b9b0e3e997c5419127f4f7d10f65d",
+    "parser_regression.json": "2cd545032abb2d77299d5ce43fac7058d18ff125d7fea2a6d852fe6f7a2f0e65",
+    "footnote_audit.json": "26e1377c8f45d5c05f960c4deaea5950f5802ff60f922bb6101deaf9e67d98ad"
+  },
+  "records": 17199,
+  "chunks": 6040,
+  "prepare_seconds": 8.056808299996192,
+  "index": {
+    "collection": "e5_116b8a7ac780",
+    "model": "intfloat/multilingual-e5-small",
+    "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dimension": 384,
+    "distance": "Cosine",
+    "chunk_sha256": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+    "chunk_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\chunks.jsonl",
+    "input_chunks": 6040,
+    "chunks": 6040,
+    "skipped_without_sources": 0,
+    "selection_policy": "sources must be non-empty",
+    "point_id_policy": "JSONL record index",
+    "batch_size": 64,
+    "upserted": 6040,
+    "status": "complete",
+    "qdrant_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\qdrant_full_book\\20261114_full_book_v2",
+    "parser_sha256": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+    "parser_path": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\parsed.jsonl"
+  },
+  "index_seconds": 483.7416226999994,
+  "post_run_validation": "parser_regression.json"
+}

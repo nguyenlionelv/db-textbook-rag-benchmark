@@ -1,0 +1,232 @@
+{
+  "footnotes": 429,
+  "note_status": {
+    "resolved": 388,
+    "unreferenced": 41
+  },
+  "unreferenced_notes": [
+    {
+      "record_id": "863264e73f7a57ea:p182:fn3:b10",
+      "pdf_page": 183,
+      "marker": "3"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p185:fn5:b5",
+      "pdf_page": 186,
+      "marker": "5"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p189:fn9:b10",
+      "pdf_page": 190,
+      "marker": "9"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p208:fn1:b6",
+      "pdf_page": 209,
+      "marker": "1"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p216:fn8:b10",
+      "pdf_page": 217,
+      "marker": "8"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p266:fn7:b27",
+      "pdf_page": 267,
+      "marker": "7"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p270:fn1:b6",
+      "pdf_page": 271,
+      "marker": "1"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p386:fn1:b9",
+      "pdf_page": 387,
+      "marker": "1"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p426:fn28:b7",
+      "pdf_page": 427,
+      "marker": "28"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p461:fn5:b13",
+      "pdf_page": 462,
+      "marker": "5"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p502:fn7:b9",
+      "pdf_page": 503,
+      "marker": "7"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p519:fn14:b10",
+      "pdf_page": 520,
+      "marker": "14"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p520:fn15:b13",
+      "pdf_page": 521,
+      "marker": "15"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p523:fn21:b14",
+      "pdf_page": 524,
+      "marker": "21"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p524:fn22:b8",
+      "pdf_page": 525,
+      "marker": "22"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p536:fn3:b12",
+      "pdf_page": 537,
+      "marker": "3"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p573:fn1:b9",
+      "pdf_page": 574,
+      "marker": "1"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p615:fn18:b28",
+      "pdf_page": 616,
+      "marker": "18"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p633:fn2:b14",
+      "pdf_page": 634,
+      "marker": "2"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p635:fn5:b8",
+      "pdf_page": 636,
+      "marker": "5"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p653:fn12:b15",
+      "pdf_page": 654,
+      "marker": "12"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p659:fn13:b4",
+      "pdf_page": 660,
+      "marker": "13"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p667:fn15:b13",
+      "pdf_page": 668,
+      "marker": "15"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p689:fn5:b14",
+      "pdf_page": 690,
+      "marker": "5"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p699:fn11:b8",
+      "pdf_page": 700,
+      "marker": "11"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p704:fn14:b8",
+      "pdf_page": 705,
+      "marker": "14"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p741:fn7:b22",
+      "pdf_page": 742,
+      "marker": "7"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p750:fn11:b18",
+      "pdf_page": 751,
+      "marker": "11"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p763:fn18:b17",
+      "pdf_page": 764,
+      "marker": "18"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p804:fn15:b11",
+      "pdf_page": 805,
+      "marker": "15"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p980:fn31:b7",
+      "pdf_page": 981,
+      "marker": "31"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1005:fn11:b6",
+      "pdf_page": 1006,
+      "marker": "11"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1015:fn23:b16",
+      "pdf_page": 1016,
+      "marker": "23"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1017:fn24:b9",
+      "pdf_page": 1018,
+      "marker": "24"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1054:fn4:b4",
+      "pdf_page": 1055,
+      "marker": "4"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1063:fn12:b11",
+      "pdf_page": 1064,
+      "marker": "12"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1077:fn26:b13",
+      "pdf_page": 1078,
+      "marker": "26"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1078:fn27:b9",
+      "pdf_page": 1079,
+      "marker": "27"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1134:fn3:b23",
+      "pdf_page": 1135,
+      "marker": "3"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1152:fn1:b19",
+      "pdf_page": 1153,
+      "marker": "1"
+    },
+    {
+      "record_id": "863264e73f7a57ea:p1203:fn1:b20",
+      "pdf_page": 1204,
+      "marker": "1"
+    }
+  ],
+  "unresolved_references": [
+    {
+      "record_id": "863264e73f7a57ea:p585:b4",
+      "pdf_page": 586,
+      "marker": "1",
+      "raw_offset": 550,
+      "bbox": [
+        247.26400756835938,
+        511.5342102050781,
+        251.04400634765625,
+        519.4091796875
+      ],
+      "anchor_text": "onger in further development. The LTO (Linear Tape Open) consortium set up by IBM, HP, and Seagate released the latest LTO-6 standard in 2012 for tapes. It uses",
+      "footnote_id": null,
+      "status": "unresolved"
+    }
+  ],
+  "note": "All note text is included in the corpus. Missing links are retained for review; no links are inferred."
+}

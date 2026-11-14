@@ -1,0 +1,204 @@
+{
+  "persisted_points": 6040,
+  "sample_checks": [
+    {
+      "chapter_number": "1",
+      "point_id": 0,
+      "top_hit_id": 0,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "2",
+      "point_id": 142,
+      "top_hit_id": 142,
+      "score": 0.9999999999999999
+    },
+    {
+      "chapter_number": "3",
+      "point_id": 295,
+      "top_hit_id": 295,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "4",
+      "point_id": 507,
+      "top_hit_id": 507,
+      "score": 1.0000000000000002
+    },
+    {
+      "chapter_number": "5",
+      "point_id": 695,
+      "top_hit_id": 695,
+      "score": 0.9999999999999999
+    },
+    {
+      "chapter_number": "6",
+      "point_id": 838,
+      "top_hit_id": 838,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "7",
+      "point_id": 983,
+      "top_hit_id": 983,
+      "score": 0.9999999999999998
+    },
+    {
+      "chapter_number": "8",
+      "point_id": 1151,
+      "top_hit_id": 1151,
+      "score": 0.9999999999999998
+    },
+    {
+      "chapter_number": "9",
+      "point_id": 1389,
+      "top_hit_id": 1389,
+      "score": 0.9999999999999999
+    },
+    {
+      "chapter_number": "10",
+      "point_id": 1468,
+      "top_hit_id": 1468,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "11",
+      "point_id": 1643,
+      "top_hit_id": 1643,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "12",
+      "point_id": 1729,
+      "top_hit_id": 1729,
+      "score": 1.0000000000000002
+    },
+    {
+      "chapter_number": "13",
+      "point_id": 2040,
+      "top_hit_id": 2040,
+      "score": 1.0000000000000002
+    },
+    {
+      "chapter_number": "14",
+      "point_id": 2195,
+      "top_hit_id": 2195,
+      "score": 1.0000000000000002
+    },
+    {
+      "chapter_number": "15",
+      "point_id": 2418,
+      "top_hit_id": 2418,
+      "score": 1.0000000000000004
+    },
+    {
+      "chapter_number": "16",
+      "point_id": 2597,
+      "top_hit_id": 2597,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "17",
+      "point_id": 2927,
+      "top_hit_id": 2927,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "18",
+      "point_id": 3185,
+      "top_hit_id": 3185,
+      "score": 0.9999999999999998
+    },
+    {
+      "chapter_number": "19",
+      "point_id": 3385,
+      "top_hit_id": 3385,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "20",
+      "point_id": 3656,
+      "top_hit_id": 3656,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "21",
+      "point_id": 3847,
+      "top_hit_id": 3847,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "22",
+      "point_id": 4013,
+      "top_hit_id": 4013,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "23",
+      "point_id": 4154,
+      "top_hit_id": 4154,
+      "score": 1.0000000000000004
+    },
+    {
+      "chapter_number": "24",
+      "point_id": 4387,
+      "top_hit_id": 4387,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "25",
+      "point_id": 4554,
+      "top_hit_id": 4554,
+      "score": 0.9999999999999999
+    },
+    {
+      "chapter_number": "26",
+      "point_id": 4847,
+      "top_hit_id": 4847,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "27",
+      "point_id": 5192,
+      "top_hit_id": 5192,
+      "score": 0.9999999999999999
+    },
+    {
+      "chapter_number": "28",
+      "point_id": 5480,
+      "top_hit_id": 5480,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "29",
+      "point_id": 5645,
+      "top_hit_id": 5645,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "30",
+      "point_id": 5737,
+      "top_hit_id": 5737,
+      "score": 1.0000000000000002
+    },
+    {
+      "chapter_number": "A",
+      "point_id": 5988,
+      "top_hit_id": 5988,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "B",
+      "point_id": 6001,
+      "top_hit_id": 6001,
+      "score": 1.0
+    },
+    {
+      "chapter_number": "C",
+      "point_id": 6011,
+      "top_hit_id": 6011,
+      "score": 0.9999999999999999
+    }
+  ],
+  "quality_evaluation": "Not performed; persistence and vector-search checks only"
+}
