@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "questions": 100,
+  "pairs": 50,
+  "method_results": 200,
+  "indexed_chunks": 6040,
+  "runtime_errors": 0,
+  "saved_ranking_metrics_recomputed": 200,
+  "payloads_checked": 1000,
+  "input_and_output_hashes": "verified",
+  "tests": {
+    "passed": 322,
+    "skipped": 1
+  },
+  "any_evidence_misses": 24,
+  "any_misses_without_annotated_candidate": 23,
+  "complete_evidence_misses": 31,
+  "complete_misses_missing_candidate_groups": 28,
+  "wall_seconds": 1452.9637781000001,
+  "maximum_query_candidate_tokens": 382
+}

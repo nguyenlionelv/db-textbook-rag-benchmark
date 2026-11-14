@@ -1,0 +1,60 @@
+{
+  "reviewer": "coding agent; no independent human review",
+  "scope": "Four selected examples, not a complete semantic re-evaluation. Primary labels and scores remain unchanged.",
+  "examples": [
+    {
+      "question_id": "f05_en",
+      "point_id": 135,
+      "classification": "valid_alternative_passage",
+      "quotes": [
+        "The database and software together form a database system."
+      ],
+      "note": "The chapter summary directly supports the reference answer, although the annotated introductory span is absent.",
+      "source_ids": [
+        "863264e73f7a57ea:p57:b17"
+      ]
+    },
+    {
+      "question_id": "f30_en",
+      "point_id": 280,
+      "classification": "valid_alternative_passage",
+      "quotes": [
+        "We distinguished the schema, or description of a database, from the database itself.",
+        "The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified."
+      ],
+      "note": "The top-5 chapter summary supplies the schema description that the annotated-span metric misses; point 168 also defines the state.",
+      "source_ids": [
+        "863264e73f7a57ea:p84:b2",
+        "863264e73f7a57ea:p84:b3",
+        "863264e73f7a57ea:p84:b4",
+        "863264e73f7a57ea:p84:b5",
+        "863264e73f7a57ea:p84:b6",
+        "863264e73f7a57ea:p84:b7"
+      ]
+    },
+    {
+      "question_id": "f14_vi",
+      "point_id": 109,
+      "classification": "alternative_support_for_missing_group",
+      "quotes": [
+        "it is made possible by the concurrency control and recovery subsystems of a DBMS."
+      ],
+      "note": "Point 56 provides the airline-seat example; point 109 names the subsystem supporting concurrent shared updates. The first annotated group is still scored missing.",
+      "source_ids": [
+        "863264e73f7a57ea:p53:b3"
+      ]
+    },
+    {
+      "question_id": "f14_en",
+      "point_id": 56,
+      "classification": "partial_annotated_evidence",
+      "quotes": [
+        "the DBMS should ensure that each seat can be accessed by only one agent at a time for assignment to a passenger."
+      ],
+      "note": "The example is present, while the separately annotated concurrency-control introduction is absent. No semantic score is substituted.",
+      "source_ids": [
+        "863264e73f7a57ea:p44:b1"
+      ]
+    }
+  ]
+}

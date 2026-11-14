@@ -1,0 +1,39 @@
+{
+  "index_manifest": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\index_manifest.json",
+  "index_manifest_sha256": "4b184949645514e02b457430e2484c72c22b9c5a31c7d6506cb5a5a203663e67",
+  "collection": "e5_116b8a7ac780",
+  "indexed_chunks": 6040,
+  "chunk_sha256": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+  "parser_sha256": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+  "queries_sha256": "a6dc77d30dd62fc31974dd31d92a047a964cd895ca205b65d72404405c6fea76",
+  "benchmark_manifest_sha256": "8a7c4d91328a28a8fe9139237dcc0676eaa96cce7d9fc37e0d750c2578b3a87c",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "top_k": 5,
+  "candidate_k": 20,
+  "rrf_constant": 60,
+  "reranker_max_length": 512,
+  "reranker_batch_size": 2,
+  "torch_threads": 4,
+  "device": "cpu",
+  "search_filter": null,
+  "methods": [
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "code_sha256": {
+    "scripts/evaluate_retrieval.py": "868fec35197f2fcb7353aa780ca34ed895290e3556cf94cbbdbc11f587bce94b",
+    "src/retrieval/textbook_retrieval.py": "2ae2917085dc1f08f900f37b98190aadd11b2267a4bab7acd40f9809fab664ea",
+    "src/ingestion/textbook_embedder.py": "b1a78e7d16c2c928330c3f4d7f579037fdb484f25bb1c23f241f28de5e5f6555"
+  },
+  "packages": {
+    "torch": "2.14.0",
+    "sentence-transformers": "6.1.0",
+    "qdrant-client": "1.19.1",
+    "rank-bm25": "0.2.2",
+    "transformers": "5.17.0",
+    "pandas": "3.0.5"
+  }
+}

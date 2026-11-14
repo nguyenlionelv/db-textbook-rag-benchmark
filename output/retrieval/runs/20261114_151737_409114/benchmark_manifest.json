@@ -1,0 +1,40 @@
+{
+  "pairs": 50,
+  "questions": 100,
+  "languages": {
+    "vi": 50,
+    "en": 50
+  },
+  "splits": {
+    "dev": 60,
+    "eval": 40
+  },
+  "query_chapters": [
+    "1",
+    "2"
+  ],
+  "search_scope": "All 6040 indexed chunks; no chapter filter",
+  "index_manifest": "D:\\Users\\BuiTrongNguyen\\CodexProject\\db-rag-eval\\output\\ingestion\\full_book\\20261114_full_book_v2\\index_manifest.json",
+  "chunk_sha256": "c9bf48d8623ed746c952b2df159112bef27421305af2ce0837e3880a4c5a9886",
+  "parser_sha256": "95499bec2efe130d7d15b666e4506312b4eae41a6da52a819879cac57f29d109",
+  "pairs_sha256": "57018ed1a4a7222081919b00ed23f5b6eacb39ad6ab6af36b1b8e92b05c8e33b",
+  "queries_sha256": "a6dc77d30dd62fc31974dd31d92a047a964cd895ca205b65d72404405c6fea76",
+  "builder_sha256": "f782d3cae4aed92706dcce0d3f35e74e86ea1467c12d12b3fae4949fb17116db",
+  "families": {
+    "basic_concepts": 5,
+    "metadata_and_operations": 4,
+    "abstraction_and_views": 4,
+    "multiuser_transactions": 2,
+    "people_and_roles": 5,
+    "capabilities_and_limits": 7,
+    "models_and_schemas": 6,
+    "schema_architecture": 4,
+    "data_independence": 3,
+    "database_languages": 5,
+    "dbms_components": 3,
+    "client_server": 2
+  },
+  "label_policy": "All required evidence groups, any alternative within a group. Terminal sentence punctuation is excluded from spans. Each span must fit in an indexed chunk. Labels fixed before retrieval.",
+  "review": "Source-based authoring by the coding agent; no independent human review.",
+  "limitations": "Topic-heldout splits within this set; topics overlap earlier project experiments. Annotated evidence is not an exhaustive set of relevant passages."
+}
