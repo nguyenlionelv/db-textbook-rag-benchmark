@@ -25,7 +25,7 @@ class TextbookParser:
         )
 
         self.section_pattern = re.compile(
-            r"^(\d+\.\d+(?:\.\d+)*)\s+(.+)$"
+            r"^((?:\d+|[A-Z])\.\d+(?:\.\d+)*)\s+(.+)$"
         )
 
     def clean_text(self, text):
@@ -297,6 +297,10 @@ class TextbookParser:
         if not match:
             return None
 
+        # Appendix headings need an identified chapter, not a contents entry.
+        if not match.group(1)[0].isdigit() and self.current_chapter is None:
+            return None
+
         # Decimal table cells such as "10.0 40.0" are not section headings.
         if not any(char.isalpha() for char in match.group(2)):
             return None
@@ -308,13 +312,22 @@ class TextbookParser:
             "title": match.group(2).strip()
         }
 
-    def parse_pages(self, start_page, end_page):
-        """Parse an inclusive range; link numbered footnotes on the same page."""
+    def parse_pages(self, start_page, end_page, *, chapter=None):
+        """Parse inclusive page bounds and link footnotes on the same page.
+
+        chapter optionally supplies number/title from a verified PDF outline.
+        It fixes the chapter for this range, including its opening page.
+        Without it, chapter detection continues to use running headers.
+        """
         if not 0 <= start_page <= end_page < len(self.doc):
             raise ValueError("Expected 0 <= start_page <= end_page < PDF page count")
+        if chapter is not None and (not isinstance(chapter, dict) or any(
+                not isinstance(chapter.get(key), str) or not chapter[key].strip()
+                for key in ("number", "title"))):
+            raise ValueError("chapter must contain a non-empty number and title")
         records = []
 
-        self.current_chapter = None
+        self.current_chapter = dict(chapter) if chapter is not None else None
         self.current_section = None
 
         for page_idx in range(
@@ -324,7 +337,7 @@ class TextbookParser:
             page = self.doc[page_idx]
 
             detected_chapter = (
-                self.detect_chapter_from_page(page)
+                self.detect_chapter_from_page(page) if chapter is None else None
             )
 
             if detected_chapter is not None:
