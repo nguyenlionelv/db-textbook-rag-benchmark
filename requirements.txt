@@ -3,6 +3,7 @@ pdfplumber
 jupyter
 pandas
 pytest
+python-dotenv==1.2.4
 langchain-core
 langchain-text-splitters
 torch --index-url https://download.pytorch.org/whl/cpu

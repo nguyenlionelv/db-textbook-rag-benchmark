@@ -8,6 +8,7 @@ import argparse
 from contextlib import closing
 from copy import deepcopy
 from datetime import datetime, timedelta, timezone
+import hashlib
 from importlib.metadata import version
 import json
 import os
@@ -20,12 +21,26 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from scripts.build_foundations_benchmark import contains_span, sha256
-
 RERANKER_REVISION = "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
 BASE = ROOT / "output/retrieval/structure_aware_recursive"
 METRICS = ["hit_at_5", "mrr_at_5", "evidence_coverage_at_5", "all_evidence_at_5",
            "candidate_hit_at_20", "candidate_all_evidence_at_20", "seconds"]
+
+
+def sha256(path):
+    """Return a file's SHA-256 digest."""
+    with Path(path).open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
+
+
+def contains_span(hit, span):
+    """Check whether one source entry contains the full annotated span."""
+    return any(
+        source["record_id"] == span["record_id"]
+        and source["source_start_index"] <= span["start"]
+        and source["source_end_index"] >= span["end"]
+        for source in hit["metadata"]["sources"]
+    )
 
 
 def read_json(path):
@@ -260,7 +275,7 @@ def main():
                      "torch_threads": 4, "device": "cpu", "search_filter": None,
                      "methods": ["hybrid", "hybrid_rerank"],
                      "code_sha256": {name: sha256(ROOT / name) for name in
-                                    ("scripts/evaluate_retrieval.py", "scripts/build_foundations_benchmark.py",
+                                    ("scripts/evaluate_retrieval.py",
                                      "src/retrieval/textbook_retrieval.py",
                                      "src/ingestion/textbook_embedder.py")},
                      "packages": {name: version(name) for name in ("torch", "sentence-transformers", "qdrant-client",

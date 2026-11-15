@@ -8,7 +8,6 @@ from types import SimpleNamespace
 import pandas as pd
 import pytest
 
-from scripts import build_foundations_benchmark as builder
 from scripts import evaluate_retrieval as evaluation
 
 
@@ -129,14 +128,14 @@ def test_token_preflight_rejects_oversized_candidates_without_inference(tmp_path
 
 
 def test_authored_benchmark_is_balanced_and_source_checked():
-    root = builder.BENCHMARK
+    root = evaluation.ROOT / "data/benchmarks/dbms_foundations_100"
     cases = [json.loads(line) for line in (root / "queries.jsonl").read_text(encoding="utf-8").splitlines()]
     manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
     assert len(cases) == 100 and len({case["pair_id"] for case in cases}) == 50
     assert sum(case["language"] == "vi" for case in cases) == 50
     assert sum(case["language"] == "en" for case in cases) == 50
     assert sum(case["split"] == "dev" for case in cases) == 60
-    assert builder.sha256(root / "queries.jsonl") == manifest["queries_sha256"]
+    assert evaluation.sha256(root / "queries.jsonl") == manifest["queries_sha256"]
     pairs, families = defaultdict(list), defaultdict(set)
     for case in cases:
         pairs[case["pair_id"]].append(case)
