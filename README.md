@@ -13,19 +13,26 @@ PDF -> Parsing -> Chunking -> Embedding -> Qdrant -> Retrieval -> Generation
 | Parsing | Text extraction, document structure, metadata and footnotes | Implemented |
 | Chunking | Fixed-size, recursive and structure-aware splitting | Implemented |
 | Embedding and storage | Multilingual E5 embeddings and a persistent Qdrant Local index | Implemented and tested |
-| Retrieval | BM25 and dense search, RRF fusion and BGE reranking | Evaluated on 32 queries |
-| Generation | Context assembly, token budget, local Ollama calls and citation validation | Implemented |
-| RAG evaluation | Selected context and saved retrieval context, answer review and result export | 46 dev and 32 Generation eval results reviewed |
-| Full-book evaluation and UI | Corpus expansion and user interface | Pending |
+| Full-book ingestion | Chapters 1-30 and Appendices A-C, with source coverage and index checks | Complete: 17,199 records and 6,040 indexed chunks |
+| Retrieval | BM25 and dense search, RRF fusion and BGE reranking | Evaluated on 32 pilot queries and 100 full-book queries |
+| Generation | Context assembly, token budget, local Ollama and OpenAI-compatible API calls, citation validation | Implemented |
+| Pilot Generation evaluation | Selected context and saved retrieval context, answer review and result export | 46 dev and 32 eval results reviewed |
+| RAG pipeline | Live retrieval connected to Local or API generation | Implemented |
+| RAG end-to-end evaluation | Answer quality and latency with live retrieval and generation | Pending |
+| Retrieval improvement | Retrieval quality and response time, particularly for Vietnamese queries | Pending |
+| Application | React and FastAPI interface with model/language selection and source excerpts | Implemented and tested locally |
+| Public deployment | Hosted demo for external users | Pending |
 
-The evaluated pilot index contains **233 chunks with source references from Chapters 1-3**. The results below apply to this pilot corpus.
+The pilot index contains **233 chunks with source references from Chapters 1-3**. The full-book index contains **6,040 chunks from 30 chapters and three appendices**. Their retrieval results are reported separately below.
 
 ## Project structure
 
 ```text
 db-rag-eval/
+├── app/                  # React frontend, FastAPI backend and Docker configuration
 ├── data/
-│   └── raw/              # Input PDF files
+│   ├── raw/              # Input PDF files
+│   └── benchmarks/       # Bilingual questions and source annotations
 ├── docs/
 │   ├── materials/        # Theory and methods
 │   └── pipelines/        # Pipeline plans and data contracts
@@ -35,13 +42,14 @@ db-rag-eval/
 ├── src/
 │   ├── ingestion/        # Parsing, chunking, embedding and indexing
 │   ├── retrieval/        # Hybrid retrieval and reranking
-│   └── generation/       # Context assembly and answer generation
+│   ├── generation/       # Context assembly and answer generation
+│   └── rag_pipeline.py   # Live retrieval and generation
 ├── tests/                # Automated tests
 ├── requirements.txt
 └── README.md
 ```
 
-Input PDFs, model caches and Qdrant databases are excluded from Git. The repository includes pilot text data and selected experiment results.
+Input PDFs, model caches, Qdrant databases and local environment files are excluded from Git. The repository includes processed textbook records, chunks, benchmark questions and selected experiment results.
 
 ## Setup
 
@@ -136,6 +144,60 @@ Stop Ollama with `Ctrl+C` in its terminal, or run:
 .\scripts\start_ollama.ps1 -Stop
 ```
 
+## Run the application
+
+The application provides model and answer-language selection, question answering, and source excerpts with PDF page references. It supports Local Ollama and OpenAI-compatible API generation.
+
+### Docker
+
+Requirements:
+
+- Docker Desktop running with Linux containers. Host Python, Node.js and an active `.venv` are not required.
+- The full-book database at `output/qdrant_full_book/20261114_full_book_v2/` and retrieval model caches at `output/model_cache/e5_hub/` and `output/model_cache/reranker_hub/`.
+- The cached `qwen3:4b-instruct-2507-q4_K_M` model in `output/model_cache/ollama_models/` and its tokenizer in `output/model_cache/qwen3_4b_instruct_tokenizer/`. The supplied Compose configuration starts Ollama alongside the app.
+
+The database and model caches are not included in Git. Stop any native backend or notebook using the same Qdrant database before starting Docker.
+
+From the repository root, build and start the application:
+
+```powershell
+docker compose up --build -d
+```
+
+Open `http://localhost:8000`. Docker builds the frontend, starts FastAPI and Ollama, and mounts the existing index and model caches. It does not run ingestion again. The first build downloads container images and dependencies; the first question may take longer while models load.
+
+Local generation is enabled by default. For API generation, create `app/.env` from [app/.env.example](app/.env.example) and fill in `RAG_API_MODEL`, `RAG_API_URL` and `LLM_API_KEY`. Compose reads this file when the app starts. Select Local or API from the model control in the interface.
+
+After changing app code or environment settings, rebuild and restart the app service:
+
+```powershell
+docker compose up -d --build app
+```
+
+View backend logs:
+
+```powershell
+docker compose logs -f app
+```
+
+Stop the application:
+
+```powershell
+docker compose down
+```
+
+The index and cached models remain on the host after the containers stop.
+
+### CLI
+
+The same API configuration is available to the CLI. Stop the Docker app first because Qdrant Local allows only one process to open its database. From the repository root with `.venv` active, run:
+
+```powershell
+python scripts/run_rag_pipeline.py --backend api --question "What is a database?" --language en
+```
+
+See the [application guide](app/README.md) for native development, API settings, tests and deployment requirements. Local application checks do not constitute a completed end-to-end RAG evaluation.
+
 ## Notebooks
 
 | Notebook | Purpose |
@@ -152,6 +214,8 @@ Stop Ollama with `Ctrl+C` in its terminal, or run:
 
 ### Retrieval
 
+#### Pilot benchmark: 32 queries
+
 The retrieval benchmark contains 32 queries: 16 dev and 16 eval, with equal numbers of English and Vietnamese queries in each split. Hybrid retrieval with reranking produced the following eval results:
 
 | Language | Queries | Hit@5 | MRR@5 |
@@ -160,6 +224,34 @@ The retrieval benchmark contains 32 queries: 16 dev and 16 eval, with equal numb
 | Vietnamese | 8 | 0.875 | 0.875 |
 
 See the [retrieval report](output/retrieval/hybrid_reranking/report.md) for method comparisons and timing. The metrics use the annotated evidence spans in the pilot benchmark.
+
+#### Full-book benchmark: 100 queries
+
+The [frozen benchmark](output/retrieval/full_book_100/20261114_frozen_v1/queries.jsonl) contains **100 queries: 50 Vietnamese and 50 English**, arranged as 50 translated pairs. There are 60 dev queries and 40 eval queries; paired translations and topic families remain in the same split.
+
+Questions cover Database Systems and DBMS topics in Chapters 1-2. Retrieval searches all **6,040 indexed chunks from Chapters 1-30 and Appendices A-C**, without a chapter filter. The recorded configuration uses multilingual E5 small, BM25/RRF with 20 candidates, and BGE reranking to return five chunks.
+
+Results across all 100 queries, including dev and eval:
+
+| Language | Method | Queries | Hit@5 | MRR@5 | All evidence@5 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| English | Hybrid | 50 | 0.860 | 0.767 | 0.760 |
+| English | Hybrid + reranker | 50 | 0.920 | 0.877 | 0.840 |
+| Vietnamese | Hybrid | 50 | 0.360 | 0.225 | 0.320 |
+| Vietnamese | Hybrid + reranker | 50 | 0.600 | 0.567 | 0.540 |
+
+On the 40-query eval split, Hybrid + reranker produced:
+
+| Language | Queries | Hit@5 | MRR@5 | All evidence@5 |
+| --- | ---: | ---: | ---: | ---: |
+| English | 20 | 0.950 | 0.925 | 0.800 |
+| Vietnamese | 20 | 0.500 | 0.500 | 0.400 |
+
+Hit@5 and MRR@5 measure matches to any annotated evidence span. All evidence@5 requires every annotated evidence group to appear in the top five. The annotations are not exhaustive relevance labels, so a missed label can still correspond to a useful or equivalent passage. The translated pairs are not independent questions, and the annotations have not received independent human review. Topics overlap earlier project experiments, so eval is not a fully unseen final benchmark.
+
+The recorded CPU run averaged 13.30 seconds per English query and 14.83 seconds per Vietnamese query after reranking. These times include live retrieval and reranking, exclude setup and warm-up, and come from one pass rather than a latency distribution.
+
+See the [report](output/retrieval/full_book_100/20261114_frozen_v1/report.md), [dev/eval summary](output/retrieval/full_book_100/20261114_frozen_v1/summary.csv), [overall results](output/retrieval/full_book_100/20261114_frozen_v1/overall.csv) and [configuration](output/retrieval/full_book_100/20261114_frozen_v1/frozen_config.json). The corpus and questions differ from the pilot benchmark, so the two sets of scores are not directly comparable. This run evaluates retrieval only; generated-answer quality and retrieval performance improvements remain pending.
 
 ### Generation
 
@@ -186,28 +278,28 @@ See the [report](output/generation/20261030_160927_838100/report.md), [summary](
 
 ## Tests
 
-Run the test suite from the repository root:
+With `.venv` active, install the application test dependencies and run the test suite from the repository root:
 
 ```powershell
+python -m pip install -r app/requirements-dev.txt
 python -m pytest -q -ra
 ```
 
-The latest recorded run passed **212 tests**, with **1 skipped**. Set `RUN_EMBEDDING_INTEGRATION=1` to enable the real E5 test. It uses a cached model or downloads it on the first run.
+Standard tests use fixed responses and test fixtures. Set `RUN_EMBEDDING_INTEGRATION=1` to enable the real E5 test. It uses a cached model or downloads it on the first run. Browser test instructions are in the [application guide](app/README.md).
 
 To run only the Generation tests:
 
 ```powershell
-python -m pytest tests/test_textbook_generation.py -q
+python -m pytest tests/test_textbook_generation.py tests/test_api_generation.py -q
 ```
 
-These tests use fixed responses and do not require a running Ollama server.
+These tests use fixed responses and do not require a running Ollama server or external LLM API calls.
 
 ## Next work
 
-- Improve Vietnamese answer quality, evidence support and refusal behavior using the dev cases.
-- Compare model and context settings with the same questions and review criteria.
-- Validate full-book parsing, chunk coverage and retrieval before expanding the evaluation.
-- Add a user interface after the pipeline and evaluation are stable.
+- Evaluate end-to-end RAG with live retrieval and generation, covering answer correctness, evidence support, citations and latency. **Pending.**
+- Improve retrieval quality and response time, particularly for Vietnamese queries, using the dev split. **Pending.**
+- Prepare and verify the public demo deployment. **Pending.**
 
 ## Documentation
 
