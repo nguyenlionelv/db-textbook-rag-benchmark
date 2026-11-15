@@ -1,8 +1,8 @@
-"""Prepare retrieved context and generate source-linked answers with local Ollama.
+"""Share context preparation and answer checks, and support local Ollama calls.
 
-The caller supplies retrieval hits and a tokenizer compatible with the model.
-This module builds the prompt, calls Ollama, and validates the response format
-and citation IDs. It does not verify the factual correctness of an answer.
+The caller supplies retrieval hits and a model tokenizer or API token counter.
+Answer checks validate the response format and citation IDs, not factual
+correctness. OllamaGenerator uses the local tokenizer and runtime.
 """
 
 import json
@@ -32,7 +32,7 @@ SYSTEM_PROMPT = (
     "A general definition or role does not establish facts about a particular real-world person or system. "
     "If any necessary fact is missing, use status insufficient_evidence, "
     "briefly state what is missing, and return citations []. "
-    "Otherwise use status answered and give the shortest complete answer in the requested language. "
+    "Otherwise use status answered and give a complete answer in the requested language. "
     "Name the requested concept precisely; keep its English term in parentheses when useful. "
     "For comparisons, state both sides and their difference. "
     "Do not repeat the question or add examples, benefits, or explanations that were not asked for. "
@@ -41,25 +41,29 @@ SYSTEM_PROMPT = (
     'citations must contain source IDs only, for example ["S1", "S2"]. '
     "Never put quotations, headings, page numbers, or descriptions in citations. "
     "Cite all sources needed for the answer, using each ID once. "
-    "Use at most two short sentences."
+    "Use as much detail as needed to answer the question."
 )
 
 
 
 
-def build_context(query, hits, tokenizer, *, num_ctx=4096, max_new_tokens=256, language="vi"):
+def build_context(query, hits, tokenizer=None, *, num_ctx=4096, max_new_tokens=256,
+                  language="vi", count_tokens=None):
     """Select whole source chunks and format a prompt within the token budget.
 
     Args:
         query: Non-empty question.
         hits: Ranked chunks with point_id, page_content, and metadata.sources.
-        tokenizer: Model tokenizer with apply_chat_template() and encode().
+        tokenizer: Local model tokenizer with apply_chat_template() and encode().
         num_ctx: Token capacity for the prompt and answer.
         max_new_tokens: Tokens reserved for the answer.
         language: Answer language, "vi" or "en".
+        count_tokens: API model token counter accepting a message list, including
+            chat overhead. Supply this instead of tokenizer for API prompts.
 
     Returns:
         Prompt, context text, token count, source metadata, and omitted hits.
+        API preparation also includes messages; prompt is their JSON encoding.
         Source pages remain zero-based; labels use S1, S2, and so on.
 
     Raises:
@@ -73,16 +77,18 @@ def build_context(query, hits, tokenizer, *, num_ctx=4096, max_new_tokens=256, l
     if (type(num_ctx) is not int or type(max_new_tokens) is not int
             or not 0 < max_new_tokens < num_ctx):
         raise ValueError("Cần 0 < max_new_tokens < num_ctx")
+    if (tokenizer is None and not callable(count_tokens)) or (tokenizer is not None and count_tokens is not None):
+        raise ValueError("Cần tokenizer local hoặc count_tokens cho API")
 
     def render(blocks):
 
         # Keep the answer instructions next to the question and source excerpts.
         instruction = (
-            "Trả lời bằng tiếng Việt trong tối đa hai câu ngắn. Dùng đúng thuật ngữ trong nguồn, "
+            "Trả lời bằng tiếng Việt. Dùng đúng thuật ngữ trong nguồn, "
             "kèm tiếng Anh trong ngoặc khi cần. Không thêm ví dụ hoặc lợi ích. "
             "Nếu nguồn thiếu thông tin được hỏi, nói rõ thiếu bằng chứng."
             if language == "vi" else
-            "Answer in English in at most two short sentences. Use the source terminology. "
+            "Answer in English. Use the source terminology. "
             "Do not add examples or benefits. If the requested facts are absent, say so."
         )
         context = "\n\n".join(blocks) or "(No source excerpts supplied.)"
@@ -94,15 +100,22 @@ def build_context(query, hits, tokenizer, *, num_ctx=4096, max_new_tokens=256, l
              f"{instruction} Write JSON with answer first, then status and citations."},
         ]
 
-        # Apply Qwen's chat format once, disable thinking, and count its tokens.
-        prompt = tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True, enable_thinking=False,
-        )
-        count = len(tokenizer.encode(prompt, add_special_tokens=False))
-        return prompt, count, context
+        if tokenizer is None:
+            # Keep API messages separate from the local model's chat template.
+            prompt = json.dumps(messages, ensure_ascii=False)
+            count = count_tokens(messages)
+            if type(count) is not int or count < 0:
+                raise ValueError("count_tokens phải trả về số nguyên không âm")
+        else:
+            # Apply Qwen's chat format once and disable thinking.
+            prompt = tokenizer.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True, enable_thinking=False,
+            )
+            count = len(tokenizer.encode(prompt, add_special_tokens=False))
+        return prompt, count, context, messages
 
     # 2. Check the fixed prompt cost before adding any retrieved chunks.
-    prompt, count, context = render([])
+    prompt, count, context, messages = render([])
     if count + max_new_tokens > num_ctx:
         raise ValueError("Câu hỏi và instruction đã vượt token budget")
     
@@ -131,7 +144,7 @@ def build_context(query, hits, tokenizer, *, num_ctx=4096, max_new_tokens=256, l
         block = f"[{label}] PDF pages: {', '.join(str(p + 1) for p in pages)}\n{text}"
         # Recount the full prompt and reserve space for the answer.
         # If this chunk does not fit, still try later, potentially shorter hits.
-        trial_prompt, trial_count, trial_context = render(blocks + [block])
+        trial_prompt, trial_count, trial_context, trial_messages = render(blocks + [block])
         if trial_count + max_new_tokens > num_ctx:
             omitted.append({"point_id": hit["point_id"], "reason": "token_budget"})
             continue
@@ -140,9 +153,35 @@ def build_context(query, hits, tokenizer, *, num_ctx=4096, max_new_tokens=256, l
         sources.append({"source_id": label, "point_id": hit["point_id"],
                         "pdf_pages": pages, "metadata": deepcopy(metadata)})
         prompt, count, context = trial_prompt, trial_count, trial_context
+        messages = trial_messages
     # 4. Return the prepared input and the source mapping without calling a model.
-    return {"prompt": prompt, "context_text": context, "sources": sources,
-            "prompt_tokens": count, "omitted": omitted}
+    prepared = {"prompt": prompt, "context_text": context, "sources": sources,
+                "prompt_tokens": count, "omitted": omitted}
+    if tokenizer is None:
+        prepared["messages"] = messages
+    return prepared
+
+
+def validate_answer(raw_output, sources):
+    """Parse an answer and resolve unique citation IDs against supplied sources.
+
+    Returns status, answer, and full citation metadata. Raises ValueError for
+    invalid fields or citations; this does not assess factual correctness.
+    """
+    answer = json.loads(raw_output)
+    if not isinstance(answer, dict) or set(answer) != {"status", "answer", "citations"}:
+        raise ValueError("Output phải có đúng status, answer, citations")
+    status, text, labels = answer["status"], answer["answer"], answer["citations"]
+    if status not in ("answered", "insufficient_evidence") or not isinstance(text, str) or not text.strip():
+        raise ValueError("status hoặc answer không hợp lệ")
+    available = {source["source_id"]: source for source in sources}
+    if (not isinstance(labels, list) or any(not isinstance(label, str) for label in labels)
+            or len(set(labels)) != len(labels) or any(label not in available for label in labels)):
+        raise ValueError("Citation không hợp lệ hoặc không thuộc context")
+    if (status == "answered" and not labels) or (status == "insufficient_evidence" and labels):
+        raise ValueError("Citation không phù hợp với trạng thái đáp án")
+    return {"status": status, "answer": text,
+            "citations": [available[label] for label in labels]}
 
 
 
@@ -321,23 +360,8 @@ class OllamaGenerator:
             if actual is not None and actual != prepared["prompt_tokens"]:
                 raise ValueError("Token count Ollama khác tokenizer; cần đối chiếu tokenizer/template")
 
-            # 7. Parse JSON and validate its fields, status, and non-blank answer.
-            answer = json.loads(result["raw_output"])
-            if not isinstance(answer, dict) or set(answer) != {"status", "answer", "citations"}:
-                raise ValueError("Output phải có đúng status, answer, citations")
-            status, text, labels = answer["status"], answer["answer"], answer["citations"]
-            if status not in ("answered", "insufficient_evidence") or not isinstance(text, str) or not text.strip():
-                raise ValueError("status hoặc answer không hợp lệ")
-            # Require unique known citation IDs and consistency with answer status.
-            available = {source["source_id"]: source for source in prepared["sources"]}
-            if (not isinstance(labels, list) or any(not isinstance(label, str) for label in labels)
-                    or len(set(labels)) != len(labels) or any(label not in available for label in labels)):
-                raise ValueError("Citation không hợp lệ hoặc không thuộc context")
-            if (status == "answered" and not labels) or (status == "insufficient_evidence" and labels):
-                raise ValueError("Citation không phù hợp với trạng thái đáp án")
-
-            # 8. Resolve cited labels to full metadata for displaying PDF sources.
-            result.update(status=status, answer=text, citations=[available[label] for label in labels])
+            # 7. Validate the answer and resolve citations to full source metadata.
+            result.update(validate_answer(result["raw_output"], prepared["sources"]))
 
         except (RuntimeError, ValueError, TypeError) as error:
             # Preserve diagnostics while marking handled failures as errors.
