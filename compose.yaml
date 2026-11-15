@@ -1,0 +1,3 @@
+name: db-notes
+include:
+  - app/compose.yaml

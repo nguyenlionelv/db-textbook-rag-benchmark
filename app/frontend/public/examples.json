@@ -1,0 +1,235 @@
+[
+  {
+    "title": "Cơ sở dữ liệu là gì?",
+    "topic": "KHÁI NIỆM NỀN TẢNG",
+    "recorded_at": "14.11.2026",
+    "result": {
+      "request_id": "example-f01_vi",
+      "query": "Cơ sở dữ liệu là gì?",
+      "language": "vi",
+      "backend": "local",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "status": "answered",
+      "answer": "Cơ sở dữ liệu là một tập hợp dữ liệu liên quan, có ý nghĩa ngầm ẩn, được thiết kế, xây dựng và điền dữ liệu cho mục đích cụ thể (database).",
+      "citations": [
+        "S1",
+        "S2"
+      ],
+      "sources": [
+        {
+          "source_id": "S1",
+          "point_id": "10",
+          "text": "A database is a collection of related data. By data, we mean known facts that can be recorded and that have implicit meaning. For example, consider the names, telephone numbers, and addresses of the people you know. Nowadays, this data is typically stored in mobile phones, which have their own simple database software. This data can also be recorded in an indexed address book or stored on a hard drive, using a personal computer and software such as Microsoft Access or Excel. This collection of related data with an implicit meaning is a database.",
+          "pdf_pages": [
+            35
+          ],
+          "chapter": "1",
+          "section": "1.1",
+          "title": "Introduction"
+        },
+        {
+          "source_id": "S2",
+          "point_id": "12",
+          "text": "■ A database represents some aspect of the real world, sometimes called the\nminiworld or the universe of discourse (UoD). Changes to the miniworld are reflected in the database.\n■ A database is a logically coherent collection of data with some inherent\nmeaning. A random assortment of data cannot correctly be referred to as a database.\n■ A database is designed, built, and populated with data for a specific purpose.\nIt has an intended group of users and some preconceived applications in which these users are interested.",
+          "pdf_pages": [
+            36
+          ],
+          "chapter": "1",
+          "section": "1.1",
+          "title": "Introduction"
+        },
+        {
+          "source_id": "S3",
+          "point_id": "18",
+          "text": "A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS",
+          "pdf_pages": [
+            37
+          ],
+          "chapter": "1",
+          "section": "1.1",
+          "title": "Introduction"
+        },
+        {
+          "source_id": "S4",
+          "point_id": "2611",
+          "text": "Programs reside and execute in dynamic random-access memory ( DRAM ). Generally, large permanent databases reside on secondary storage (magnetic disks), and portions of the database are read into and written from buffers in main memory as needed. Nowadays, personal computers and workstations have large main memories of hundreds of megabytes of RAM and DRAM, so it is becoming possible to load a large part of the database into main memory. Eight to sixteen GB of main memory is becoming commonplace on laptops, and servers with 256 GB capacity are not uncommon",
+          "pdf_pages": [
+            574
+          ],
+          "chapter": "16",
+          "section": "16.1.1",
+          "title": "Memory Hierarchies and Storage Devices1"
+        },
+        {
+          "source_id": "S5",
+          "point_id": "62",
+          "text": "In any organization where many people use the same resources, there is a need for a chief administrator to oversee and manage these resources. In a database environment, the primary resource is the database itself, and the secondary resource is the DBMS and related software. Administering these resources is the responsibility of the database administrator (DBA). The DBA is responsible for authorizing access to the database, coordinating and monitoring its use, and acquiring software and hardware resources as needed. The DBA is accountable for problems such as security breaches and poor system response time",
+          "pdf_pages": [
+            46
+          ],
+          "chapter": "1",
+          "section": "1.4.1",
+          "title": "Database Administrators"
+        }
+      ],
+      "retrieval_seconds": 11.20552139999927,
+      "generation_seconds": 48.63499160000356,
+      "total_seconds": 59.84051300000283,
+      "error": null
+    }
+  },
+  {
+    "title": "Defining a database vs. constructing it",
+    "topic": "HIỂU VỀ DBMS",
+    "recorded_at": "14.11.2026",
+    "result": {
+      "request_id": "example-f06_en",
+      "query": "How does defining a database differ from constructing it?",
+      "language": "en",
+      "backend": "local",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "status": "answered",
+      "answer": "Defining a database involves specifying the data types, structures, and constraints (schema), while constructing it involves storing the data on a storage medium controlled by the DBMS.",
+      "citations": [
+        "S1"
+      ],
+      "sources": [
+        {
+          "source_id": "S1",
+          "point_id": "18",
+          "text": "A database management system (DBMS) is a computerized system that enables users to create and maintain a database. The DBMS is a general-purpose software system that facilitates the processes of defining, constructing, manipulating, and sharing databases among various users and applications. Defining a database involves specifying the data types, structures, and constraints of the data to be stored in the database. The database definition or descriptive information is also stored by the DBMS in the form of a database catalog or dictionary; it is called meta-data. Constructing the database is the process of storing the data on some storage medium that is controlled by the DBMS",
+          "pdf_pages": [
+            37
+          ],
+          "chapter": "1",
+          "section": "1.1",
+          "title": "Introduction"
+        },
+        {
+          "source_id": "S2",
+          "point_id": "12",
+          "text": "■ A database represents some aspect of the real world, sometimes called the\nminiworld or the universe of discourse (UoD). Changes to the miniworld are reflected in the database.\n■ A database is a logically coherent collection of data with some inherent\nmeaning. A random assortment of data cannot correctly be referred to as a database.\n■ A database is designed, built, and populated with data for a specific purpose.\nIt has an intended group of users and some preconceived applications in which these users are interested.",
+          "pdf_pages": [
+            36
+          ],
+          "chapter": "1",
+          "section": "1.1",
+          "title": "Introduction"
+        },
+        {
+          "source_id": "S3",
+          "point_id": "2022",
+          "text": "Following the description of the ODMG object model, we described a general technique for designing object database schemas in Section 12.4. We discussed how object databases differ from relational databases in three main areas: references to represent relationships, inclusion of operations, and inheritance. Finally, we showed how to map a conceptual database design in the EER model to the constructs of object databases.",
+          "pdf_pages": [
+            450
+          ],
+          "chapter": "12",
+          "section": "12.7",
+          "title": "Summary"
+        },
+        {
+          "source_id": "S4",
+          "point_id": "135",
+          "text": "In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents some aspect of the real world and is used for specific purposes by one or more groups of users. A DBMS is a generalized software package for implementing and maintaining a computerized database. The database and software together form a database system. We identified several characteristics that distinguish the database approach from traditional file-processing applications, and we discussed the main categories of database users, or the actors on the scene",
+          "pdf_pages": [
+            58
+          ],
+          "chapter": "1",
+          "section": "1.9",
+          "title": "Summary"
+        },
+        {
+          "source_id": "S5",
+          "point_id": "280",
+          "text": "[[SECTION 2.7: Summary]]\nIn this chapter we introduced the main concepts used in database systems. We defined a data model and we distinguished three main categories:\n■ High-level or conceptual data models (based on entities and relationships)\n■ Low-level or physical data models\n■ Representational or implementation data models (record-based, object-\noriented)\nWe distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:",
+          "pdf_pages": [
+            85
+          ],
+          "chapter": "2",
+          "section": "2.7",
+          "title": "Summary"
+        }
+      ],
+      "retrieval_seconds": 16.428757800000312,
+      "generation_seconds": 34.697038600003,
+      "total_seconds": 51.12579640000331,
+      "error": null
+    }
+  },
+  {
+    "title": "Khi giáo trình chưa có đủ thông tin",
+    "topic": "THIẾU BẰNG CHỨNG",
+    "recorded_at": "14.11.2026",
+    "result": {
+      "request_id": "example-probe_ip_vi",
+      "query": "Địa chỉ IP của máy chủ cơ sở dữ liệu trong lớp học của tôi là gì?",
+      "language": "vi",
+      "backend": "local",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "status": "insufficient_evidence",
+      "answer": "Địa chỉ IP của máy chủ cơ sở dữ liệu không được cung cấp trong các đoạn trích.",
+      "citations": [],
+      "sources": [
+        {
+          "source_id": "S1",
+          "point_id": "681",
+          "text": "c.\nE1\nR\nE3\nN\no\nM\nMEMORY VIDEO_CARD\nd\nLAPTOP DESKTOP\nINSTALLED\nd\nCOMPUTER\nSOFTWARE\nOPERATING_\nSYSTEM\nINSTALLED_OS\nSUPPORTS\nCOMPONENT OPTIONS\nSOUND_CARD\nMEM_OPTIONS\nKEYBOARD MOUSE\nd\nACCESSORY\nMONITOR\nSOLD_WITH\nLaboratory Exercises\n4.28. Consider a GRADE_BOOK database in which instructors within an academic\ndepartment record points earned by individual students in their classes. The data requirements are summarized as follows:\n■Each student is identified by a unique identifier, first and last name, and\nan e-mail address.\n■Each instructor teaches certain courses each term. Each course is identified\nby a course number, a section number, and the term in which it is taught. For",
+          "pdf_pages": [
+            174
+          ],
+          "chapter": "4",
+          "section": "4.8",
+          "title": "Summary"
+        },
+        {
+          "source_id": "S2",
+          "point_id": "465",
+          "text": "(1,1)\n(1,1)\n(1,1)\n(1,1)\n(1,1)\n(0,N)\n(0,N)\n(0,N)\n(0,N)\n(0,N)\n(0,N)\n(0,N)\n(0,1)\n(0,1)\n(0,1)\n(5,N)\nCName\nDName\nCCode SecId\nIOffice\nIName\nRank\nCPhone\nDCode\nDOffice\nCoName\nCredits\nCDesc\nLevel\nDPhone\nIPhone Id\nSId\nOFFERS\nCRoom\nBldg RoomNo\nDaysTime\nFigure 3.20 An ER diagram for a UNIVERSITY database schema.",
+          "pdf_pages": [
+            125
+          ],
+          "chapter": "3",
+          "section": "3.10",
+          "title": "Another Example: A UNIVERSITY Database"
+        },
+        {
+          "source_id": "S3",
+          "point_id": "1691",
+          "text": "1. $_SERVER['SERVER_NAME']. This provides the Web site name or the Uni-\nform Resource Locator (URL) of the server computer where the PHP interpreter is running. For example, if the PHP interpreter is running on the Web site http://www.uta.edu, then this string would be the value in $_SERVER['SERVER_NAME'].\n2. $_SERVER['REMOTE_ADDRESS']. This is the IP (Internet Protocol) address\nof the client user computer that is accessing the server; for example, 129.107.61.8.\n3. $_SERVER['REMOTE_HOST']. This is the Web site name (URL) of the client\nuser computer; for example, abc.uta.edu. In this case, the server will need to translate the name into an IP address to access the client.",
+          "pdf_pages": [
+            383
+          ],
+          "chapter": "11",
+          "section": "11.2.4",
+          "title": "PHP Server Variables and Forms"
+        },
+        {
+          "source_id": "S4",
+          "point_id": "459",
+          "text": "[[SECTION 3.10: Another Example: A UNIVERSITY Database]]\n■ A department offers a number of courses (COURSE), each of which has a\nunique course name (CoName), a unique code number (CCode), a course level (Level: this can be coded as 1 for freshman level, 2 for sophomore, 3 for junior, 4 for senior, 5 for MS level, and 6 for PhD level), a course credit hours (Credits), and a course description (CDesc). The database also keeps track of instructors (INSTRUCTOR); and each instructor has a unique identifier (Id), name (IName), office (IOffice), phone (IPhone), and rank (Rank); in addition, each instructor works for one primary academic department.",
+          "pdf_pages": [
+            124
+          ],
+          "chapter": "3",
+          "section": "3.10",
+          "title": "Another Example: A UNIVERSITY Database"
+        },
+        {
+          "source_id": "S5",
+          "point_id": "978",
+          "text": "2008.\nc. For each section taught by Professor King, retrieve the course number,\nsemester, year, and number of students who took the section.\nd. Retrieve the name and transcript of each senior student (Class = 4)\nmajoring in CS. A transcript includes course name, course number, credit hours, semester, year, and grade for each course completed by the student.\nPublisher_name Book_id Title\nBOOK\nBOOK_COPIES\nBook_id Branch_id No_of_copies\nBOOK_AUTHORS\nBook_id Author_name\nLIBRARY_BRANCH\nBranch_id Branch_name Address\nPUBLISHER\nName Address Phone\nBOOK_LOANS\nBook_id Branch_id Card_no Date_out Due_date\nBORROWER\nCard_no Name Address Phone Figure 6.6 A relational database schema for a LIBRARY database.",
+          "pdf_pages": [
+            235
+          ],
+          "chapter": "6",
+          "section": "6.6",
+          "title": "Summary"
+        }
+      ],
+      "retrieval_seconds": 15.840144100002362,
+      "generation_seconds": 43.054104999995616,
+      "total_seconds": 58.89424909999798,
+      "error": null
+    }
+  }
+]

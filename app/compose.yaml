@@ -1,0 +1,87 @@
+name: db-notes
+
+services:
+  ollama:
+    # CPU-only Ollama 0.40.15, pinned to the multi-platform image digest.
+    image: alpine/ollama@sha256:1792cb2cc1b468826119b176a9679cbaab685ee9bd8296633cdcd203ee6d5528
+    environment:
+      OLLAMA_HOST: 127.0.0.1:11434
+      OLLAMA_MODELS: /models
+      OLLAMA_NO_CLOUD: "1"
+      OLLAMA_NUM_PARALLEL: "1"
+      OLLAMA_MAX_LOADED_MODELS: "1"
+      OLLAMA_KEEP_ALIVE: 2m
+      OLLAMA_VULKAN: "0"
+    volumes:
+      - type: bind
+        source: ../output/model_cache/ollama_models
+        target: /models
+        bind:
+          create_host_path: false
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test: ["CMD", "ollama", "show", "qwen3:4b-instruct-2507-q4_K_M"]
+      interval: 5s
+      timeout: 10s
+      start_period: 20s
+      retries: 20
+    restart: unless-stopped
+
+  app:
+    image: db-notes-app:local
+    build:
+      context: ..
+      dockerfile: app/Dockerfile
+    network_mode: service:ollama
+    depends_on:
+      ollama:
+        condition: service_healthy
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      RAG_INDEX_MANIFEST: /data/index_manifest.json
+      RAG_QDRANT_PATH: /data/qdrant
+      RAG_OLLAMA_URL: http://127.0.0.1:11434
+      RAG_TIMEOUT: ${RAG_TIMEOUT:-300}
+      OMP_NUM_THREADS: "4"
+      MKL_NUM_THREADS: "4"
+    volumes:
+      - type: bind
+        source: ../output/ingestion/full_book/20261114_full_book_v2/index_manifest.json
+        target: /data/index_manifest.json
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../output/qdrant_full_book/20261114_full_book_v2
+        target: /data/qdrant
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../output/model_cache/e5_hub
+        target: /project/output/model_cache/e5_hub
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../output/model_cache/reranker_hub
+        target: /project/output/model_cache/reranker_hub
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../output/model_cache/qwen3_4b_instruct_tokenizer
+        target: /project/output/model_cache/qwen3_4b_instruct_tokenizer
+        read_only: true
+        bind:
+          create_host_path: false
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,urllib.request; r=json.load(urllib.request.urlopen('http://127.0.0.1:8000/api/health',timeout=3)); raise SystemExit(0 if r['ready'] or r['status']=='examples' else 1)"]
+      interval: 10s
+      timeout: 5s
+      start_period: 120s
+      retries: 12
+    stop_grace_period: 240s
+    restart: unless-stopped
